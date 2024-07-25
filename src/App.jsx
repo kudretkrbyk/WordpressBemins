@@ -1,7 +1,11 @@
-import { useState } from "react";
+import Navbar from "./components/Navbar";
 
 function App() {
-  return <div className="text-blue-500">APP</div>;
+  return (
+    <div>
+      <Navbar></Navbar>
+    </div>
+  );
 }
 
 export default App;
