@@ -45,7 +45,7 @@ export default function Categories() {
             className="rounded-full hover:scale-90 duration-700"
             src="https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2023/11/category-1.jpg"
           ></img>
-          <span>Shoes</span>
+          <span>Shoess</span>
         </div>
       </div>
     </div>
