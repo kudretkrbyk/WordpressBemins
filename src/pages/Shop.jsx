@@ -50,7 +50,10 @@ export default function Shop() {
           </div>
         </div>
       </div>
-      <div></div>
+      <div className="w-full flex">
+        <div className="bg-red-500 w-3/12 h-full">dd</div>
+        <div className="bg-blue-500 w-9/12 h-full">dd</div>
+      </div>
     </div>
   );
 }
