@@ -67,13 +67,27 @@ export default function Footer() {
             Subscribe and be the first to know about exclusive offers, products,
             promotions & more
           </div>
-          <div>
-            <div></div>
-            <div></div>
+          <div className="flex items-center justify-center gap-5">
+            <div>
+              <input
+                className="border-none focus:outline-none"
+                placeholder="Enter Your email"
+              ></input>
+            </div>
+            <div>
+              <button className="p-3 px-6 bg-[#54d9e1] rounded-xl">
+                Submit
+              </button>
+            </div>
           </div>
         </div>
       </div>
-      <div></div>
+      <div className="flex w-full items-center justify-between">
+        <div>© 2024 – bemins. All Rights Reserved.</div>
+        <div>
+          <img src="https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2020/06/payment.png"></img>
+        </div>
+      </div>
     </div>
   );
 }
