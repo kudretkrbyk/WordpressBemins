@@ -1,0 +1,184 @@
+[
+  {
+    "ad": "90s Chino Pant",
+    "aciklama": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    "fiyat": 50.0,
+    "colors": ["Beige", "Black"],
+    "size": ["M", "S", "L"],
+    "SKU": "D1116",
+    "kategori": "üst",
+    "altKategori": "Shirts",
+    "marka": "Marka 1",
+    "tag": ["Hot"],
+
+    "indirim": 10,
+    "indirimBitis": "2024-12-31",
+
+    "puan": 4.5,
+    "tarih": "2024-07-01",
+    "fotograflar": [
+      "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2020/12/products-1-1.jpg",
+      "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2020/12/products-2-1.jpg",
+      "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2020/12/products-3-1.jpg",
+      "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2020/12/products-4-2.jpg"
+    ]
+  },
+  {
+    "ad": "Angie Skirt",
+    "fiyat": 100.0,
+    "aciklama": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    "colors": ["Brick", "Black"],
+    "size": ["M", "S", "L"],
+    "SKU": "D2300-1",
+    "kategori": "üst",
+    "altKategori": "Shirts",
+    "marka": "???",
+    "tag": ["Hot"],
+
+    "indirim": 10,
+    "indirimBitis": "2024-12-31",
+
+    "puan": 4.5,
+    "tarih": "2024-07-01",
+    "fotograflar": [
+      "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2019/04/products-11-1.jpg",
+      "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2019/04/products-11-2.jpg",
+      "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2019/04/products-11-3.jpg",
+      "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2019/04/products-11-4.jpg"
+    ]
+  },
+  {
+    "ad": "Band Straw Hat",
+    "fiyat": 20.0,
+    "aciklama": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    "colors": ["Beige", "Black"],
+    "size": [],
+    "SKU": "D2300-1",
+    "kategori": "Sandals",
+    "altKategori": "",
+    "marka": "???",
+    "tag": ["Hot"],
+
+    "indirim": 10,
+    "indirimBitis": "2024-12-31",
+
+    "puan": 4.5,
+    "tarih": "2024-07-01",
+    "fotograflar": [
+      "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2023/12/products-15-1.jpg",
+      "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2023/12/products-15-2.jpg",
+      "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2023/12/products-15-3.jpg",
+      "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2023/12/products-15-4.jpg"
+    ]
+  },
+  {
+    "ad": "Black Gold",
+    "fiyat": 200.0,
+    "aciklama": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    "colors": [],
+    "size": [],
+    "SKU": "D2300-3-2-3",
+    "kategori": "Glasses",
+    "altKategori": "",
+    "marka": "???",
+    "tag": ["Hot", "trend"],
+
+    "indirim": 10,
+    "indirimBitis": "2024-12-31",
+
+    "puan": 4.5,
+    "tarih": "2024-07-01",
+    "fotograflar": [
+      "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2020/12/products-19.jpg",
+      "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2020/12/products-20.jpg"
+    ]
+  },
+  {
+    "ad": "Caramel Midnight",
+    "fiyat": 50.0,
+    "aciklama": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    "colors": [],
+    "size": [],
+    "SKU": "D2300-3-1",
+    "kategori": "Glasses",
+    "altKategori": "",
+    "marka": "???",
+    "tag": ["Hot", "trend"],
+
+    "indirim": 10,
+    "indirimBitis": "2024-12-31",
+
+    "puan": 4.5,
+    "tarih": "2024-07-01",
+    "fotograflar": [
+      "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2020/12/products-21.jpg",
+      "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2020/12/products-22.jpg"
+    ]
+  },
+  {
+    "ad": "Cloud 5 Ready",
+    "fiyat": 100.0,
+    "aciklama": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    "colors": [],
+    "size": [],
+    "SKU": "D2300-3-2-4",
+    "kategori": "shoes",
+    "altKategori": "",
+    "marka": "???",
+    "tag": ["life style", "trend"],
+
+    "indirim": 10,
+    "indirimBitis": "2024-12-31",
+
+    "puan": 4.5,
+    "tarih": "2024-07-01",
+    "fotograflar": [
+      "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2020/12/products-23.jpg",
+      "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2020/12/products-24.jpg"
+    ]
+  },
+  {
+    "ad": "Cloud X Shift",
+    "fiyat": 40.0,
+    "aciklama": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    "colors": [],
+    "size": [],
+    "SKU": "D2409",
+    "kategori": "shoes",
+    "altKategori": "",
+    "marka": "???",
+    "tag": ["life style", "trend", "blue"],
+
+    "indirim": 10,
+    "indirimBitis": "2024-12-31",
+
+    "puan": 4.5,
+    "tarih": "2024-07-01",
+    "fotograflar": [
+      "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2020/12/products-25.jpg",
+      "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2020/12/products-26.jpg"
+    ]
+  },
+  {
+    "ad": "Cloudboom Echo",
+    "fiyat": 40.0,
+    "aciklama": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    "colors": [],
+    "size": [],
+    "SKU": "D1112",
+    "kategori": "shoes",
+    "altKategori": "",
+    "marka": "???",
+    "tag": ["life style", "hot"],
+
+    "indirim": 10,
+    "indirimBitis": "2024-12-31",
+
+    "puan": 4.5,
+    "tarih": "2024-07-01",
+    "fotograflar": [
+      "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2020/12/products-23.jpg",
+      "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2020/12/products-24.jpg"
+    ]
+  }
+]
