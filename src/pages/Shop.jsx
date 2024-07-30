@@ -2,11 +2,22 @@ import { useEffect, useState } from "react";
 
 export default function Shop() {
   const [productList, setProductList] = useState([]);
+  const [colorsList, setColorsList] = useState([]);
+  const [sizeList, setSizeList] = useState([]);
 
   useEffect(() => {
     fetch("/src/data/products.json")
       .then((response) => response.json())
-      .then((data) => setProductList(data))
+      .then((data) => {
+        setProductList(data);
+
+        // Colors ve Sizes listelerini oluşturma
+        const colors = data.flatMap((product) => product.colors);
+        const sizes = data.flatMap((product) => product.size);
+
+        setColorsList([...new Set(colors)]);
+        setSizeList([...new Set(sizes)]);
+      })
       .catch((error) => console.error("Error fetching JSON:", error));
   }, []);
 
@@ -71,7 +82,37 @@ export default function Shop() {
         </div>
       </div>
       <div className="w-full flex">
-        <div className="bg-red-500 w-3/12 h-full">dd</div>
+        <div className=" w-3/12 h-full flex flex-col">
+          <div>Categories</div>
+          <div>Price</div>
+          <div className="w-full">
+            <div>Color:</div>
+            <div className=" grid grid-cols-5 w-full gap-2   p-2">
+              {colorsList.map((color, index) => (
+                <div
+                  className="flex items-center justify-center size-10 rounded-full bg-green-500"
+                  key={index}
+                >
+                  {color}
+                </div>
+              ))}
+            </div>
+          </div>
+          <div>
+            <div>Size:</div>
+            <div className=" grid grid-cols-5 w-full gap-2   p-2">
+              {sizeList.map((size, index) => (
+                <div
+                  className="flex items-center justify-center size-10 rounded-full bg-green-500"
+                  key={index}
+                >
+                  {size}
+                </div>
+              ))}
+            </div>
+          </div>
+          <div>Feature Product</div>
+        </div>
         <div className=" w-9/12 h-full">
           <div className="grid grid-cols-3 gap-4">
             {productList.map((product, index) => (
