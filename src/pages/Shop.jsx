@@ -80,6 +80,18 @@ export default function Shop() {
                 <div className="bg-red-500 w-auto flex items-center justify-center absolute top-3 left-0 rounded p-1 px-3 ">
                   {product.tag[0]}{" "}
                 </div>
+                <div className="flex flex-col absolute top-10 right-10">
+                  <div>1</div>
+                  <div>2</div>
+                  <div>3</div>
+                  <div>4</div>
+                </div>
+                <div className="flex  absolute bottom-10 left-1/2">
+                  <div>1</div>
+                  <div>2</div>
+                  <div>3</div>
+                  <div>4</div>
+                </div>
               </div>
             ))}
           </div>
