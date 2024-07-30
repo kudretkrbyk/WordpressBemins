@@ -75,8 +75,11 @@ export default function Shop() {
         <div className=" w-9/12 h-full">
           <div className="grid grid-cols-3 gap-4">
             {productList.map((product, index) => (
-              <div key={index}>
-                <img src={product.fotograflar[0]}></img>
+              <div className="relative" key={index}>
+                <img className="" src={product.fotograflar[0]}></img>
+                <div className="bg-red-500 w-auto flex items-center justify-center absolute top-3 left-0 rounded p-1 px-3 ">
+                  {product.tag[0]}{" "}
+                </div>
               </div>
             ))}
           </div>
