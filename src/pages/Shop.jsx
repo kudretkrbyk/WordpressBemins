@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-
 import { IoIosArrowDown } from "react-icons/io";
 
 export default function Shop() {
@@ -7,6 +6,14 @@ export default function Shop() {
   const [colorsList, setColorsList] = useState([]);
   const [categories, setCategories] = useState([]);
   const [sizeList, setSizeList] = useState([]);
+  const [subCatFlag, setSubCatFlag] = useState({});
+
+  const handleOpenSubCategories = (categoryName) => {
+    setSubCatFlag((prevFlag) => ({
+      ...prevFlag,
+      [categoryName]: !prevFlag[categoryName],
+    }));
+  };
 
   useEffect(() => {
     fetch("/src/data/products.json")
@@ -28,7 +35,7 @@ export default function Shop() {
   console.log(categories);
 
   return (
-    <div className="w-full  flex flex-col  ">
+    <div className="w-full flex flex-col">
       <div className="w-full h-[480px] relative border border-red-500 overflow-hidden">
         <div className="absolute">
           <img
@@ -88,29 +95,38 @@ export default function Shop() {
         </div>
       </div>
       <div className="w-full flex">
-        <div className=" w-3/12 h-full flex flex-col p-4">
+        <div className="w-3/12 h-full flex flex-col p-4">
           <div>
             <div className="font-bold flex flex-col">Categories</div>
             {categories.map((category, index) => (
-              <div className="flex flex-col gap-10" key={index}>
+              <div className="flex flex-col gap-4 mt-2" key={index}>
                 <div className="flex items-center justify-between gap-2 text-blue-700">
                   <div>{category.name}</div>
                   {category.subcategories.length > 0 && (
                     <div className="">
-                      <IoIosArrowDown />
+                      <IoIosArrowDown
+                        onClick={() => handleOpenSubCategories(category.name)}
+                      />
                     </div>
                   )}
                 </div>
-                {category.subcategories.map((sub, index) => (
-                  <div key={index}>{category.subcategories}</div>
-                ))}
+                {subCatFlag[category.name] && (
+                  <div className="flex flex-col gap-2 ml-4">
+                    {category.subcategories.map((sub, subIndex) => (
+                      <div key={subIndex}>{sub}</div>
+                    ))}
+                  </div>
+                )}
               </div>
             ))}
           </div>
-          <div>Price</div>
-          <div className="w-full">
-            <div>Color:</div>
-            <div className=" grid grid-cols-5 w-full gap-2   p-2">
+          <div className="mt-4">
+            <div className="font-bold">Price</div>
+            {/* Price filter component goes here */}
+          </div>
+          <div className="mt-4">
+            <div className="font-bold">Color:</div>
+            <div className="grid grid-cols-5 w-full gap-2 p-2">
               {colorsList.map((color, index) => (
                 <div
                   className="flex items-center justify-center size-10 rounded-full bg-green-500"
@@ -121,9 +137,9 @@ export default function Shop() {
               ))}
             </div>
           </div>
-          <div>
-            <div>Size:</div>
-            <div className=" grid grid-cols-5 w-full gap-2   p-2">
+          <div className="mt-4">
+            <div className="font-bold">Size:</div>
+            <div className="grid grid-cols-5 w-full gap-2 p-2">
               {sizeList.map((size, index) => (
                 <div
                   className="flex items-center justify-center size-10 rounded-full bg-green-500"
@@ -134,15 +150,18 @@ export default function Shop() {
               ))}
             </div>
           </div>
-          <div>Feature Product</div>
+          <div className="mt-4">
+            <div className="font-bold">Feature Product</div>
+            {/* Feature Product component goes here */}
+          </div>
         </div>
-        <div className=" w-9/12 h-full">
-          <div className="grid grid-cols-3 gap-4">
+        <div className="w-9/12 h-full">
+          <div className="grid grid-cols-3 gap-4 p-4">
             {productList.map((product, index) => (
               <div className="relative" key={index}>
-                <img className="" src={product.fotograflar[0]}></img>
-                <div className="bg-red-500 w-auto flex items-center justify-center absolute top-3 left-0 rounded p-1 px-3 ">
-                  {product.tag[0]}{" "}
+                <img src={product.fotograflar[0]} alt={product.name} />
+                <div className="bg-red-500 w-auto flex items-center justify-center absolute top-3 left-0 rounded p-1 px-3">
+                  {product.tag[0]}
                 </div>
                 <div className="flex flex-col absolute top-10 right-10">
                   <div>1</div>
@@ -150,7 +169,7 @@ export default function Shop() {
                   <div>3</div>
                   <div>4</div>
                 </div>
-                <div className="flex  absolute bottom-10 left-1/2">
+                <div className="flex absolute bottom-10 left-1/2">
                   <div>1</div>
                   <div>2</div>
                   <div>3</div>
