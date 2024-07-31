@@ -32,7 +32,20 @@ export default function Shop() {
       .catch((error) => console.error("Error fetching JSON:", error));
   }, []);
 
-  console.log(categories);
+  const colorCodes = {
+    red: "#ef5050",
+    green: "#20b2aa",
+    Blue: "#5173a6",
+    yellow: "#c69a02",
+    black: "#000000",
+    white: "#FFFFFF",
+    Beige: "#e6d4b4",
+    Brick: "#6b302c",
+    gray: "#8d9098",
+    lilac: "#a5afc5",
+    pink: "#ffc0cb",
+    // Diğer renk kodları buraya eklenebilir
+  };
 
   return (
     <div className="w-full flex flex-col">
@@ -129,10 +142,11 @@ export default function Shop() {
             <div className="grid grid-cols-5 w-full gap-2 p-2">
               {colorsList.map((color, index) => (
                 <div
-                  className="flex items-center justify-center size-10 rounded-full bg-green-500"
+                  className="flex items-center justify-center size-10 rounded-full"
+                  style={{ backgroundColor: colorCodes[color] || "#000000" }} // Default color black if color code not found
                   key={index}
                 >
-                  {color}
+                  <div className="text-blue-500">{color} </div>
                 </div>
               ))}
             </div>
