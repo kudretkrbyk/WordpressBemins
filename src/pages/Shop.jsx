@@ -5,7 +5,10 @@ export default function Shop() {
   const [productList, setProductList] = useState([]);
   const [colorsList, setColorsList] = useState([]);
   const [categories, setCategories] = useState([]);
+  const [colorCount, setColorCount] = useState([]);
+  const [sizeCount, setSizeCount] = useState([]);
   const [sizeList, setSizeList] = useState([]);
+
   const [subCatFlag, setSubCatFlag] = useState({});
 
   const handleOpenSubCategories = (categoryName) => {
@@ -28,6 +31,22 @@ export default function Shop() {
 
         setColorsList([...new Set(colors)]);
         setSizeList([...new Set(sizes)]);
+        // Color count ve size count objelerini oluşturma
+        const colorCount = data.product.reduce((count, product) => {
+          product.colors.forEach((color) => {
+            count[color] = (count[color] || 0) + 1;
+          });
+          return count;
+        }, {});
+
+        const sizeCount = data.product.reduce((count, product) => {
+          product.size.forEach((size) => {
+            count[size] = (count[size] || 0) + 1;
+          });
+          return count;
+        }, {});
+        setColorCount(colorCount);
+        setSizeCount(sizeCount);
       })
       .catch((error) => console.error("Error fetching JSON:", error));
   }, []);
@@ -146,7 +165,9 @@ export default function Shop() {
                   style={{ backgroundColor: colorCodes[color] || "#000000" }} // Default color black if color code not found
                   key={index}
                 >
-                  <div className="text-blue-500">{color} </div>
+                  <div className="text-blue-500">
+                    {color} ({colorCount[color] || 0}){" "}
+                  </div>
                 </div>
               ))}
             </div>
@@ -156,10 +177,10 @@ export default function Shop() {
             <div className="grid grid-cols-5 w-full gap-2 p-2">
               {sizeList.map((size, index) => (
                 <div
-                  className="flex items-center justify-center size-10 rounded-full bg-green-500"
+                  className="flex items-center justify-center   border"
                   key={index}
                 >
-                  {size}
+                  {size}({sizeCount[size] || 0}){" "}
                 </div>
               ))}
             </div>
