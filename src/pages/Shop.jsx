@@ -3,23 +3,27 @@ import { useEffect, useState } from "react";
 export default function Shop() {
   const [productList, setProductList] = useState([]);
   const [colorsList, setColorsList] = useState([]);
+  const [categories, setCategories] = useState([]);
   const [sizeList, setSizeList] = useState([]);
 
   useEffect(() => {
     fetch("/src/data/products.json")
       .then((response) => response.json())
       .then((data) => {
-        setProductList(data);
+        setProductList(data.product);
+        setCategories(data.categories);
 
         // Colors ve Sizes listelerini oluşturma
-        const colors = data.flatMap((product) => product.colors);
-        const sizes = data.flatMap((product) => product.size);
+        const colors = data.product.flatMap((product) => product.colors);
+        const sizes = data.product.flatMap((product) => product.size);
 
         setColorsList([...new Set(colors)]);
         setSizeList([...new Set(sizes)]);
       })
       .catch((error) => console.error("Error fetching JSON:", error));
   }, []);
+
+  console.log(categories);
 
   return (
     <div className="w-full  flex flex-col  ">
