@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 
+import { IoIosArrowDown } from "react-icons/io";
+
 export default function Shop() {
   const [productList, setProductList] = useState([]);
   const [colorsList, setColorsList] = useState([]);
@@ -86,14 +88,22 @@ export default function Shop() {
         </div>
       </div>
       <div className="w-full flex">
-        <div className=" w-3/12 h-full flex flex-col">
+        <div className=" w-3/12 h-full flex flex-col p-4">
           <div>
             <div className="font-bold flex flex-col">Categories</div>
             {categories.map((category, index) => (
-              <div className="flex flex-col gap-4" key={index}>
-                <div> {category.name} </div>
-                <div>{category.subcategories}</div>
-                <div className="flex flex-col gap-4"></div>
+              <div className="flex flex-col gap-10" key={index}>
+                <div className="flex items-center justify-between gap-2 text-blue-700">
+                  <div>{category.name}</div>
+                  {category.subcategories.length > 0 && (
+                    <div className="">
+                      <IoIosArrowDown />
+                    </div>
+                  )}
+                </div>
+                {category.subcategories.map((sub, index) => (
+                  <div key={index}>{category.subcategories}</div>
+                ))}
               </div>
             ))}
           </div>
