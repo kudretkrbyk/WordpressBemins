@@ -87,7 +87,16 @@ export default function Shop() {
       </div>
       <div className="w-full flex">
         <div className=" w-3/12 h-full flex flex-col">
-          <div>Categories</div>
+          <div>
+            <div className="font-bold flex flex-col">Categories</div>
+            {categories.map((category, index) => (
+              <div className="flex flex-col gap-4" key={index}>
+                <div> {category.name} </div>
+                <div>{category.subcategories}</div>
+                <div className="flex flex-col gap-4"></div>
+              </div>
+            ))}
+          </div>
           <div>Price</div>
           <div className="w-full">
             <div>Color:</div>
