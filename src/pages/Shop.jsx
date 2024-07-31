@@ -161,12 +161,18 @@ export default function Shop() {
             <div className="grid grid-cols-5 w-full gap-2 p-2">
               {colorsList.map((color, index) => (
                 <div
-                  className="flex items-center justify-center size-10 rounded-full"
+                  className="relative flex items-center justify-center size-10 rounded-full group border"
                   style={{ backgroundColor: colorCodes[color] || "#000000" }} // Default color black if color code not found
                   key={index}
                 >
-                  <div className="text-blue-500">
-                    {color} ({colorCount[color] || 0}){" "}
+                  <div className=" absolute  -top-10 text-blue-500 hidden group-hover:flex bg-black w-16 h-7 ">
+                    {color}({colorCount[color] || 0}){" "}
+                    <div className="relative top-0 text-black w-full h-full border border-red-500">
+                      <div className="absolute top-0 left-0">
+                        {" "}
+                        <IoIosArrowDown />{" "}
+                      </div>
+                    </div>
                   </div>
                 </div>
               ))}
