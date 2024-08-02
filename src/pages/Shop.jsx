@@ -1,6 +1,10 @@
 import { useEffect, useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
 import { IoMdArrowDropdown } from "react-icons/io";
+import { IoBagOutline } from "react-icons/io5";
+import { IoIosSearch } from "react-icons/io";
+import { CiHeart } from "react-icons/ci";
+import { MdCompareArrows } from "react-icons/md";
 
 export default function Shop() {
   const [productList, setProductList] = useState([]);
@@ -203,11 +207,19 @@ export default function Shop() {
                 <div className="bg-red-500 w-auto flex items-center justify-center absolute top-3 left-0 rounded p-1 px-3">
                   {product.tag[0]}
                 </div>
-                <div className="flex flex-col absolute top-10 right-10">
-                  <div>1</div>
-                  <div>2</div>
-                  <div>3</div>
-                  <div>4</div>
+                <div className="flex flex-col absolute gap-10 top-10 right-10">
+                  <div>
+                    <IoBagOutline className="size-6" />
+                  </div>
+                  <div>
+                    <IoIosSearch className="size-6" />
+                  </div>
+                  <div>
+                    <CiHeart className="size-6" />
+                  </div>
+                  <div>
+                    <MdCompareArrows className="size-6" />
+                  </div>
                 </div>
                 <div className="flex absolute bottom-10 left-1/2">
                   <div>1</div>
