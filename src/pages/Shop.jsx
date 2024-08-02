@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
+import { IoMdArrowDropdown } from "react-icons/io";
 
 export default function Shop() {
   const [productList, setProductList] = useState([]);
@@ -165,13 +166,11 @@ export default function Shop() {
                   style={{ backgroundColor: colorCodes[color] || "#000000" }} // Default color black if color code not found
                   key={index}
                 >
-                  <div className=" absolute  -top-10 text-blue-500 hidden group-hover:flex bg-black w-16 h-7 ">
+                  <div className=" absolute  -top-10 text-blue-500 hidden group-hover:flex items-center justify-center bg-black w-16 h-7 ">
                     {color}({colorCount[color] || 0}){" "}
-                    <div className="relative top-0 text-black w-full h-full border border-red-500">
-                      <div className="absolute top-0 left-0">
-                        {" "}
-                        <IoIosArrowDown />{" "}
-                      </div>
+                    <div className="absolute top-[10px] left-3 text-black">
+                      {" "}
+                      <IoMdArrowDropdown className="size-10" />{" "}
                     </div>
                   </div>
                 </div>
