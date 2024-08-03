@@ -21,11 +21,13 @@ export function filterProductsByPrice(products, priceRange) {
 
 // Kategoriye göre ürünleri filtrele
 export function filterProductsByCategory(products, category) {
-  return products.filter((product) => product.category === category);
+  console.log("api cat", category);
+  return products.filter((product) => product.kategori === category);
 }
 
 // Renklere göre ürünleri filtrele
 export function filterProductsByColor(products, selectedColors) {
+  console.log("api sc", selectedColors);
   return products.filter((product) =>
     selectedColors.every((color) => product.colors.includes(color))
   );

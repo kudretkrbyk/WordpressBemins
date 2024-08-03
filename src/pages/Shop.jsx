@@ -16,6 +16,7 @@ export default function Shop() {
 
   const [selectedColors, setSelectedColors] = useState([]); // Seçilen renkler
   const [selectedSizes, setSelectedSizes] = useState([]); // Seçilen boyutlar
+  const [selectedCategory, setSelectedCategory] = useState([]); // Seçilen boyutlar
   const [subCatFlag, setSubCatFlag] = useState({});
   const {
     productList,
@@ -33,9 +34,11 @@ export default function Shop() {
 
   useFilterProducts(
     productList,
+    selectedCategory,
     priceRange,
     selectedColors,
     selectedSizes,
+
     setFilteredProducts
   );
 
@@ -58,6 +61,9 @@ export default function Shop() {
     setSelectedColors((prev) =>
       prev.includes(color) ? prev.filter((c) => c !== color) : [...prev, color]
     );
+  };
+  const handleCategoryClick = (category) => {
+    setSelectedCategory(category);
   };
 
   const handleSizeClick = (size) => {
@@ -82,7 +88,9 @@ export default function Shop() {
             {categories.map((category, index) => (
               <div className="flex flex-col  mt-2" key={index}>
                 <div className="flex  items-center justify-between gap-2 text-blue-700">
-                  <div>{category.name}</div>
+                  <div onClick={() => handleCategoryClick(category.name)}>
+                    {category.name}
+                  </div>
                   {category.subcategories.length > 0 && (
                     <div className="">
                       <IoIosArrowDown
