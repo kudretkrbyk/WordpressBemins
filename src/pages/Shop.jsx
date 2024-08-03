@@ -1,3 +1,5 @@
+// src/pages/Shop.js
+
 import { useEffect, useState } from "react";
 import ShopTopMenu from "../components/ShopTopMenu";
 import Slider from "react-slider";
@@ -7,6 +9,13 @@ import { IoBagOutline } from "react-icons/io5";
 import { IoIosSearch } from "react-icons/io";
 import { CiHeart } from "react-icons/ci";
 import { MdCompareArrows } from "react-icons/md";
+import {
+  fetchProducts,
+  filterProductsByPrice,
+  filterProductsByCategory,
+  filterProductsByColor,
+  filterProductsBySize,
+} from "../api/api"; // api.js dosyasından import et
 
 export default function Shop() {
   const [productList, setProductList] = useState([]);
@@ -20,7 +29,8 @@ export default function Shop() {
   const [visibleProducts, setVisibleProducts] = useState(10); // Başlangıçta 10 ürün göster
   const [priceRange, setPriceRange] = useState([0, 1000]); // Fiyat aralığı için state
   const [maxPrice, setMaxPrice] = useState(1000); // Maksimum fiyatı takip et
-  const [minPrice, setMinPrice] = useState(1000); // Maksimum fiyatı takip et
+  const [selectedColors, setSelectedColors] = useState([]); // Seçilen renkler
+  const [selectedSizes, setSelectedSizes] = useState([]); // Seçilen boyutlar
 
   const handleOpenSubCategories = (categoryName) => {
     setSubCatFlag((prevFlag) => ({
@@ -34,8 +44,7 @@ export default function Shop() {
   };
 
   useEffect(() => {
-    fetch("/src/data/products.json")
-      .then((response) => response.json())
+    fetchProducts()
       .then((data) => {
         setProductList(data.product);
         setFilteredProducts(data.product); // Filtrelenmiş ürünleri de başlangıçta tüm ürünler olarak ayarla
@@ -75,12 +84,31 @@ export default function Shop() {
       .catch((error) => console.error("Error fetching JSON:", error));
   }, []);
 
+  useEffect(() => {
+    let filtered = productList;
+
+    filtered = filterProductsByPrice(filtered, priceRange);
+    filtered = filterProductsByColor(filtered, selectedColors);
+    filtered = filterProductsBySize(filtered, selectedSizes);
+    // Kategori filtreleme işlevi eklenebilir
+
+    setFilteredProducts(filtered);
+  }, [priceRange, productList, selectedColors, selectedSizes]);
+
   const handlePriceChange = (newRange) => {
     setPriceRange(newRange);
-    const filtered = productList.filter(
-      (product) => product.fiyat >= newRange[0] && product.fiyat <= newRange[1]
+  };
+
+  const handleColorClick = (color) => {
+    setSelectedColors((prev) =>
+      prev.includes(color) ? prev.filter((c) => c !== color) : [...prev, color]
     );
-    setFilteredProducts(filtered);
+  };
+
+  const handleSizeClick = (size) => {
+    setSelectedSizes((prev) =>
+      prev.includes(size) ? prev.filter((s) => s !== size) : [...prev, size]
+    );
   };
 
   const colorCodes = {
@@ -158,9 +186,10 @@ export default function Shop() {
             <div className="grid grid-cols-5 w-full gap-2 p-2">
               {colorsList.map((color, index) => (
                 <div
-                  className="relative flex items-center justify-center size-10 rounded-full group border border-black"
+                  className="relative flex items-center justify-center size-10 rounded-full group border border-black cursor-pointer"
                   style={{ backgroundColor: colorCodes[color] || "#000000" }} // Default color black if color code not found
                   key={index}
+                  onClick={() => handleColorClick(color)}
                 >
                   <div className=" absolute  -top-10 text-blue-500 hidden group-hover:flex items-center justify-center bg-black w-16 h-7 ">
                     {color}({colorCount[color] || 0}){" "}
@@ -178,8 +207,9 @@ export default function Shop() {
             <div className="grid grid-cols-5 w-full gap-2 p-2">
               {sizeList.map((size, index) => (
                 <div
-                  className="flex items-center justify-center   border"
+                  className="flex items-center justify-center   border cursor-pointer"
                   key={index}
+                  onClick={() => handleSizeClick(size)}
                 >
                   {size}({sizeCount[size] || 0}){" "}
                 </div>
