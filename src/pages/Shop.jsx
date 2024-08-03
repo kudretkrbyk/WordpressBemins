@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import ShopTopMenu from "../components/ShopTopMenu";
+
 import { IoIosArrowDown } from "react-icons/io";
 import { IoMdArrowDropdown } from "react-icons/io";
 import { IoBagOutline } from "react-icons/io5";
@@ -73,66 +75,9 @@ export default function Shop() {
 
   return (
     <div className="w-full flex flex-col relative">
-      <div className="w-full h-[480px] relative border border-red-500 overflow-hidden ">
-        <div className="absolute">
-          <img
-            src="https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2024/02/lookbook-3.jpg"
-            alt="Lookbook"
-          />
-        </div>
-        <div className="absolute flex items-center justify-center w-full gap-10 bottom-0">
-          <div className="flex flex-col items-center justify-center gap-2">
-            <img
-              className="rounded-full hover:scale-90 duration-700"
-              src="https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2023/11/category.jpg"
-              alt="Tops"
-            />
-            <span>Tops</span>
-          </div>
-          <div className="flex flex-col items-center justify-center gap-2">
-            <img
-              className="rounded-full hover:scale-90 duration-700"
-              src="https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2023/11/category-4.jpg"
-              alt="Shirts"
-            />
-            <span>Shirts</span>
-          </div>
-          <div className="flex flex-col items-center justify-center gap-2">
-            <img
-              className="rounded-full hover:scale-90 duration-700"
-              src="https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2023/11/category-2.jpg"
-              alt="Glasses"
-            />
-            <span>Glasses</span>
-          </div>
-          <div className="flex flex-col items-center justify-center gap-2">
-            <img
-              className="rounded-full hover:scale-90 duration-700"
-              src="https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2023/11/category-5.jpg"
-              alt="Sandals"
-            />
-            <span>Sandals</span>
-          </div>
-          <div className="flex flex-col items-center justify-center gap-2">
-            <img
-              className="rounded-full hover:scale-90 duration-700"
-              src="https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2023/11/category-3.jpg"
-              alt="Bag"
-            />
-            <span>Bag</span>
-          </div>
-          <div className="flex flex-col items-center justify-center gap-2">
-            <img
-              className="rounded-full hover:scale-90 duration-700"
-              src="https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2023/11/category-1.jpg"
-              alt="Shoes"
-            />
-            <span>Shoes</span>
-          </div>
-        </div>
-      </div>
+      <ShopTopMenu />
       <div className="w-full flex ">
-        <div className="w-3/12 h-full flex flex-col p-4 ">
+        <div className="w-3/12 h-full flex flex-col gap-10 p-4 ">
           <div>
             <div className="font-bold flex flex-col">Categories</div>
             {categories.map((category, index) => (
@@ -157,11 +102,11 @@ export default function Shop() {
               </div>
             ))}
           </div>
-          <div className="mt-4">
+          <div className="">
             <div className="font-bold">Price</div>
             {/* Price filter component goes here */}
           </div>
-          <div className="mt-4">
+          <div className="">
             <div className="font-bold">Color:</div>
             <div className="grid grid-cols-5 w-full gap-2 p-2">
               {colorsList.map((color, index) => (
