@@ -10,6 +10,7 @@ import { IoMdArrowDropdown } from "react-icons/io";
 import useFetchProducts from "../hooks/useFetchProducts";
 import useFilterProducts from "../hooks/useFilterProducts";
 import colorCodes from "../constraint/colors";
+import ShopGridFilterComp from "../components/ShopGridFilterComp";
 
 export default function Shop() {
   const [visibleProducts, setVisibleProducts] = useState(10); // Başlangıçta 10 ürün göster
@@ -184,6 +185,7 @@ export default function Shop() {
           </div>
         </div>
         <div className="w-9/12 h-full ">
+          <ShopGridFilterComp />
           <div className="grid grid-cols-3 gap-4 p-4 overflow-hidden ">
             {filteredProducts.slice(0, visibleProducts).map(
               (
