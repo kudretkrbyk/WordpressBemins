@@ -15,14 +15,18 @@ export default function Shop() {
   const [colorCount, setColorCount] = useState([]);
   const [sizeCount, setSizeCount] = useState([]);
   const [sizeList, setSizeList] = useState([]);
-
   const [subCatFlag, setSubCatFlag] = useState({});
+  const [visibleProducts, setVisibleProducts] = useState(10); // Başlangıçta 10 ürün göster
 
   const handleOpenSubCategories = (categoryName) => {
     setSubCatFlag((prevFlag) => ({
       ...prevFlag,
       [categoryName]: !prevFlag[categoryName],
     }));
+  };
+
+  const handleShowMoreProducts = () => {
+    setVisibleProducts((prevCount) => prevCount + 10); // Her seferinde 10 ürün daha göster
   };
 
   useEffect(() => {
@@ -146,55 +150,70 @@ export default function Shop() {
         </div>
         <div className="w-9/12 h-full ">
           <div className="grid grid-cols-3 gap-4 p-4 overflow-hidden ">
-            {productList.map((product, index) => (
-              <div className="relative group overflow-hidden " key={index}>
-                <div className="relative">
-                  <img
-                    src={product.fotograflar[0]}
-                    alt={product.name}
-                    className="transition-opacity duration-500 ease-in-out"
-                  />
-                  <img
-                    src={product.fotograflar[1]}
-                    alt={product.name}
-                    className="absolute top-0 left-0 opacity-0 hover:opacity-100 transition-opacity duration-500 ease-in-out"
-                  />
-                </div>
+            {productList.slice(0, visibleProducts).map(
+              (
+                product,
+                index // Yalnızca visibleProducts kadar ürün göster
+              ) => (
+                <div className="relative group overflow-hidden " key={index}>
+                  <div className="relative">
+                    <img
+                      src={product.fotograflar[0]}
+                      alt={product.name}
+                      className="transition-opacity duration-500 ease-in-out"
+                    />
+                    <img
+                      src={product.fotograflar[1]}
+                      alt={product.name}
+                      className="absolute top-0 left-0 opacity-0 hover:opacity-100 transition-opacity duration-500 ease-in-out"
+                    />
+                  </div>
 
-                <div className="bg-red-500 w-auto flex items-center justify-center absolute top-3 left-0 rounded p-1 px-3 ">
-                  {product.tag[0]}
-                </div>
+                  <div className="bg-red-500 w-auto flex items-center justify-center absolute top-3 left-0 rounded p-1 px-3 ">
+                    {product.tag[0]}
+                  </div>
 
-                <div className="flex flex-col absolute top-10 right-10 w-full   ">
-                  <div className="absolute top-0 group-hover:right-0 -right-full duration-700 delay-0  ">
-                    <IoBagOutline className="size-6" />
-                  </div>
-                  <div className="absolute top-[40px] group-hover:right-0 -right-full duration-700 delay-75  ">
-                    <IoIosSearch className="size-6" />
-                  </div>
-                  <div className="absolute top-[80px] group-hover:right-0 -right-full duration-700 delay-100 ">
-                    <CiHeart className="size-6" />
-                  </div>
-                  <div className="absolute top-[120px] group-hover:right-0 -right-full duration-700 delay-150 ">
-                    <MdCompareArrows className="size-6" />
-                  </div>
-                </div>
-
-                {product.size.length > 0 && (
-                  <div className=" group-hover:opacity-60 opacity-0 flex  duration-700 flex-col items-center justify-center absolute bottom-0  bg-white w-full h-16 ">
-                    <div>
-                      <div>Select Options</div>
-                      <div className="flex items-center justify-center gap-4">
-                        {product.size.map((size, index) => (
-                          <div key={index}>{size} </div>
-                        ))}
-                      </div>
+                  <div className="flex flex-col absolute top-10 right-10 w-full   ">
+                    <div className="absolute top-0 group-hover:right-0 -right-full duration-700 delay-0  ">
+                      <IoBagOutline className="size-6" />
+                    </div>
+                    <div className="absolute top-[40px] group-hover:right-0 -right-full duration-700 delay-75  ">
+                      <IoIosSearch className="size-6" />
+                    </div>
+                    <div className="absolute top-[80px] group-hover:right-0 -right-full duration-700 delay-100 ">
+                      <CiHeart className="size-6" />
+                    </div>
+                    <div className="absolute top-[120px] group-hover:right-0 -right-full duration-700 delay-150 ">
+                      <MdCompareArrows className="size-6" />
                     </div>
                   </div>
-                )}
-              </div>
-            ))}
+
+                  {product.size.length > 0 && (
+                    <div className=" group-hover:opacity-60 opacity-0 flex  duration-700 flex-col items-center justify-center absolute bottom-0  bg-white w-full h-16 ">
+                      <div>
+                        <div>Select Options</div>
+                        <div className="flex items-center justify-center gap-4">
+                          {product.size.map((size, index) => (
+                            <div key={index}>{size} </div>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+                  )}
+                </div>
+              )
+            )}
           </div>
+          {visibleProducts < productList.length && ( // Eğer daha gösterilecek ürün varsa "Daha Fazla Göster" düğmesini göster
+            <div className="flex justify-center p-10">
+              <button
+                onClick={handleShowMoreProducts}
+                className="bg-blue-500 text-white py-2 px-4 rounded"
+              >
+                Load More
+              </button>
+            </div>
+          )}
         </div>
       </div>
     </div>
