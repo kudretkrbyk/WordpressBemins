@@ -1,6 +1,6 @@
 // src/pages/Shop.js
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import ShopTopMenu from "../components/ShopTopMenu";
 import Slider from "react-slider";
 import { IoIosArrowDown } from "react-icons/io";
@@ -9,28 +9,36 @@ import { IoBagOutline } from "react-icons/io5";
 import { IoIosSearch } from "react-icons/io";
 import { CiHeart } from "react-icons/ci";
 import { MdCompareArrows } from "react-icons/md";
-import {
-  fetchProducts,
-  filterProductsByPrice,
-  filterProductsByCategory,
-  filterProductsByColor,
-  filterProductsBySize,
-} from "../api/api"; // api.js dosyasından import et
+import useFetchProducts from "../hooks/useFetchProducts";
+import useFilterProducts from "../hooks/useFilterProducts";
 
 export default function Shop() {
-  const [productList, setProductList] = useState([]);
-  const [filteredProducts, setFilteredProducts] = useState([]);
-  const [colorsList, setColorsList] = useState([]);
-  const [categories, setCategories] = useState([]);
-  const [colorCount, setColorCount] = useState([]);
-  const [sizeCount, setSizeCount] = useState([]);
-  const [sizeList, setSizeList] = useState([]);
-  const [subCatFlag, setSubCatFlag] = useState({});
   const [visibleProducts, setVisibleProducts] = useState(10); // Başlangıçta 10 ürün göster
-  const [priceRange, setPriceRange] = useState([0, 1000]); // Fiyat aralığı için state
-  const [maxPrice, setMaxPrice] = useState(1000); // Maksimum fiyatı takip et
+
   const [selectedColors, setSelectedColors] = useState([]); // Seçilen renkler
   const [selectedSizes, setSelectedSizes] = useState([]); // Seçilen boyutlar
+  const [subCatFlag, setSubCatFlag] = useState({});
+  const {
+    productList,
+    filteredProducts,
+    colorsList,
+    categories,
+    colorCount,
+    sizeCount,
+    sizeList,
+    maxPrice,
+    priceRange,
+    setFilteredProducts,
+    setPriceRange,
+  } = useFetchProducts();
+
+  useFilterProducts(
+    productList,
+    priceRange,
+    selectedColors,
+    selectedSizes,
+    setFilteredProducts
+  );
 
   const handleOpenSubCategories = (categoryName) => {
     setSubCatFlag((prevFlag) => ({
@@ -42,58 +50,6 @@ export default function Shop() {
   const handleShowMoreProducts = () => {
     setVisibleProducts((prevCount) => prevCount + 10); // Her seferinde 10 ürün daha göster
   };
-
-  useEffect(() => {
-    fetchProducts()
-      .then((data) => {
-        setProductList(data.product);
-        setFilteredProducts(data.product); // Filtrelenmiş ürünleri de başlangıçta tüm ürünler olarak ayarla
-        setCategories(data.categories);
-
-        // Colors ve Sizes listelerini oluşturma
-        const colors = data.product.flatMap((product) => product.colors);
-        const sizes = data.product.flatMap((product) => product.size);
-
-        setColorsList([...new Set(colors)]);
-        setSizeList([...new Set(sizes)]);
-        // Color count ve size count objelerini oluşturma
-        const colorCount = data.product.reduce((count, product) => {
-          product.colors.forEach((color) => {
-            count[color] = (count[color] || 0) + 1;
-          });
-          return count;
-        }, {});
-
-        const sizeCount = data.product.reduce((count, product) => {
-          product.size.forEach((size) => {
-            count[size] = (count[size] || 0) + 1;
-          });
-          return count;
-        }, {});
-        setColorCount(colorCount);
-        setSizeCount(sizeCount);
-
-        // Maksimum fiyatı bulma
-        const maxPrice = Math.max(
-          ...data.product.map((product) => product.fiyat)
-        );
-        setMaxPrice(maxPrice);
-        console.log(maxPrice);
-        setPriceRange([0, maxPrice]);
-      })
-      .catch((error) => console.error("Error fetching JSON:", error));
-  }, []);
-
-  useEffect(() => {
-    let filtered = productList;
-
-    filtered = filterProductsByPrice(filtered, priceRange);
-    filtered = filterProductsByColor(filtered, selectedColors);
-    filtered = filterProductsBySize(filtered, selectedSizes);
-    // Kategori filtreleme işlevi eklenebilir
-
-    setFilteredProducts(filtered);
-  }, [priceRange, productList, selectedColors, selectedSizes]);
 
   const handlePriceChange = (newRange) => {
     setPriceRange(newRange);
@@ -109,6 +65,12 @@ export default function Shop() {
     setSelectedSizes((prev) =>
       prev.includes(size) ? prev.filter((s) => s !== size) : [...prev, size]
     );
+  };
+
+  const resetFilters = () => {
+    setPriceRange([0, maxPrice]);
+    setSelectedColors([]);
+    setSelectedSizes([]);
   };
 
   const colorCodes = {
@@ -215,6 +177,14 @@ export default function Shop() {
                 </div>
               ))}
             </div>
+          </div>
+          <div className="flex justify-center mt-4">
+            <button
+              className="bg-red-500 text-white px-4 py-2 rounded"
+              onClick={resetFilters}
+            >
+              Reset Filters
+            </button>
           </div>
           <div className="mt-4">
             <div className="font-bold">Feature Product</div>
