@@ -72,8 +72,8 @@ export default function Shop() {
   };
 
   return (
-    <div className="w-full flex flex-col">
-      <div className="w-full h-[480px] relative border border-red-500 overflow-hidden">
+    <div className="w-full flex flex-col relative">
+      <div className="w-full h-[480px] relative border border-red-500 overflow-hidden ">
         <div className="absolute">
           <img
             src="https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2024/02/lookbook-3.jpg"
@@ -131,8 +131,8 @@ export default function Shop() {
           </div>
         </div>
       </div>
-      <div className="w-full flex">
-        <div className="w-3/12 h-full flex flex-col p-4">
+      <div className="w-full flex ">
+        <div className="w-3/12 h-full flex flex-col p-4 ">
           <div>
             <div className="font-bold flex flex-col">Categories</div>
             {categories.map((category, index) => (
@@ -199,10 +199,10 @@ export default function Shop() {
             {/* Feature Product component goes here */}
           </div>
         </div>
-        <div className="w-9/12 h-full">
-          <div className="grid grid-cols-3 gap-4 p-4 overflow-hidden">
+        <div className="w-9/12 h-full ">
+          <div className="grid grid-cols-3 gap-4 p-4 overflow-hidden ">
             {productList.map((product, index) => (
-              <div className="relative group" key={index}>
+              <div className="relative group overflow-hidden " key={index}>
                 <div className="relative">
                   <img
                     src={product.fotograflar[0]}
@@ -216,15 +216,15 @@ export default function Shop() {
                   />
                 </div>
 
-                <div className="bg-red-500 w-auto flex items-center justify-center absolute top-3 left-0 rounded p-1 px-3">
+                <div className="bg-red-500 w-auto flex items-center justify-center absolute top-3 left-0 rounded p-1 px-3 ">
                   {product.tag[0]}
                 </div>
 
-                <div className="flex flex-col absolute top-10 right-10 w-full ">
-                  <div className="absolute top-0 group-hover:right-0 -right-full duration-700 delay-0 ">
+                <div className="flex flex-col absolute top-10 right-10 w-full   ">
+                  <div className="absolute top-0 group-hover:right-0 -right-full duration-700 delay-0  ">
                     <IoBagOutline className="size-6" />
                   </div>
-                  <div className="absolute top-[40px] group-hover:right-0 -right-full duration-700 delay-75 ">
+                  <div className="absolute top-[40px] group-hover:right-0 -right-full duration-700 delay-75  ">
                     <IoIosSearch className="size-6" />
                   </div>
                   <div className="absolute top-[80px] group-hover:right-0 -right-full duration-700 delay-100 ">
