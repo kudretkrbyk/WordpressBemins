@@ -203,7 +203,19 @@ export default function Shop() {
           <div className="grid grid-cols-3 gap-4 p-4 overflow-hidden">
             {productList.map((product, index) => (
               <div className="relative group" key={index}>
-                <img src={product.fotograflar[0]} alt={product.name} />
+                <div className="relative">
+                  <img
+                    src={product.fotograflar[0]}
+                    alt={product.name}
+                    className="transition-opacity duration-500 ease-in-out"
+                  />
+                  <img
+                    src={product.fotograflar[1]}
+                    alt={product.name}
+                    className="absolute top-0 left-0 opacity-0 hover:opacity-100 transition-opacity duration-500 ease-in-out"
+                  />
+                </div>
+
                 <div className="bg-red-500 w-auto flex items-center justify-center absolute top-3 left-0 rounded p-1 px-3">
                   {product.tag[0]}
                 </div>
