@@ -208,17 +208,17 @@ export default function Shop() {
                   {product.tag[0]}
                 </div>
 
-                <div className="flex flex-col absolute gap-10 top-10 right-10">
-                  <div>
+                <div className="flex flex-col absolute gap-10 top-10 group-hover:right-10 -right-full duration-700 ">
+                  <div className="group-hover:duration-300 group-hover:delay-100 transition-all">
                     <IoBagOutline className="size-6" />
                   </div>
-                  <div>
+                  <div className="group-hover:duration-500 group-hover:delay-200 transition-all">
                     <IoIosSearch className="size-6" />
                   </div>
-                  <div>
+                  <div className="group-hover:duration-700 group-hover:delay-300 transition-all">
                     <CiHeart className="size-6" />
                   </div>
-                  <div>
+                  <div className="group-hover:duration-1000 group-hover:delay-400 transition-all">
                     <MdCompareArrows className="size-6" />
                   </div>
                 </div>
