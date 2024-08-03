@@ -166,7 +166,7 @@ export default function Shop() {
             <div className="grid grid-cols-5 w-full gap-2 p-2">
               {colorsList.map((color, index) => (
                 <div
-                  className="relative flex items-center justify-center size-10 rounded-full group border"
+                  className="relative flex items-center justify-center size-10 rounded-full group border border-black"
                   style={{ backgroundColor: colorCodes[color] || "#000000" }} // Default color black if color code not found
                   key={index}
                 >
@@ -207,6 +207,7 @@ export default function Shop() {
                 <div className="bg-red-500 w-auto flex items-center justify-center absolute top-3 left-0 rounded p-1 px-3">
                   {product.tag[0]}
                 </div>
+
                 <div className="flex flex-col absolute gap-10 top-10 right-10">
                   <div>
                     <IoBagOutline className="size-6" />
@@ -221,12 +222,19 @@ export default function Shop() {
                     <MdCompareArrows className="size-6" />
                   </div>
                 </div>
-                <div className="flex absolute bottom-10 left-1/2">
-                  <div>1</div>
-                  <div>2</div>
-                  <div>3</div>
-                  <div>4</div>
-                </div>
+
+                {product.size.length > 0 && (
+                  <div className="flex flex-col items-center justify-center absolute bottom-0  bg-white w-full h-16 opacity-60">
+                    <div>
+                      <div>Select Options</div>
+                      <div className="flex items-center justify-center gap-4">
+                        {product.size.map((size, index) => (
+                          <div key={index}>{size} </div>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                )}
               </div>
             ))}
           </div>
