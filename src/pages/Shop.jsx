@@ -2,15 +2,14 @@
 
 import { useState } from "react";
 import ShopTopMenu from "../components/ShopTopMenu";
+import ShopProductDetails from "../components/ShopProductDetails";
 import Slider from "react-slider";
 import { IoIosArrowDown } from "react-icons/io";
 import { IoMdArrowDropdown } from "react-icons/io";
-import { IoBagOutline } from "react-icons/io5";
-import { IoIosSearch } from "react-icons/io";
-import { CiHeart } from "react-icons/ci";
-import { MdCompareArrows } from "react-icons/md";
+
 import useFetchProducts from "../hooks/useFetchProducts";
 import useFilterProducts from "../hooks/useFilterProducts";
+import colorCodes from "../constraint/colors";
 
 export default function Shop() {
   const [visibleProducts, setVisibleProducts] = useState(10); // Başlangıçta 10 ürün göster
@@ -73,31 +72,16 @@ export default function Shop() {
     setSelectedSizes([]);
   };
 
-  const colorCodes = {
-    red: "#ef5050",
-    green: "#20b2aa",
-    Blue: "#5173a6",
-    yellow: "#c69a02",
-    black: "#000000",
-    white: "#FFFFFF",
-    Beige: "#e6d4b4",
-    Brick: "#6b302c",
-    gray: "#8d9098",
-    lilac: "#a5afc5",
-    pink: "#ffc0cb",
-    // Diğer renk kodları buraya eklenebilir
-  };
-
   return (
     <div className="w-full flex flex-col relative">
       <ShopTopMenu />
       <div className="w-full flex ">
         <div className="w-3/12 h-full flex flex-col gap-10 p-4 ">
           <div>
-            <div className="font-bold flex flex-col">Categories</div>
+            <div className="font-bold flex flex-col ">Categories</div>
             {categories.map((category, index) => (
-              <div className="flex flex-col gap-4 mt-2" key={index}>
-                <div className="flex items-center justify-between gap-2 text-blue-700">
+              <div className="flex flex-col  mt-2" key={index}>
+                <div className="flex  items-center justify-between gap-2 text-blue-700">
                   <div>{category.name}</div>
                   {category.subcategories.length > 0 && (
                     <div className="">
@@ -211,26 +195,10 @@ export default function Shop() {
                       className="absolute top-0 left-0 opacity-0 hover:opacity-100 transition-opacity duration-500 ease-in-out"
                     />
                   </div>
-
                   <div className="bg-red-500 w-auto flex items-center justify-center absolute top-3 left-0 rounded p-1 px-3 ">
                     {product.tag[0]}
                   </div>
-
-                  <div className="flex flex-col absolute top-10 right-10 w-full   ">
-                    <div className="absolute top-0 group-hover:right-0 -right-full duration-700 delay-0  ">
-                      <IoBagOutline className="size-6" />
-                    </div>
-                    <div className="absolute top-[40px] group-hover:right-0 -right-full duration-700 delay-75  ">
-                      <IoIosSearch className="size-6" />
-                    </div>
-                    <div className="absolute top-[80px] group-hover:right-0 -right-full duration-700 delay-100 ">
-                      <CiHeart className="size-6" />
-                    </div>
-                    <div className="absolute top-[120px] group-hover:right-0 -right-full duration-700 delay-150 ">
-                      <MdCompareArrows className="size-6" />
-                    </div>
-                  </div>
-
+                  <ShopProductDetails />
                   {product.size.length > 0 && (
                     <div className=" group-hover:opacity-60 opacity-0 flex  duration-700 flex-col items-center justify-center absolute bottom-0  bg-white w-full h-16 ">
                       <div>
