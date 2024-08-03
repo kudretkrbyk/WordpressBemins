@@ -200,7 +200,7 @@ export default function Shop() {
           </div>
         </div>
         <div className="w-9/12 h-full">
-          <div className="grid grid-cols-3 gap-4 p-4">
+          <div className="grid grid-cols-3 gap-4 p-4 overflow-hidden">
             {productList.map((product, index) => (
               <div className="relative group" key={index}>
                 <img src={product.fotograflar[0]} alt={product.name} />
@@ -208,17 +208,17 @@ export default function Shop() {
                   {product.tag[0]}
                 </div>
 
-                <div className="flex flex-col absolute gap-10 top-10 group-hover:right-10 -right-full duration-700 ">
-                  <div className="group-hover:duration-300 group-hover:delay-100 transition-all">
+                <div className="flex flex-col absolute top-10 right-10 w-full ">
+                  <div className="absolute top-0 group-hover:right-0 -right-full duration-700 delay-0 ">
                     <IoBagOutline className="size-6" />
                   </div>
-                  <div className="group-hover:duration-500 group-hover:delay-200 transition-all">
+                  <div className="absolute top-[40px] group-hover:right-0 -right-full duration-700 delay-75 ">
                     <IoIosSearch className="size-6" />
                   </div>
-                  <div className="group-hover:duration-700 group-hover:delay-300 transition-all">
+                  <div className="absolute top-[80px] group-hover:right-0 -right-full duration-700 delay-100 ">
                     <CiHeart className="size-6" />
                   </div>
-                  <div className="group-hover:duration-1000 group-hover:delay-400 transition-all">
+                  <div className="absolute top-[120px] group-hover:right-0 -right-full duration-700 delay-150 ">
                     <MdCompareArrows className="size-6" />
                   </div>
                 </div>
