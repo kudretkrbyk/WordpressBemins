@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import ShopTopMenu from "../components/ShopTopMenu";
-
+import Slider from "react-slider";
 import { IoIosArrowDown } from "react-icons/io";
 import { IoMdArrowDropdown } from "react-icons/io";
 import { IoBagOutline } from "react-icons/io5";
@@ -10,6 +10,7 @@ import { MdCompareArrows } from "react-icons/md";
 
 export default function Shop() {
   const [productList, setProductList] = useState([]);
+  const [filteredProducts, setFilteredProducts] = useState([]);
   const [colorsList, setColorsList] = useState([]);
   const [categories, setCategories] = useState([]);
   const [colorCount, setColorCount] = useState([]);
@@ -17,6 +18,9 @@ export default function Shop() {
   const [sizeList, setSizeList] = useState([]);
   const [subCatFlag, setSubCatFlag] = useState({});
   const [visibleProducts, setVisibleProducts] = useState(10); // Başlangıçta 10 ürün göster
+  const [priceRange, setPriceRange] = useState([0, 1000]); // Fiyat aralığı için state
+  const [maxPrice, setMaxPrice] = useState(1000); // Maksimum fiyatı takip et
+  const [minPrice, setMinPrice] = useState(1000); // Maksimum fiyatı takip et
 
   const handleOpenSubCategories = (categoryName) => {
     setSubCatFlag((prevFlag) => ({
@@ -34,6 +38,7 @@ export default function Shop() {
       .then((response) => response.json())
       .then((data) => {
         setProductList(data.product);
+        setFilteredProducts(data.product); // Filtrelenmiş ürünleri de başlangıçta tüm ürünler olarak ayarla
         setCategories(data.categories);
 
         // Colors ve Sizes listelerini oluşturma
@@ -58,9 +63,25 @@ export default function Shop() {
         }, {});
         setColorCount(colorCount);
         setSizeCount(sizeCount);
+
+        // Maksimum fiyatı bulma
+        const maxPrice = Math.max(
+          ...data.product.map((product) => product.fiyat)
+        );
+        setMaxPrice(maxPrice);
+        console.log(maxPrice);
+        setPriceRange([0, maxPrice]);
       })
       .catch((error) => console.error("Error fetching JSON:", error));
   }, []);
+
+  const handlePriceChange = (newRange) => {
+    setPriceRange(newRange);
+    const filtered = productList.filter(
+      (product) => product.fiyat >= newRange[0] && product.fiyat <= newRange[1]
+    );
+    setFilteredProducts(filtered);
+  };
 
   const colorCodes = {
     red: "#ef5050",
@@ -108,7 +129,29 @@ export default function Shop() {
           </div>
           <div className="">
             <div className="font-bold">Price</div>
-            {/* Price filter component goes here */}
+            <Slider
+              className="horizontal-slider"
+              thumbClassName="thumb"
+              trackClassName="track"
+              value={priceRange}
+              min={0}
+              max={maxPrice}
+              step={10}
+              onChange={handlePriceChange}
+            />
+            <div className="flex flex-col gap-2 ">
+              <div className="bg-black w-full h-1"></div>
+              <div className="flex items-center justify-between w-full">
+                {" "}
+                <span>{priceRange[0]} TL</span>
+                <span>{priceRange[1]} TL</span>
+              </div>
+              <div>
+                <span>
+                  Range: {priceRange[0]}-{priceRange[1]}{" "}
+                </span>
+              </div>
+            </div>
           </div>
           <div className="">
             <div className="font-bold">Color:</div>
@@ -150,7 +193,7 @@ export default function Shop() {
         </div>
         <div className="w-9/12 h-full ">
           <div className="grid grid-cols-3 gap-4 p-4 overflow-hidden ">
-            {productList.slice(0, visibleProducts).map(
+            {filteredProducts.slice(0, visibleProducts).map(
               (
                 product,
                 index // Yalnızca visibleProducts kadar ürün göster
@@ -204,13 +247,13 @@ export default function Shop() {
               )
             )}
           </div>
-          {visibleProducts < productList.length && ( // Eğer daha gösterilecek ürün varsa "Daha Fazla Göster" düğmesini göster
-            <div className="flex justify-center p-10">
+          {visibleProducts < filteredProducts.length && (
+            <div className="flex justify-center">
               <button
+                className="bg-blue-500 text-white px-4 py-2 rounded"
                 onClick={handleShowMoreProducts}
-                className="bg-blue-500 text-white py-2 px-4 rounded"
               >
-                Load More
+                Daha Fazla Göster
               </button>
             </div>
           )}

@@ -1,4 +1,5 @@
 import Shop from "./pages/Shop";
+import "./App.css";
 
 function App() {
   return (
