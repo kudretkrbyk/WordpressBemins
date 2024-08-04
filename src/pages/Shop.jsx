@@ -19,6 +19,7 @@ export default function Shop() {
   const [selectedSizes, setSelectedSizes] = useState([]); // Seçilen boyutlar
   const [selectedCategory, setSelectedCategory] = useState([]); // Seçilen boyutlar
   const [subCatFlag, setSubCatFlag] = useState({});
+  const [gridCols, setGridCols] = useState("grid-cols-3"); // Varsayılan grid kolonları
   const {
     productList,
     filteredProducts,
@@ -77,6 +78,26 @@ export default function Shop() {
     setPriceRange([0, maxPrice]);
     setSelectedColors([]);
     setSelectedSizes([]);
+  };
+
+  const handleFilterClick = (id) => {
+    switch (id) {
+      case 1:
+        setGridCols("grid-cols-2");
+        break;
+      case 2:
+        setGridCols("grid-cols-3");
+        break;
+      case 3:
+        setGridCols("grid-cols-4");
+        break;
+      case 4:
+        setGridCols("grid-rows-1");
+        break;
+      default:
+        setGridCols("grid-cols-3");
+        break;
+    }
   };
 
   return (
@@ -185,8 +206,8 @@ export default function Shop() {
           </div>
         </div>
         <div className="w-9/12 h-full ">
-          <ShopGridFilterComp />
-          <div className="grid grid-cols-3 gap-4 p-4 overflow-hidden ">
+          <ShopGridFilterComp onFilterClick={handleFilterClick} />
+          <div className={`grid ${gridCols} gap-4 p-4 overflow-hidden`}>
             {filteredProducts.slice(0, visibleProducts).map(
               (
                 product,
