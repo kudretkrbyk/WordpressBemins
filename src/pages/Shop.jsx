@@ -1,6 +1,7 @@
 // src/pages/Shop.js
 
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import ShopTopMenu from "../components/ShopTopMenu";
 import ShopProductDetails from "../components/ShopProductDetails";
 import Slider from "react-slider";
@@ -13,6 +14,7 @@ import colorCodes from "../constraint/colors";
 import ShopGridFilterComp from "../components/ShopGridFilterComp";
 
 export default function Shop() {
+  const navigate = useNavigate();
   const [visibleProducts, setVisibleProducts] = useState(10); // Başlangıçta 10 ürün göster
 
   const [selectedColors, setSelectedColors] = useState([]); // Seçilen renkler
@@ -98,6 +100,10 @@ export default function Shop() {
         setGridCols("grid-cols-3");
         break;
     }
+  };
+
+  const handleProductClick = (productId) => {
+    navigate(`/product/${productId}`);
   };
 
   return (
@@ -213,7 +219,11 @@ export default function Shop() {
                 product,
                 index // Yalnızca visibleProducts kadar ürün göster
               ) => (
-                <div className="relative group overflow-hidden " key={index}>
+                <div
+                  onClick={() => handleProductClick(product.id)}
+                  className="relative group overflow-hidden "
+                  key={index}
+                >
                   <div className="relative">
                     <img
                       src={product.fotograflar[0]}

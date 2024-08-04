@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { IoIosSearch } from "react-icons/io";
 import { GoPerson } from "react-icons/go";
 import { CiHeart } from "react-icons/ci";
@@ -11,11 +12,11 @@ export default function Navbar() {
         <span>.</span>
       </div>
       <div className="flex items-center w-full justify-center gap-10 ">
-        <span>Home</span>
-        <span>Shop</span>
-        <span>Products</span>
-        <span>Blog</span>
-        <span>Page</span>
+        <Link to="/">Home</Link>
+        <Link to="/shop">Shop</Link>
+
+        <Link to="/blog">Blog</Link>
+        <Link to="/page">Page</Link>
       </div>
       <div className="flex w-full items-center justify-end gap-10  ">
         <span className=" ">

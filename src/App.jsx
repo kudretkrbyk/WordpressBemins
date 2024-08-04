@@ -1,11 +1,27 @@
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import MainPage from "./pages/MainPage";
+import ProductPage from "./pages/ProductPage";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import Blog from "./pages/Blog";
+
 import Shop from "./pages/Shop";
 import "./App.css";
 
 function App() {
   return (
-    <div>
-      <Shop></Shop>
-    </div>
+    <Router>
+      <Navbar /> {/* Navbar bileşenini üst kısma ekliyoruz */}
+      <Routes>
+        <Route path="/" element={<MainPage />} />
+        <Route path="/shop" element={<Shop />} />
+
+        <Route path="/blog" element={<Blog />} />
+
+        <Route path="/product/:productId" element={<ProductPage />} />
+      </Routes>
+      <Footer></Footer>
+    </Router>
   );
 }
 
