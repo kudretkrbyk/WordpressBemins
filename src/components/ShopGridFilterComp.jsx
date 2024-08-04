@@ -2,7 +2,9 @@ import PropTypes from "prop-types";
 export default function ShopGridFilterComp({ onFilterClick }) {
   return (
     <div className="w-full flex items-center justify-between p-5 px-10">
-      <div className="w-full">1</div>
+      <div className="w-full">
+        <button className="border border-gray-500 p-2"> Default Sorting</button>
+      </div>
       <div className="flex items-center justify-end gap-3 w-full">
         <div
           id="1"
