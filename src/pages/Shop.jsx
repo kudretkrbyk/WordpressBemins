@@ -5,8 +5,7 @@ import { useNavigate } from "react-router-dom";
 import ShopTopMenu from "../components/ShopTopMenu";
 import ShopProductDetails from "../components/ShopProductDetails";
 import Slider from "react-slider";
-import { IoIosArrowDown } from "react-icons/io";
-import { IoMdArrowDropdown } from "react-icons/io";
+import { IoIosArrowDown, IoMdArrowDropdown } from "react-icons/io";
 
 import useFetchProducts from "../hooks/useFetchProducts";
 import useFilterProducts from "../hooks/useFilterProducts";
