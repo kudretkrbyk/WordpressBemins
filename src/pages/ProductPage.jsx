@@ -137,7 +137,7 @@ export default function ProductPage() {
         </div>
         <div className="w-full">
           <button className="border border-black w-full p-2 font-bold">
-            Buy Now
+            Buy now
           </button>
         </div>
       </div>
