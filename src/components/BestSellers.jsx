@@ -1,4 +1,8 @@
-import React, { useState } from "react";
+import { useState } from "react";
+import { IoIosArrowBack } from "react-icons/io";
+
+import { IoIosArrowForward } from "react-icons/io";
+
 import useFetchProducts from "../hooks/useFetchProducts";
 import ShopProductDetails from "./ShopProductDetails";
 
@@ -73,19 +77,15 @@ export default function BestSellers() {
           ))}
         </div>
       </div>
-      <div className="flex justify-between mt-4">
-        <button
-          onClick={handlePrevClick}
-          className="p-2 bg-gray-200 rounded hover:bg-gray-300"
-        >
-          Prev
-        </button>
-        <button
-          onClick={handleNextClick}
-          className="p-2 bg-gray-200 rounded hover:bg-gray-300"
-        >
-          Next
-        </button>
+      <div className="flex justify-between ">
+        <div className="border border-black rounded-full p-2 flex items-center justify-center">
+          {" "}
+          <IoIosArrowBack className="size-7" onClick={handlePrevClick} />
+        </div>
+        <div className="border border-black rounded-full p-2 flex items-center justify-center">
+          {" "}
+          <IoIosArrowForward className="size-7" onClick={handleNextClick} />
+        </div>
       </div>
     </div>
   );
