@@ -78,13 +78,19 @@ export default function BestSellers() {
         </div>
       </div>
       <div className="flex justify-between ">
-        <div className="border border-black rounded-full p-2 flex items-center justify-center">
+        <div className="border border-black rounded-full p-2 flex items-center justify-center group hover:bg-[#54d9e1] duration-300">
           {" "}
-          <IoIosArrowBack className="size-7" onClick={handlePrevClick} />
+          <IoIosArrowBack
+            className="size-7 group-hover:text-white duration-300"
+            onClick={handlePrevClick}
+          />
         </div>
-        <div className="border border-black rounded-full p-2 flex items-center justify-center">
+        <div className="border border-black rounded-full p-2 flex items-center justify-center group hover:bg-[#54d9e1] duration-300">
           {" "}
-          <IoIosArrowForward className="size-7" onClick={handleNextClick} />
+          <IoIosArrowForward
+            className="size-7 group-hover:text-white duration-300"
+            onClick={handleNextClick}
+          />
         </div>
       </div>
     </div>
