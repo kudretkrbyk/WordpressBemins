@@ -1,5 +1,5 @@
 import React from "react";
 
 export default function BestSellers() {
-  return <div></div>;
+  return <div>best seller</div>;
 }
