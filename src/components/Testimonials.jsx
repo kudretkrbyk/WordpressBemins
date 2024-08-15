@@ -57,9 +57,9 @@ export default function Testimonials() {
   };
 
   return (
-    <div className="w-full h-screen flex flex-col gap-10 items-center justify-center">
-      <div>Testimonials</div>
-      <div className=" w-full  h-full flex items-center justify-center gap-20 p-40 ">
+    <div className="w-full h-screen flex flex-col gap-0 items-center justify-center bg-[#f8fbfc] p-20">
+      <div className="font-bold text-xl">Testimonials</div>
+      <div className=" w-full  h-full flex items-center justify-center gap-20 p-32 ">
         <div className="w-full h-full overflow-hidden ">
           <div
             className="flex transition-transform duration-500 ease-in-out w-full h-full"
