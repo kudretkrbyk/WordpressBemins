@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import { useState } from "react";
+import { GoDotFill } from "react-icons/go";
 
 export default function HomeSlider() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -27,54 +28,42 @@ export default function HomeSlider() {
     },
   ];
 
-  const handlePrevClick = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? slider.length - 1 : prevIndex - 1
-    );
-  };
-
-  const handleNextClick = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === slider.length - 1 ? 0 : prevIndex + 1
-    );
-  };
-
   return (
     <div className="w-full h-screen relative overflow-hidden">
-      <div className="relative w-full h-full">
+      <div className=" flex flex-col w-full h-full transition-transform duration-500 ease-in-out ">
         {slider.map((slide, index) => (
           <div
             key={slide.id}
-            className={`absolute w-full h-full flex items-center justify-center bg-center bg-cover transition-opacity duration-500 ease-in-out ${
-              index === currentIndex ? "opacity-100" : "opacity-0"
+            className={`absolute w-full h-full flex items-center justify-center bg-center bg-cover transition-duration duration-1000  ${
+              index === currentIndex
+                ? "translate-y-0 opacity-100"
+                : " opacity-0 translate-y-[-150%] "
             }`}
             style={{ backgroundImage: `url(${slide.image})` }}
           >
-            <div className="absolute bottom-0 left-0 w-full p-8  text-black">
+            <div className="absolute top-1/2 left-40 w-full p-8 text-black">
               <div className="flex flex-col items-start justify-center gap-2">
-                <div className="font-bold text-3xl">{slide.description}</div>
-                <div className="text-xl">{slide.category}</div>
-                <div className="mt-4 py-2 px-4 bg-blue-500 text-black rounded">
-                  Shop Now
-                </div>
+                <div className="font-bold text-5xl">{slide.description}</div>
+                <div className="text-3xl ">{slide.category}</div>
+                <div className="  text-black rounded">Shop Now</div>
               </div>
             </div>
           </div>
         ))}
+        <div className="absolute  left-10 top-1/2  flex flex-col  gap-2 z-40">
+          {slider.map((_, dotIndex) => (
+            <div className="border border-black rounded-full" key={dotIndex}>
+              {" "}
+              <GoDotFill
+                className={`cursor-pointer size-6   ${
+                  dotIndex === currentIndex ? "text-black" : "text-white"
+                }`}
+                onClick={() => setCurrentIndex(dotIndex)}
+              />
+            </div>
+          ))}
+        </div>
       </div>
-
-      <button
-        onClick={handlePrevClick}
-        className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full"
-      >
-        Prev
-      </button>
-      <button
-        onClick={handleNextClick}
-        className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full"
-      >
-        Next
-      </button>
     </div>
   );
 }
