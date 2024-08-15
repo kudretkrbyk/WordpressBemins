@@ -1,6 +1,6 @@
 export default function Banner() {
   return (
-    <div className="flex items-center justify-center w-full gap-10">
+    <div className="flex items-center justify-center w-full gap-10 p-20 py-40">
       <div className="relative overflow-hidden rounded-xl">
         <span className="absolute bottom-20  left-1/2 -translate-x-1/2 z-30">
           Spring Collection
