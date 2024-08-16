@@ -1,5 +1,7 @@
-import React from "react";
 import { useState } from "react";
+import { IoIosArrowBack } from "react-icons/io";
+
+import { IoIosArrowForward } from "react-icons/io";
 
 export default function Instagram() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -38,12 +40,22 @@ export default function Instagram() {
   ];
   return (
     <div className="w-full h-full flex items-center justify-center">
-      <div className="flex gap-4 items-center justify-center p-4">
+      <div className="relative flex gap-4 items-center justify-center p-4 border border-black">
         {feeds.map((image) => (
           <div key={image.id}>
             <img src={image.image}></img>
           </div>
         ))}
+        <div className="absolute flex justify-between w-full z-30 left-0 p-10 top-1/2 transform -translate-y-1/2 ">
+          <div className="border border-black rounded-full p-2 flex items-center justify-center ">
+            {" "}
+            <IoIosArrowBack className="size-7 group-hover:text-white text-black duration-300" />
+          </div>
+          <div className="border border-black rounded-full p-2 flex items-center justify-center hover:bg-[#54d9e1] duration-300">
+            {" "}
+            <IoIosArrowForward className="size-7 group-hover:text-white duration-300" />
+          </div>
+        </div>
       </div>
     </div>
   );
