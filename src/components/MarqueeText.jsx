@@ -1,17 +1,34 @@
+import React from "react";
+
 export default function MarqueeText() {
   return (
-    <div className="bg-gray-800 text-white py-2">
-      <div className="overflow-hidden whitespace-nowrap">
-        <div className="marquee_text_content inline-block">
-          <ul className="flex gap-8 animate-marquee">
-            {Array(10).fill(
-              <li>
-                <a className="hover:text-[#54d9e1]" href="#">
-                  Free Delivery on orders over $100.
-                </a>
-              </li>
-            )}
-          </ul>
+    <div className="bg-[#e8f9fb] text-white py-2">
+      <div className="w-full overflow-hidden whitespace-nowrap">
+        <div className="flex animate-marquee">
+          <div className="marquee_text_content flex">
+            <ul className="flex space-x-8">
+              {Array(10)
+                .fill("Free Delivery on orders over $100.")
+                .map((text, index) => (
+                  <li key={index}>
+                    <a href="#" style={{ color: "#000000" }}>
+                      {text}
+                    </a>
+                  </li>
+                ))}
+            </ul>
+            <ul className="flex space-x-8">
+              {Array(10)
+                .fill("Free Delivery on orders over $100.")
+                .map((text, index) => (
+                  <li key={index}>
+                    <a href="#" style={{ color: "#000000" }}>
+                      {text}
+                    </a>
+                  </li>
+                ))}
+            </ul>
+          </div>
         </div>
       </div>
     </div>
