@@ -36,5 +36,15 @@ export default function Instagram() {
         "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2023/12/instagram.jpg",
     },
   ];
-  return <div></div>;
+  return (
+    <div className="w-full h-full flex items-center justify-center">
+      <div className="flex gap-4 items-center justify-center p-4">
+        {feeds.map((image) => (
+          <div key={image.id}>
+            <img src={image.image}></img>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
 }
