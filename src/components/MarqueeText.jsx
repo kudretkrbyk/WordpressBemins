@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function MarqueeText() {
   return (
     <div className="bg-[#e8f9fb] text-white py-2">
