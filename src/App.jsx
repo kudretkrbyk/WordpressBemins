@@ -4,6 +4,7 @@ import ProductPage from "./pages/ProductPage";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Blog from "./pages/Blog";
+import MarqueeText from "./components/MarqueeText";
 
 import Shop from "./pages/Shop";
 import "./App.css";
@@ -11,6 +12,7 @@ import "./App.css";
 function App() {
   return (
     <Router>
+      <MarqueeText />
       <Navbar /> {/* Navbar bileşenini üst kısma ekliyoruz */}
       <Routes>
         <Route path="/" element={<MainPage />} />

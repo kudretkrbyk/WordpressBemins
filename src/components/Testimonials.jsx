@@ -104,6 +104,7 @@ export default function Testimonials() {
                       <IoIosArrowForward className="size-5 group-hover:text-white duration-300" />
                     </button>
                   </div>
+                  <div></div>
                 </div>
               </div>
             ))}
