@@ -3,7 +3,7 @@ import "../slick-carousel/slick.css";
 import "../slick-carousel/slick-theme.css";
 const PrevArrow = ({ className, style, onClick }) => (
   <button
-    style={{ ...style, left: 0, backgroundColor: "red" }}
+    style={{ ...style, left: 0, backgroundColor: "red", zIndex: "1" }}
     onClick={onClick}
     className={className}
   >
@@ -67,7 +67,7 @@ export default function Instagram() {
       <div className="slider-container w-full h-full">
         <Slider {...settings}>
           {feeds.map((feed) => (
-            <div key={feed.id} className="p-5">
+            <div key={feed.id} className="p-6">
               <img
                 src={feed.image}
                 className="w-full h-full object-cover"
