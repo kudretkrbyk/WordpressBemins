@@ -66,15 +66,18 @@ export default function Instagram() {
 
   return (
     <div className="w-full h-full flex items-center justify-center ">
-      <div className="slider-container w-full h-full group">
+      <div className=" w-full h-full group">
         <Slider {...settings}>
           {feeds.map((feed) => (
-            <div key={feed.id} className="p-6">
-              <img
-                src={feed.image}
-                className="w-full h-full object-cover"
-                alt={`Feed ${feed.id}`}
-              />
+            <div key={feed.id} className="p-5 w-[400px] outline-none   ">
+              <div className="w-full overflow-hidden rounded">
+                {" "}
+                <img
+                  src={feed.image}
+                  className="w-full h-full object-cover scale-110 hover:scale-100 duration-700"
+                  alt={`Feed ${feed.id}`}
+                />
+              </div>
             </div>
           ))}
         </Slider>
