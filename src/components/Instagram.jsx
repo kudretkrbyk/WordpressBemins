@@ -8,14 +8,14 @@ const PrevArrow = ({ onClick }) => (
       zIndex: "1",
     }} // Stil ve konum ayarları
     onClick={onClick} // Tıklama işlevi
-    className="size-8 hover:cursor-pointer top-1/2 left-2 border border-black absolute rounded-full " // Varsayılan sınıf adları
+    className="size-8 hover:cursor-pointer top-1/2 left-2 border border-black absolute rounded-full hover:bg-[#54d9e1] hover:text-white hover:border-none duration-300" // Varsayılan sınıf adları
   />
 );
 const NextArrow = ({ style, onClick }) => (
   <IoIosArrowForward
     style={{ ...style }}
     onClick={onClick}
-    className="size-8 hover:cursor-pointer top-1/2 right-2 border border-black absolute rounded-full group-hover:bg-red-500 "
+    className="size-8 hover:cursor-pointer top-1/2 right-2 border border-black absolute rounded-full hover:bg-[#54d9e1] hover:text-white hover:border-none duration-300 "
   ></IoIosArrowForward>
 );
 export default function Instagram() {
