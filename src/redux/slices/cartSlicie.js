@@ -16,9 +16,19 @@ const cartSlice = createSlice({
         (item) => item.id !== action.payload
       );
     },
+    updateCartItem: (state, action) => {
+      const { id, quantity, selectedColor, selectedSize } = action.payload;
+      const existingItem = state.cartItems.find((item) => item.id === id);
+      if (existingItem) {
+        existingItem.quantity = quantity || existingItem.quantity;
+        existingItem.selectedColor =
+          selectedColor || existingItem.selectedColor;
+        existingItem.selectedSize = selectedSize || existingItem.selectedSize;
+      }
+    },
   },
 });
 
-export const { addToCart, removeFromCart } = cartSlice.actions;
+export const { addToCart, removeFromCart, updateCartItem } = cartSlice.actions;
 
 export default cartSlice.reducer;

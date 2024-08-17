@@ -1,7 +1,10 @@
-import { useSelector } from "react-redux";
-import { useState } from "react";
+import { useSelector, useDispatch } from "react-redux";
+
+import { updateCartItem, removeFromCart } from "../redux/slices/cartSlicie";
+import CartPageCalculate from "../components/CartPageCalculate";
 
 export default function CartPage() {
+  const dispatch = useDispatch();
   const cartItems = useSelector((state) => state.cart.cartItems);
 
   const handleCalculateSubTotalCost = () => {
@@ -14,7 +17,22 @@ export default function CartPage() {
   const SubTotalCost = handleCalculateSubTotalCost();
   const totalCost = SubTotalCost + (SubTotalCost * 18) / 100;
 
-  console.log("burası cart");
+  const handleUpdateCart = (id, newQuantity, newColor, newSize) => {
+    if (newQuantity === 0) {
+      dispatch(removeFromCart(id));
+    } else {
+      dispatch(
+        updateCartItem({
+          id,
+          quantity: newQuantity,
+          color: newColor,
+          size: newSize,
+        })
+      );
+    }
+  };
+
+  console.log(cartItems);
   return (
     <div className="w-full h-screen flex items-center justify-center gap-10 p-10">
       <div className="flex flex-col gap-10 w-9/12 border ">
@@ -33,14 +51,26 @@ export default function CartPage() {
                 className="w-[200px] h-[200px] object-contain object-center"
                 src={items.fotograflar[0]}
               />
-              <div>{items.ad} </div>
+              <div>
+                {items.ad},{items.selectedSize}{" "}
+              </div>
             </div>
             <div className="flex items-start justify-end gap-16 w-full p-4">
               <div>{items.fiyat} </div>
               <div className="flex items-center justify-center border gap-10 p-2">
-                <span className="font-bold ">+</span>
+                <span
+                  onClick={() => handleUpdateCart(items.id, items.quantity + 1)}
+                  className="font-bold hover:cursor-pointer "
+                >
+                  +
+                </span>
                 <span>{items.quantity}</span>
-                <span className="font-bold ">-</span>
+                <span
+                  onClick={() => handleUpdateCart(items.id, items.quantity - 1)}
+                  className="font-bold hover:cursor-pointer"
+                >
+                  -
+                </span>
               </div>
               <div>${items.fiyat} </div>
             </div>
@@ -67,29 +97,10 @@ export default function CartPage() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col w-3/12">
-        <div className="bg-[#e9e9e9] p-5 font-bold"> Cart Totals</div>
-        <div className="flex flex-col bg-[#f6f6f6] p-5 gap-10">
-          <div className="flex items-center justify-between gap-40 ">
-            <div>Sub total</div>
-            <div className="font-bold">${SubTotalCost}</div>
-          </div>
-          <div className="flex items-center justify-between gap-40 ">
-            <div>Shipping</div>
-            <div>Turkey</div>
-          </div>
-          <div className="flex items-center justify-between gap-40 ">
-            {" "}
-            <div>Total</div>
-            <div className="font-bold">${totalCost} </div>
-          </div>
-          <div>
-            <button className="text-white bg-black p-4 px-20 rounded hover:bg-[#54d9e1] duration-300">
-              Proceed to checkout
-            </button>
-          </div>
-        </div>
-      </div>
+      <CartPageCalculate
+        SubTotalCost={SubTotalCost}
+        totalCost={totalCost}
+      ></CartPageCalculate>
     </div>
   );
 }
