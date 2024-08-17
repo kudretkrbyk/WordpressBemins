@@ -17,8 +17,9 @@ export default function Navbar() {
       <div className="flex items-center w-full justify-center gap-10 ">
         <Link to="/">Home</Link>
         <Link to="/shop">Shop</Link>
-
         <Link to="/blog">Blog</Link>
+        <Link to="/cart">cart</Link>
+
         <Link to="/page">Page</Link>
       </div>
       <div className="flex w-full items-center justify-end gap-10  ">
@@ -36,6 +37,7 @@ export default function Navbar() {
         </span>
         <span className="relative ">
           <IoBagOutline className="size-6 " />
+
           <div className="bg-[#54d9e1] rounded-full size-6 absolute -top-2 -right-3 flex items-center justify-center">
             {cartItems.length}
           </div>

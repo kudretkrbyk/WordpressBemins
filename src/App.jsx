@@ -8,7 +8,8 @@ import MarqueeText from "./components/MarqueeText";
 
 import Shop from "./pages/Shop";
 import "./App.css";
-import Cart from "./pages/Cart";
+import CartPage from "./pages/CartPage";
+import ErrorPage from "./pages/ErrorPage";
 
 function App() {
   return (
@@ -20,9 +21,11 @@ function App() {
         <Route path="/shop" element={<Shop />} />
 
         <Route path="/blog" element={<Blog />} />
-        <Route patch="/cart" element={<Cart />} />
+
+        <Route path="/cart" element={<CartPage />} />
 
         <Route path="/product/:productId" element={<ProductPage />} />
+        <Route path="/*" element={<ErrorPage />} />
       </Routes>
       <Footer></Footer>
     </Router>
