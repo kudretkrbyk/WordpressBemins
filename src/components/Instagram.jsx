@@ -1,15 +1,34 @@
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-
+import "../slick-carousel/slick.css";
+import "../slick-carousel/slick-theme.css";
+const PrevArrow = ({ className, style, onClick }) => (
+  <button
+    style={{ ...style, left: 0, backgroundColor: "red" }}
+    onClick={onClick}
+    className={className}
+  >
+    <div>back</div>
+  </button>
+);
+const NextArrow = ({ className, style, onClick }) => (
+  <button
+    style={{ ...style, right: 0, backgroundColor: "red" }}
+    onClick={onClick}
+    className={className}
+  >
+    <div>back</div>
+  </button>
+);
 export default function Instagram() {
   const settings = {
-    infinite: true,
     speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 3,
-    arrows: true,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    prevArrow: <PrevArrow />,
+    nextArrow: <NextArrow />,
+    className: "react__slick__slider__parent",
   };
+
   const feeds = [
     {
       id: 1,
@@ -46,25 +65,16 @@ export default function Instagram() {
   return (
     <div className="w-full h-full flex items-center justify-center ">
       <div className="slider-container w-full h-full">
-        <Slider className="w-full h-full overflow-hidden" {...settings}>
-          <div className="p-5">
-            <img src={feeds[0].image}></img>
-          </div>
-          <div className="p-5">
-            <img src={feeds[1].image}></img>
-          </div>
-          <div className="p-5">
-            <img src={feeds[2].image}></img>
-          </div>
-          <div className=" p-5">
-            <img src={feeds[3].image}></img>
-          </div>
-          <div className="p-5">
-            <img src={feeds[4].image}></img>
-          </div>
-          <div className="p-5">
-            <img src={feeds[5].image}></img>
-          </div>
+        <Slider {...settings}>
+          {feeds.map((feed) => (
+            <div key={feed.id} className="p-5">
+              <img
+                src={feed.image}
+                className="w-full h-full object-cover"
+                alt={`Feed ${feed.id}`}
+              />
+            </div>
+          ))}
         </Slider>
       </div>
     </div>
