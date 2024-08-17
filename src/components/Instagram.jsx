@@ -1,4 +1,5 @@
 import Slider from "react-slick";
+import PropTypes from "prop-types";
 import "../slick-carousel/slick.css";
 import "../slick-carousel/slick-theme.css";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
@@ -11,13 +12,15 @@ const PrevArrow = ({ onClick }) => (
     className="size-8 hover:cursor-pointer top-1/2 left-2 border border-black absolute rounded-full hover:bg-[#54d9e1] hover:text-white hover:border-none duration-300" // Varsayılan sınıf adları
   />
 );
-const NextArrow = ({ style, onClick }) => (
+const NextArrow = ({ onClick }) => (
   <IoIosArrowForward
-    style={{ ...style }}
     onClick={onClick}
     className="size-8 hover:cursor-pointer top-1/2 right-2 border border-black absolute rounded-full hover:bg-[#54d9e1] hover:text-white hover:border-none duration-300 "
   ></IoIosArrowForward>
 );
+PrevArrow.propTypes = NextArrow.propTypes = {
+  onClick: PropTypes.func, // onClick'in bir fonksiyon olduğunu belirtir
+};
 export default function Instagram() {
   const settings = {
     speed: 500,
