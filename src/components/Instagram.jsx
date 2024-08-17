@@ -1,11 +1,15 @@
-import { useState } from "react";
-import { IoIosArrowBack } from "react-icons/io";
-
-import { IoIosArrowForward } from "react-icons/io";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 export default function Instagram() {
-  const [currentIndex, setCurrentIndex] = useState(0);
-
+  const settings = {
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 3,
+    arrows: true,
+  };
   const feeds = [
     {
       id: 1,
@@ -38,24 +42,30 @@ export default function Instagram() {
         "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2023/12/instagram.jpg",
     },
   ];
+
   return (
-    <div className="w-full h-full flex items-center justify-center">
-      <div className="relative flex gap-4 items-center justify-center p-4 border border-black">
-        {feeds.map((image) => (
-          <div key={image.id}>
-            <img src={image.image}></img>
+    <div className="w-full h-full flex items-center justify-center ">
+      <div className="slider-container w-full h-full">
+        <Slider className="w-full h-full overflow-hidden" {...settings}>
+          <div className="p-5">
+            <img src={feeds[0].image}></img>
           </div>
-        ))}
-        <div className="absolute flex justify-between w-full z-30 left-0 p-10 top-1/2 transform -translate-y-1/2 ">
-          <div className="border border-black rounded-full p-2 flex items-center justify-center ">
-            {" "}
-            <IoIosArrowBack className="size-7 group-hover:text-white text-black duration-300" />
+          <div className="p-5">
+            <img src={feeds[1].image}></img>
           </div>
-          <div className="border border-black rounded-full p-2 flex items-center justify-center hover:bg-[#54d9e1] duration-300">
-            {" "}
-            <IoIosArrowForward className="size-7 group-hover:text-white duration-300" />
+          <div className="p-5">
+            <img src={feeds[2].image}></img>
           </div>
-        </div>
+          <div className=" p-5">
+            <img src={feeds[3].image}></img>
+          </div>
+          <div className="p-5">
+            <img src={feeds[4].image}></img>
+          </div>
+          <div className="p-5">
+            <img src={feeds[5].image}></img>
+          </div>
+        </Slider>
       </div>
     </div>
   );
