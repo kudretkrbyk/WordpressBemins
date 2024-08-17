@@ -3,8 +3,11 @@ import { IoIosSearch } from "react-icons/io";
 import { GoPerson } from "react-icons/go";
 import { CiHeart } from "react-icons/ci";
 import { IoBagOutline } from "react-icons/io5";
+import { useSelector } from "react-redux";
 
 export default function Navbar() {
+  const cartItems = useSelector((state) => state.cart.cartItems);
+  const favoriteItems = useSelector((state) => state.favorites.favoriteItems);
   return (
     <div className="flex items-center justify-around w-full p-4 px-10 ">
       <div className="w-full text-xl font-bold ">
@@ -28,13 +31,13 @@ export default function Navbar() {
         <span className="relative ">
           <CiHeart className="size-6" />
           <div className="bg-[#54d9e1] rounded-full size-6 absolute -top-2 -right-3 flex items-center justify-center">
-            2
+            {favoriteItems.length}
           </div>
         </span>
         <span className="relative ">
           <IoBagOutline className="size-6 " />
           <div className="bg-[#54d9e1] rounded-full size-6 absolute -top-2 -right-3 flex items-center justify-center">
-            3
+            {cartItems.length}
           </div>
         </span>
       </div>

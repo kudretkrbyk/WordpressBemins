@@ -19,28 +19,28 @@ export default function ProductPage() {
   const favoriteItems = useSelector((state) => state.favorites.favoriteItems);
   console.log("cart", cartItems);
   console.log("fav", favoriteItems);
-
+  const { productId } = useParams(); // URL'den ürün ID'sini alır
+  const { product, loading, error } = useFetchProductById(productId);
+  const [count, setCount] = useState(1);
+  const [selectedSize, setSelectedSize] = useState(null); // Seçilen boyut
+  const [selectedColor, setSelectedColor] = useState(null); // Seçilen renk
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  // Ürün yüklendiğinde ve fotoğraf varsa, fotoğraf listesini oluştur
+  const images = product?.fotograflar || [];
   const handleAddToCart = () => {
-    const cartItem = {
-      ...product, // Includes all the product details
-      quantity: count, // Adds the quantity (count) to the cart item
-    };
-    dispatch(addToCart(cartItem));
+    dispatch(
+      addToCart({
+        ...product,
+        quantity: count,
+        selectedSize, // Seçilen boyut
+        selectedColor, // Seçilen renk
+      })
+    );
   };
 
   const handleAddToFavorites = () => {
     dispatch(addToFavorites(product));
   };
-
-  const { productId } = useParams(); // URL'den ürün ID'sini alır
-  const { product, loading, error } = useFetchProductById(productId);
-  const [count, setCount] = useState(1);
-
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
-
-  // Ürün yüklendiğinde ve fotoğraf varsa, fotoğraf listesini oluştur
-  const images = product?.fotograflar || [];
-
   const handlePrev = () => {
     setCurrentImageIndex((prevIndex) =>
       prevIndex === 0 ? images.length - 1 : prevIndex - 1
@@ -110,9 +110,12 @@ export default function ProductPage() {
             {" "}
             {product.colors.map((color, index) => (
               <div
-                className="relative flex items-center justify-center size-7 rounded-full group border border-black cursor-pointer"
-                style={{ backgroundColor: colorCodes[color] || "#000000" }} // Default color black if color code not found
+                className={`relative flex items-center justify-center size-7 rounded-full group border border-black cursor-pointer ${
+                  selectedColor === color ? "border-2 border-blue-500" : ""
+                }`}
+                style={{ backgroundColor: colorCodes[color] || "#000000" }}
                 key={index}
+                onClick={() => setSelectedColor(color)}
               ></div>
             ))}
           </div>
@@ -122,8 +125,11 @@ export default function ProductPage() {
           <div className="flex  items-center justify-center gap-4">
             {product.size.map((size, index) => (
               <div
-                className="border border-black w-5 flex items-center justify-center"
+                className={`border border-black w-5 flex items-center justify-center cursor-pointer ${
+                  selectedSize === size ? "border-2 border-blue-500" : ""
+                }`}
                 key={index}
+                onClick={() => setSelectedSize(size)}
               >
                 {" "}
                 {size}{" "}
