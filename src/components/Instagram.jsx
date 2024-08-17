@@ -1,23 +1,22 @@
 import Slider from "react-slick";
 import "../slick-carousel/slick.css";
 import "../slick-carousel/slick-theme.css";
-const PrevArrow = ({ className, style, onClick }) => (
-  <button
-    style={{ ...style, left: 0, backgroundColor: "red", zIndex: "1" }}
-    onClick={onClick}
-    className={className}
-  >
-    <div>back</div>
-  </button>
+import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+const PrevArrow = ({ onClick }) => (
+  <IoIosArrowBack
+    style={{
+      zIndex: "1",
+    }} // Stil ve konum ayarları
+    onClick={onClick} // Tıklama işlevi
+    className="size-8 hover:cursor-pointer top-1/2 left-2 border border-black absolute rounded-full " // Varsayılan sınıf adları
+  />
 );
-const NextArrow = ({ className, style, onClick }) => (
-  <button
-    style={{ ...style, right: 0, backgroundColor: "red" }}
+const NextArrow = ({ style, onClick }) => (
+  <IoIosArrowForward
+    style={{ ...style }}
     onClick={onClick}
-    className={className}
-  >
-    <div>back</div>
-  </button>
+    className="size-8 hover:cursor-pointer top-1/2 right-2 border border-black absolute rounded-full group-hover:bg-red-500 "
+  ></IoIosArrowForward>
 );
 export default function Instagram() {
   const settings = {
@@ -64,7 +63,7 @@ export default function Instagram() {
 
   return (
     <div className="w-full h-full flex items-center justify-center ">
-      <div className="slider-container w-full h-full">
+      <div className="slider-container w-full h-full group">
         <Slider {...settings}>
           {feeds.map((feed) => (
             <div key={feed.id} className="p-6">
