@@ -7,7 +7,31 @@ import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import { CiHeart } from "react-icons/ci";
 import { MdCompareArrows } from "react-icons/md";
 
+import { useDispatch, useSelector } from "react-redux";
+import { addToCart, removeFromCart } from "../redux/slices/cartSlicie";
+import {
+  addToFavorites,
+  removeFromFavorites,
+} from "../redux/slices/favoriteSlice";
 export default function ProductPage() {
+  const dispatch = useDispatch();
+  const cartItems = useSelector((state) => state.cart.cartItems);
+  const favoriteItems = useSelector((state) => state.favorites.favoriteItems);
+  console.log("cart", cartItems);
+  console.log("fav", favoriteItems);
+
+  const handleAddToCart = () => {
+    const cartItem = {
+      ...product, // Includes all the product details
+      quantity: count, // Adds the quantity (count) to the cart item
+    };
+    dispatch(addToCart(cartItem));
+  };
+
+  const handleAddToFavorites = () => {
+    dispatch(addToFavorites(product));
+  };
+
   const { productId } = useParams(); // URL'den ürün ID'sini alır
   const { product, loading, error } = useFetchProductById(productId);
   const [count, setCount] = useState(1);
@@ -124,7 +148,10 @@ export default function ProductPage() {
             </div>
           </div>
           <div>
-            <button className="bg-gray-700 text-white px-16 p-2 rounded-xl">
+            <button
+              className="bg-gray-700 text-white px-16 p-2 rounded-xl"
+              onClick={handleAddToCart}
+            >
               Add To Cart
             </button>
           </div>
