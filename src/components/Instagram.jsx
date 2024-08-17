@@ -3,6 +3,8 @@ import PropTypes from "prop-types";
 import "../slick-carousel/slick.css";
 import "../slick-carousel/slick-theme.css";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+import { BsInstagram } from "react-icons/bs";
+
 const PrevArrow = ({ onClick }) => (
   <IoIosArrowBack
     style={{
@@ -70,13 +72,16 @@ export default function Instagram() {
         <Slider {...settings}>
           {feeds.map((feed) => (
             <div key={feed.id} className="p-5 w-[400px] outline-none   ">
-              <div className="w-full overflow-hidden rounded">
+              <div className="relative w-full overflow-hidden rounded group/image">
                 {" "}
                 <img
                   src={feed.image}
                   className="w-full h-full object-cover scale-110 hover:scale-100 duration-700"
                   alt={`Feed ${feed.id}`}
                 />
+                <div className="absolute translate-y-3 opacity-0 group-hover/image:opacity-100   group-hover/image:-translate-y-1/2 duration-500  top-1/2  left-1/2 -translate-x-1/2  bg-white rounded-full p-3">
+                  <BsInstagram className="z-30 size-5 " />
+                </div>
               </div>
             </div>
           ))}
