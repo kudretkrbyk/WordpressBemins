@@ -4,10 +4,16 @@ import { GoPerson } from "react-icons/go";
 import { CiHeart } from "react-icons/ci";
 import { IoBagOutline } from "react-icons/io5";
 import { useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
 
 export default function Navbar() {
   const cartItems = useSelector((state) => state.cart.cartItems);
   const favoriteItems = useSelector((state) => state.favorites.favoriteItems);
+  const navigate = useNavigate();
+  const handleCartLink = () => {
+    navigate("/cart");
+  };
+
   return (
     <div className="flex items-center justify-around w-full p-4 px-10 ">
       <div className="w-full text-xl font-bold ">
@@ -18,7 +24,6 @@ export default function Navbar() {
         <Link to="/">Home</Link>
         <Link to="/shop">Shop</Link>
         <Link to="/blog">Blog</Link>
-        <Link to="/cart">cart</Link>
 
         <Link to="/page">Page</Link>
       </div>
@@ -35,7 +40,10 @@ export default function Navbar() {
             {favoriteItems.length}
           </div>
         </span>
-        <span className="relative ">
+        <span
+          onClick={handleCartLink}
+          className="relative hover:cursor-pointer "
+        >
           <IoBagOutline className="size-6 " />
 
           <div className="bg-[#54d9e1] rounded-full size-6 absolute -top-2 -right-3 flex items-center justify-center">
