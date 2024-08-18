@@ -7,9 +7,9 @@ export default function OrderTracking() {
       <div className="flex flex-col w-1/3 gap-5">
         <div>
           <p>
-            To track your order please enter your Order ID in the box below and
+            {`To track your order please enter your Order ID in the box below and
             press the "Track" button. This was given to you on your receipt and
-            in the confirmation email you should have received.
+            in the confirmation email you should have received.`}
           </p>
         </div>
         <div>
