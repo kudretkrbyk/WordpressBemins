@@ -29,8 +29,61 @@ export default function ChectOutForm() {
     ? states.find((state) => state.name === selectedState)?.cities || []
     : [];
   return (
-    <div>
-      <div className="veriler w-1/2">
+    <div className="w-full flex flex-col gap-4">
+      <div>
+        <h6 className="text-xl font-bold">Billing Details</h6>
+      </div>
+      <div className="flex flex-col">
+        <span>First Name*</span>
+        <label htmlFor="Name">
+          <input
+            className="border focus:outline-none w-full h-10 rounded px-2 "
+            placeholder="Name"
+            type="text"
+          ></input>
+        </label>
+      </div>
+      <div className="flex flex-col">
+        <span>Last Name*</span>
+        <label htmlFor="LastName">
+          <input
+            className="border focus:outline-none w-full h-10 rounded px-2 "
+            placeholder="LastName"
+            type="text"
+          ></input>
+        </label>
+      </div>
+      <div className="flex flex-col">
+        <span>Email</span>
+        <label htmlFor="email">
+          <input
+            className="border focus:outline-none w-full h-10 rounded px-2 "
+            placeholder="email"
+            type="email"
+          ></input>
+        </label>
+      </div>
+      <div className="flex flex-col">
+        <span>Company Name (optional)</span>
+        <label htmlFor="CompanyName">
+          <input
+            className="border focus:outline-none w-full h-10 rounded px-2 "
+            placeholder="CompanyName"
+            type="text"
+          ></input>
+        </label>
+      </div>
+      <div className="flex flex-col">
+        <span>Street Adress*</span>
+        <label htmlFor="address">
+          <input
+            className="border focus:outline-none w-80 h-10 rounded px-2 "
+            placeholder="address"
+            type="text"
+          ></input>
+        </label>
+      </div>
+      <div className="veriler w-full">
         <label htmlFor="country">Country:</label>
         <select
           id="country"

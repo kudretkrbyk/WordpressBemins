@@ -23,9 +23,9 @@ export default function CheckOut() {
           </div>
         </div>
       </div>
-      <div className="flex w-full p-10">
+      <div className="flex w-8/12 p-10">
         <ChectOutForm></ChectOutForm>
-        <div className="w-full">sdsd</div>
+        <div className="w-4/12">sdsd</div>
       </div>
     </div>
   );
