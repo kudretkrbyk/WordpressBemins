@@ -20,7 +20,7 @@ export default function CheckOut() {
 
   const totalCost = subTotalCost + (subTotalCost * 18) / 100;
   return (
-    <div className="w-full h-full flex flex-col items-center gap-10 p-5">
+    <div className="w-full h-full flex flex-col items-center gap-10 ">
       <CartPageNavigator></CartPageNavigator>
       <div className="w-8/12 flex items-center justify-between ">
         <div className="flex items-center gap-2">
@@ -38,9 +38,38 @@ export default function CheckOut() {
           </div>
         </div>
       </div>
-      <div className="flex w-8/12 p-10">
+      <div className="flex w-full p-10">
         <ChectOutForm></ChectOutForm>
-        <div className="w-4/12 h-full border border-black p-2">
+        <div className="w-2/5 h-full border border-black p-2">
+          <div>Product</div>
+          <div className="flex flex-col">
+            {" "}
+            {cartItems.map((item, index) => (
+              <div
+                className="w-full flex items-start justify-between"
+                key={index}
+              >
+                <div>
+                  {" "}
+                  <div className="w-full flex items-start justify-center p-3">
+                    <div className="flex flex-col gap-4">
+                      <img
+                        className="w-[100px] h-[100px] object-contain object-center"
+                        src={item.fotograflar[0]}
+                      ></img>
+                    </div>
+                    <div className="flex flex-col items-start gap-3">
+                      <span>{item.ad} </span>
+                      <span className="font-bold">QTY:{item.quantity} </span>
+                    </div>
+                  </div>
+                </div>
+
+                <div>$ {item.fiyat}</div>
+              </div>
+            ))}
+          </div>
+
           <div>$ {totalCost} </div>
         </div>
       </div>
