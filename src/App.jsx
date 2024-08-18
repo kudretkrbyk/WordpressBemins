@@ -9,6 +9,8 @@ import MarqueeText from "./components/MarqueeText";
 import Shop from "./pages/Shop";
 import "./App.css";
 import CartPage from "./pages/CartPage";
+import CheckOut from "./pages/CheckOut";
+import OrderTracking from "./pages/OrderTracking";
 import ErrorPage from "./pages/ErrorPage";
 
 function App() {
@@ -23,6 +25,8 @@ function App() {
         <Route path="/blog" element={<Blog />} />
 
         <Route path="/cart" element={<CartPage />} />
+        <Route path="/checkout" element={<CheckOut />} />
+        <Route path="/orderTracking" element={<OrderTracking />} />
 
         <Route path="/product/:productId" element={<ProductPage />} />
         <Route path="/*" element={<ErrorPage />} />
