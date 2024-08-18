@@ -22,6 +22,7 @@ export default function CheckOut() {
   return (
     <div className="w-full h-full flex flex-col items-center gap-10 ">
       <CartPageNavigator></CartPageNavigator>
+      <div className="w-full flex items-center justify-center gap-5"></div>
       <div className="w-8/12 flex items-center justify-between ">
         <div className="flex items-center gap-2">
           <GoPerson className="size-5" />
@@ -38,11 +39,11 @@ export default function CheckOut() {
           </div>
         </div>
       </div>
-      <div className="flex w-full p-10">
+      <div className="flex items-center justify-center gap-4 w-full p-10">
         <ChectOutForm></ChectOutForm>
-        <div className="w-2/5 h-full border border-black p-2">
+        <div className="w-2/5 h-full flex flex-col gap-4 border border-black p-2">
           <div>Product</div>
-          <div className="flex flex-col">
+          <div className="flex flex-col gap-2">
             {" "}
             {cartItems.map((item, index) => (
               <div
@@ -69,8 +70,22 @@ export default function CheckOut() {
               </div>
             ))}
           </div>
+          <div className="bg-black w-full h-[1px]"></div>
+          <div className="w-full flex items-center justify-between">
+            <div>Subtotal</div>
+            <div className="text-2xl"> ${subTotalCost}</div>
+          </div>
+          <div className="bg-black w-full h-[1px]"></div>
+          <div className="w-full flex items-center justify-between">
+            <div>Shipping</div>
+            <div className="text-2xl"> Flat rate</div>
+          </div>
+          <div className="bg-black w-full h-[1px]"></div>
 
-          <div>$ {totalCost} </div>
+          <div className="w-full flex items-center justify-between">
+            <div>Total</div>
+            <div className="text-2xl"> ${totalCost}</div>
+          </div>
         </div>
       </div>
     </div>
