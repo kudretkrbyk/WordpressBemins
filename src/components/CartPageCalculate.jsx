@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function CartPageCalculate({ SubTotalCost, totalCost }) {
   return (
     <div className="flex flex-col w-3/12">

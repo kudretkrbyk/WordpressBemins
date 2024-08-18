@@ -1,4 +1,5 @@
 import { useSelector, useDispatch } from "react-redux";
+import { Link } from "react-router-dom";
 
 import { updateCartItem, removeFromCart } from "../redux/slices/cartSlicie";
 import CartPageCalculate from "../components/CartPageCalculate";
@@ -34,9 +35,24 @@ export default function CartPage() {
 
   console.log(cartItems);
   return (
-    <div className="w-full h-full  flex flex-col gap-10">
-      <div></div>
-      <div className="w-full h-screen flex items-center justify-center gap-10 p-10">
+    <div className="w-full h-full  flex flex-col gap-10 p-10">
+      <div className="flex items-center justify-center gap-10 text-xl font-bold ">
+        <div className="flex flex-col  items-center group/cart">
+          <Link className="" to="/cart">
+            Cart
+          </Link>
+          <div className="w-[0px] h-[2px] bg-black group-hover/cart:w-full duration-300 "></div>
+        </div>
+        <div className="flex flex-col  items-center group/checkout">
+          <Link to="/checkout">Checkout</Link>
+          <div className="w-[0px] h-[2px] bg-black group-hover/checkout:w-full duration-300 "></div>
+        </div>
+        <div className="flex flex-col  items-center group/order">
+          <Link to="/orderTracking">Order Tracking</Link>
+          <div className="w-[0px] h-[2px] bg-black group-hover/order:w-full duration-300 "></div>
+        </div>
+      </div>
+      <div className="w-full h-full flex items-center justify-center gap-10 ">
         <div className="flex flex-col gap-10 w-9/12 border ">
           <div className="flex items-center justify-between w-full border-b p-4">
             <div className="">Product</div>
