@@ -5,7 +5,7 @@ export default function CartPageNavigator() {
 
   return (
     <div className="flex items-center justify-center gap-10 text-xl font-bold">
-      <div className="flex flex-col items-center group/cart">
+      <div className="flex flex-col items-center group/cart ">
         <Link className="" to="/cart">
           Cart
         </Link>

@@ -24,16 +24,16 @@ export default function CheckOut() {
   return (
     <div className="w-full h-full flex flex-col items-center gap-10 ">
       <CartPageNavigator></CartPageNavigator>
-      <div className="w-full flex items-center justify-center gap-5"></div>
+
       <div className="w-8/12 flex items-center justify-between ">
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 bg-[#f2f2f2] p-5 px-10">
           <GoPerson className="size-5" />
           <div>
             <span>Returning customer?</span>
             <span className="font-bold"> Click here to login</span>
           </div>
         </div>
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 bg-[#f2f2f2] p-5 px-10">
           <BiSolidDiscount className="size-5" />
           <div>
             <span>Have a coupon?</span>
