@@ -29,7 +29,7 @@ export default function OrderTracking() {
           ></input>
         </div>
         <div className=" flex items-center justify-center ">
-          <button className="p-3 px-20 bg-black text-white rounded">
+          <button className="p-3 px-20 bg-black text-white rounded hover:bg-[#54d9e1] duration-300">
             Track
           </button>
         </div>
