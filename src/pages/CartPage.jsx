@@ -1,5 +1,6 @@
 import { useSelector, useDispatch } from "react-redux";
 import CartPageNavigator from "../components/CartPageNavigator";
+import handleCalculateSubTotalCost from "../functions/handleCalculateSubTotalCost";
 
 import { updateCartItem, removeFromCart } from "../redux/slices/cartSlicie";
 import CartPageCalculate from "../components/CartPageCalculate";
@@ -8,14 +9,7 @@ export default function CartPage() {
   const dispatch = useDispatch();
   const cartItems = useSelector((state) => state.cart.cartItems);
 
-  const handleCalculateSubTotalCost = () => {
-    const totalCost = cartItems.reduce((total, item) => {
-      return total + item.fiyat * item.quantity; // Her ürünün fiyatı ve miktarını çarparak toplama ekler
-    }, 0); // Başlangıç değeri 0
-
-    return totalCost;
-  };
-  const SubTotalCost = handleCalculateSubTotalCost();
+  const SubTotalCost = handleCalculateSubTotalCost(cartItems);
   const totalCost = SubTotalCost + (SubTotalCost * 18) / 100;
 
   const handleUpdateCart = (id, newQuantity, newColor, newSize) => {
