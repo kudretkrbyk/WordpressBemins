@@ -1,4 +1,5 @@
 import { useSelector, useDispatch } from "react-redux";
+import { useEffect, useState } from "react";
 import CartPageNavigator from "../components/CartPageNavigator";
 import handleCalculateSubTotalCost from "../functions/handleCalculateSubTotalCost";
 
@@ -6,11 +7,20 @@ import { updateCartItem, removeFromCart } from "../redux/slices/cartSlicie";
 import CartPageCalculate from "../components/CartPageCalculate";
 
 export default function CartPage() {
+  const [subTotalCost, setSubTotalCost] = useState(0);
   const dispatch = useDispatch();
   const cartItems = useSelector((state) => state.cart.cartItems);
 
-  const SubTotalCost = handleCalculateSubTotalCost(cartItems);
-  const totalCost = SubTotalCost + (SubTotalCost * 18) / 100;
+  useEffect(() => {
+    if (cartItems && cartItems.length > 0) {
+      const calculatedSubTotalCost = handleCalculateSubTotalCost(cartItems);
+      setSubTotalCost(calculatedSubTotalCost);
+    } else {
+      setSubTotalCost(0); // Eğer cartItems boşsa veya null ise toplam maliyeti sıfır yapar
+    }
+  }, [cartItems]);
+
+  const totalCost = subTotalCost + (subTotalCost * 18) / 100;
 
   const handleUpdateCart = (id, newQuantity, newColor, newSize) => {
     if (newQuantity === 0) {
@@ -99,7 +109,7 @@ export default function CartPage() {
           </div>
         </div>
         <CartPageCalculate
-          SubTotalCost={SubTotalCost}
+          SubTotalCost={subTotalCost}
           totalCost={totalCost}
         ></CartPageCalculate>
       </div>
