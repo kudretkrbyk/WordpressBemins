@@ -4,30 +4,75 @@ import { GoPerson } from "react-icons/go";
 import { CiHeart } from "react-icons/ci";
 import { IoBagOutline } from "react-icons/io5";
 import { useSelector } from "react-redux";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
+import { useEffect, useState } from "react";
 
 export default function Navbar() {
+  const location = useLocation();
+  const [navbarİcon, setNavbarIcon] = useState(true);
   const cartItems = useSelector((state) => state.cart.cartItems);
   const favoriteItems = useSelector((state) => state.favorites.favoriteItems);
   const navigate = useNavigate();
   const handleCartLink = () => {
     navigate("/cart");
   };
+  const handleHomeLink = () => {
+    navigate("/");
+  };
+
+  useEffect(() => {
+    if (location.pathname === "/") {
+      setNavbarIcon(true);
+    } else {
+      setNavbarIcon(false);
+    }
+  }, [location]);
+  console.log("location:", location);
 
   return (
-    <div className="flex items-center justify-around w-full p-4 px-10 ">
-      <div className="w-full text-xl font-bold ">
-        <span className="text-xl font-bold">bemins</span>
-        <span>.</span>
-      </div>
-      <div className="flex items-center w-full justify-center gap-10 ">
-        <Link to="/">Home</Link>
-        <Link to="/shop">Shop</Link>
-        <Link to="/blog">Blog</Link>
+    <div className="flex items-center justify-center w-full p-4 px-10 ">
+      <div className="w-8/12 flex items-center justify-between text-xl font-bold  ">
+        {navbarİcon ? (
+          <div className="flex items-center justify-between w-full">
+            <div className="w-full">
+              {" "}
+              <img
+                onClick={handleHomeLink}
+                className=" object-cover object-center w-48"
+                src="https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2020/06/logo.png"
+              ></img>
+            </div>
 
-        <Link to="/page">Page</Link>
+            <div className="flex items-center w-full justify-center gap-10 ">
+              <Link to="/">Home</Link>
+              <Link to="/shop">Shop</Link>
+              <Link to="/blog">Blog</Link>
+
+              <Link to="/page">Page</Link>
+            </div>
+          </div>
+        ) : (
+          <div className="flex items-center justify-between w-full ">
+            <div className="flex items-center w-full justify-center gap-10 ">
+              <Link to="/">Home</Link>
+              <Link to="/shop">Shop</Link>
+              <Link to="/blog">Blog</Link>
+
+              <Link to="/page">Page</Link>
+            </div>
+            <div className="w-full flex items-center justify-center">
+              {" "}
+              <img
+                onClick={handleHomeLink}
+                className=" object-cover object-center w-48"
+                src="https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2020/06/logo.png"
+              ></img>
+            </div>
+          </div>
+        )}
       </div>
-      <div className="flex w-full items-center justify-end gap-10  ">
+
+      <div className="flex w-4/12 items-center justify-center gap-10  p-2 ">
         <span className=" ">
           <IoIosSearch className="size-6" />
         </span>

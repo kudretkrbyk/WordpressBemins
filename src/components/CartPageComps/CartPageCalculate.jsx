@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 export default function CartPageCalculate({ SubTotalCost, totalCost }) {
   return (
     <div className="flex flex-col w-3/12">
@@ -25,3 +27,8 @@ export default function CartPageCalculate({ SubTotalCost, totalCost }) {
     </div>
   );
 }
+
+CartPageCalculate.propTypes = {
+  SubTotalCost: PropTypes.object.isRequired,
+  totalCost: PropTypes.object.isRequired,
+};
