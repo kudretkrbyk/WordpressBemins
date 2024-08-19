@@ -114,7 +114,7 @@ export default function Shop() {
             <div className="font-bold flex flex-col ">Categories</div>
             {categories.map((category, index) => (
               <div className="flex flex-col  mt-2" key={index}>
-                <div className="flex  items-center justify-between gap-2 text-blue-700">
+                <div className="flex  items-center justify-between gap-2 text-blue-700 hover:cursor-pointer">
                   <div onClick={() => handleCategoryClick(category.name)}>
                     {category.name}
                   </div>
