@@ -1,27 +1,23 @@
 // src/pages/Shop.js
 
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+
 import ShopTopMenu from "../components/ShopTopMenu";
-import ShopProductDetails from "../components/ShopProductDetails";
 
 import useFetchProducts from "../hooks/useFetchProducts";
 import useFilterProducts from "../hooks/useFilterProducts";
 
-import ShopGridFilterComp from "../components/ShopGridFilterComp";
 import ShopPageCategories from "../components/ShopPageCategories";
 import ShopPageColorList from "../components/ShopPageColorList";
 import ShopPageFilterSlider from "../components/ShopPageFilterSlider";
+import ShopPageProductListing from "../components/ShopPageProductListing";
 
 export default function Shop() {
-  const navigate = useNavigate();
-  const [visibleProducts, setVisibleProducts] = useState(10); // Başlangıçta 10 ürün göster
-
   const [selectedColors, setSelectedColors] = useState([]); // Seçilen renkler
   const [selectedSizes, setSelectedSizes] = useState([]); // Seçilen boyutlar
   const [selectedCategory, setSelectedCategory] = useState([]); // Seçilen boyutlar
   const [subCatFlag, setSubCatFlag] = useState({});
-  const [gridCols, setGridCols] = useState("grid-cols-3"); // Varsayılan grid kolonları
+
   const {
     productList,
     filteredProducts,
@@ -53,10 +49,6 @@ export default function Shop() {
     }));
   };
 
-  const handleShowMoreProducts = () => {
-    setVisibleProducts((prevCount) => prevCount + 10); // Her seferinde 10 ürün daha göster
-  };
-
   const handlePriceChange = (newRange) => {
     setPriceRange(newRange);
   };
@@ -83,29 +75,6 @@ export default function Shop() {
     setSelectedCategory([]);
   };
 
-  const handleFilterClick = (id) => {
-    switch (id) {
-      case 1:
-        setGridCols("grid-cols-2");
-        break;
-      case 2:
-        setGridCols("grid-cols-3");
-        break;
-      case 3:
-        setGridCols("grid-cols-4");
-        break;
-      case 4:
-        setGridCols("grid-rows-1");
-        break;
-      default:
-        setGridCols("grid-cols-3");
-        break;
-    }
-  };
-
-  const handleProductClick = (productId) => {
-    navigate(`/product/${productId}`);
-  };
   console.log("fp: ", filteredProducts);
   console.log("color list:", colorsList);
   return (
@@ -160,67 +129,11 @@ export default function Shop() {
               Reset Filters
             </button>
           </div>
-          <div className="mt-4">
-            <div className="font-bold">Feature Product</div>
-            {/* Feature Product component goes here */}
-          </div>
         </div>
-        <div className="w-9/12 h-full ">
-          <ShopGridFilterComp onFilterClick={handleFilterClick} />
-          <div className={`grid ${gridCols} gap-4 p-4 overflow-hidden`}>
-            {filteredProducts.slice(0, visibleProducts).map(
-              (
-                product,
-                index // Yalnızca visibleProducts kadar ürün göster
-              ) => (
-                <div
-                  onClick={() => handleProductClick(product.id)}
-                  className="relative group overflow-hidden "
-                  key={index}
-                >
-                  <div className="relative">
-                    <img
-                      src={product.fotograflar[0]}
-                      alt={product.name}
-                      className="transition-opacity duration-500 ease-in-out"
-                    />
-                    <img
-                      src={product.fotograflar[1]}
-                      alt={product.name}
-                      className="absolute top-0 left-0 opacity-0 hover:opacity-100 transition-opacity duration-500 ease-in-out"
-                    />
-                  </div>
-                  <div className="bg-red-500 w-auto flex items-center justify-center absolute top-3 left-0 rounded p-1 px-3 ">
-                    {product.tag[0]}
-                  </div>
-                  <ShopProductDetails />
-                  {product.size.length > 0 && (
-                    <div className=" group-hover:opacity-60 opacity-0 flex  duration-700 flex-col items-center justify-center absolute bottom-0  bg-white w-full h-16 ">
-                      <div>
-                        <div>Select Options</div>
-                        <div className="flex items-center justify-center gap-4">
-                          {product.size.map((size, index) => (
-                            <div key={index}>{size} </div>
-                          ))}
-                        </div>
-                      </div>
-                    </div>
-                  )}
-                </div>
-              )
-            )}
-          </div>
-          {visibleProducts < filteredProducts.length && (
-            <div className="flex justify-center">
-              <button
-                className="bg-blue-500 text-white px-4 py-2 rounded"
-                onClick={handleShowMoreProducts}
-              >
-                Daha Fazla Göster
-              </button>
-            </div>
-          )}
-        </div>
+        {/*Ürünler Listelenecek */}
+        <ShopPageProductListing
+          filteredProducts={filteredProducts}
+        ></ShopPageProductListing>
       </div>
     </div>
   );
