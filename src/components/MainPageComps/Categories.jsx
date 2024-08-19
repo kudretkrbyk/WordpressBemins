@@ -52,7 +52,7 @@ export default function Categories() {
               <div
                 onClick={() => handleProductClick(category.name)}
                 key={index}
-                className="w-full"
+                className="w-full p-10"
               >
                 <div className="flex flex-col items-center justify-center  w-full">
                   {" "}

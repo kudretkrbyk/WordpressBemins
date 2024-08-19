@@ -28,9 +28,9 @@ export default function BestSellers() {
   };
 
   return (
-    <div>
-      <h2>Best Sellers</h2>
-      <div className="relative w-full overflow-hidden  z-10 group/mainProduct">
+    <div className="flex flex-col items-center justify-center gap-5 w-full h-full overflow-hidden">
+      <h2 className="font-bold text-3xl">Best Sellers</h2>
+      <div className="relative w-full   z-10 group/mainProduct border border-black">
         <div
           className="flex transition-transform duration-500 ease-in-out"
           style={{ transform: `translateX(-${currentIndex * 20}%)` }}
@@ -76,7 +76,7 @@ export default function BestSellers() {
             </div>
           ))}
         </div>
-        <div className="absolute flex justify-between w-full z-30 left-0 p-10 top-1/2 group-hover/mainProduct:opacity-100 opacity-0">
+        <div className="absolute flex justify-between w-full z-30 left-0 p-10 top-1/2 -translate-y-1/2 group-hover/mainProduct:opacity-100 opacity-0">
           <div className="border border-black rounded-full p-2 flex items-center justify-center group hover:bg-[#54d9e1] duration-300">
             {" "}
             <IoIosArrowBack

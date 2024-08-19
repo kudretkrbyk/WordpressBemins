@@ -10,6 +10,7 @@ import { useEffect, useState } from "react";
 export default function Navbar() {
   const location = useLocation();
   const [navbarİcon, setNavbarIcon] = useState(true);
+  const [isScrolled, setIsScrolled] = useState(false);
   const cartItems = useSelector((state) => state.cart.cartItems);
   const favoriteItems = useSelector((state) => state.favorites.favoriteItems);
   const navigate = useNavigate();
@@ -21,6 +22,21 @@ export default function Navbar() {
   };
 
   useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  useEffect(() => {
     if (location.pathname === "/") {
       setNavbarIcon(true);
     } else {
@@ -30,7 +46,11 @@ export default function Navbar() {
   console.log("location:", location);
 
   return (
-    <div className="flex items-center justify-center w-full p-4 px-10 ">
+    <div
+      className={`flex items-center justify-center w-full bg-white p-4 px-10  top-0 z-50 transition-all duration-300 ${
+        isScrolled ? "shadow-lg  fixed" : ""
+      }`}
+    >
       <div className="w-8/12 flex items-center justify-between text-xl font-bold  ">
         {navbarİcon ? (
           <div className="flex items-center justify-between w-full">
