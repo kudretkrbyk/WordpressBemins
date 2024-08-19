@@ -1,10 +1,11 @@
-import Banner from "../components/Banner";
-import Categories from "../components/Categories";
-import ShopNow from "../components/ShopNow";
-import BestSellers from "../components/BestSellers";
-import Testimonials from "../components/Testimonials";
-import HomeSlider from "../components/HomeSlider";
-import Instagram from "../components/Instagram";
+import Categories from "../components/MainPageComps/Categories";
+import ShopNow from "../components/MainPageComps/ShopNow";
+
+import Testimonials from "../components/MainPageComps/Testimonials";
+import HomeSlider from "../components/MainPageComps/HomeSlider";
+import Instagram from "../components/MainPageComps/Instagram";
+import Banner from "../components/MainPageComps/Banner";
+import BestSellers from "../components/MainPageComps/BestSellers";
 
 export default function MainPage() {
   return (

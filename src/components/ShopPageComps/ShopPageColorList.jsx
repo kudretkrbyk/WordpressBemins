@@ -1,5 +1,5 @@
 import { IoMdArrowDropdown } from "react-icons/io";
-import colorCodes from "../constraint/colors";
+import colorCodes from "../../constraint/colors";
 import PropTypes from "prop-types";
 
 export default function ShopPageColorList({

@@ -1,9 +1,9 @@
 import { useNavigate } from "react-router-dom";
-import useFetchProducts from "../hooks/useFetchProducts";
+import useFetchProducts from "../../hooks/useFetchProducts";
 import Slider from "react-slick";
 
-import "../slick-carousel/slick.css";
-import "../slick-carousel/slick-theme.css";
+import "../../slick-carousel/slick.css";
+import "../../slick-carousel/slick-theme.css";
 import PropTypes from "prop-types";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 export default function Categories() {

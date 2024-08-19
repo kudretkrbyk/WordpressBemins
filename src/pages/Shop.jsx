@@ -2,15 +2,15 @@
 
 import { useState } from "react";
 
-import ShopTopMenu from "../components/ShopTopMenu";
+import ShopTopMenu from "../components/ShopPageComps/ShopTopMenu";
 
 import useFetchProducts from "../hooks/useFetchProducts";
 import useFilterProducts from "../hooks/useFilterProducts";
 
-import ShopPageCategories from "../components/ShopPageCategories";
-import ShopPageColorList from "../components/ShopPageColorList";
-import ShopPageFilterSlider from "../components/ShopPageFilterSlider";
-import ShopPageProductListing from "../components/ShopPageProductListing";
+import ShopPageCategories from "../components/ShopPageComps/ShopPageCategories";
+import ShopPageColorList from "../components/ShopPageComps/ShopPageColorList";
+import ShopPageFilterSlider from "../components/ShopPageComps/ShopPageFilterSlider";
+import ShopPageProductListing from "../components/ShopPageComps/ShopPageProductListing";
 
 export default function Shop() {
   const [selectedColors, setSelectedColors] = useState([]); // Seçilen renkler

@@ -4,7 +4,7 @@ import ProductPage from "./pages/ProductPage";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Blog from "./pages/Blog";
-import MarqueeText from "./components/MarqueeText";
+import MarqueeText from "./components/MainPageComps/MarqueeText";
 
 import Shop from "./pages/Shop";
 import "./App.css";

@@ -3,8 +3,8 @@ import { IoIosArrowBack } from "react-icons/io";
 
 import { IoIosArrowForward } from "react-icons/io";
 
-import useFetchProducts from "../hooks/useFetchProducts";
-import ShopProductDetails from "./ShopProductDetails";
+import useFetchProducts from "../../hooks/useFetchProducts";
+import ShopProductDetails from "../ShopPageComps/ShopProductDetails";
 
 export default function BestSellers() {
   const [idList] = useState([1, 5, 9, 21, 30, 29]);

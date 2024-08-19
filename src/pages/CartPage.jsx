@@ -1,10 +1,10 @@
 import { useSelector, useDispatch } from "react-redux";
 import { useEffect, useState } from "react";
-import CartPageNavigator from "../components/CartPageNavigator";
+import CartPageNavigator from "../components/CartPageComps/CartPageNavigator";
 import handleCalculateSubTotalCost from "../functions/handleCalculateSubTotalCost";
 
 import { updateCartItem, removeFromCart } from "../redux/slices/cartSlicie";
-import CartPageCalculate from "../components/CartPageCalculate";
+import CartPageCalculate from "../components/CartPageComps/CartPageCalculate";
 
 export default function CartPage() {
   const [subTotalCost, setSubTotalCost] = useState(0);

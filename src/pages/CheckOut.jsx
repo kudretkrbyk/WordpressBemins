@@ -3,8 +3,9 @@ import { BiSolidDiscount } from "react-icons/bi";
 import { GoDotFill, GoDot } from "react-icons/go";
 
 import { useSelector } from "react-redux";
-import ChectOutForm from "../components/ChectOutForm";
-import CartPageNavigator from "../components/CartPageNavigator";
+
+import ChectOutForm from "../components/CheckOutPageComps/ChectOutForm";
+import CartPageNavigator from "../components/CartPageComps/CartPageNavigator";
 import handleCalculateSubTotalCost from "../functions/handleCalculateSubTotalCost";
 import { useEffect, useState } from "react";
 

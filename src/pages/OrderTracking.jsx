@@ -1,4 +1,4 @@
-import CartPageNavigator from "../components/CartPageNavigator";
+import CartPageNavigator from "../components/CartPageComps/CartPageNavigator";
 
 export default function OrderTracking() {
   return (

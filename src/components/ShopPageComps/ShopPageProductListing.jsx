@@ -1,4 +1,4 @@
-import ShopGridFilterComp from "../components/ShopGridFilterComp";
+import ShopGridFilterComp from "./ShopGridFilterComp";
 import ShopProductDetails from "./ShopProductDetails";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
