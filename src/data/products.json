@@ -3,38 +3,45 @@
     {
       "name": "Top",
 
-      "subcategories": ["Shirts", "dress shirt"]
+      "subcategories": ["Shirts", "dress shirt"],
+      "image": "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2023/11/category.jpg"
     },
 
     {
       "name": "Glasses",
 
-      "subcategories": []
+      "subcategories": [],
+      "image": "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2023/11/category-2.jpg"
     },
     {
       "name": "Sandals",
 
-      "subcategories": []
+      "subcategories": [],
+      "image": "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2023/11/category-5.jpg"
     },
     {
       "name": "Bag",
 
-      "subcategories": []
+      "subcategories": [],
+      "image": "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2023/11/category-3.jpg"
     },
     {
       "name": "Shoes",
 
-      "subcategories": []
+      "subcategories": [],
+      "image": "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2023/11/category-1.jpg"
     },
     {
       "name": "Furniture",
 
-      "subcategories": ["chair", "decor"]
+      "subcategories": ["chair", "decor"],
+      "image": "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2024/03/category-fr.jpg"
     },
     {
       "name": "jewerly",
 
-      "subcategories": ["rings", "Earrings"]
+      "subcategories": ["rings", "Earrings"],
+      "image": "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2024/03/category-jw.jpg"
     }
   ],
   "product": [
@@ -46,7 +53,7 @@
       "colors": ["Beige", "Black"],
       "size": ["M", "S", "L"],
       "SKU": "D1116",
-      "kategori": "üst",
+      "kategori": "Top",
       "altKategori": "Shirts",
       "marka": "Marka 1",
       "tag": ["Hot"],
@@ -71,7 +78,7 @@
       "colors": ["Brick", "Black"],
       "size": ["M", "S", "L"],
       "SKU": "D2300-1",
-      "kategori": "üst",
+      "kategori": "Top",
       "altKategori": "Shirts",
       "marka": "???",
       "tag": ["Hot"],
