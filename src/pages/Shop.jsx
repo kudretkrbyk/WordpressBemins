@@ -5,13 +5,13 @@ import { useNavigate } from "react-router-dom";
 import ShopTopMenu from "../components/ShopTopMenu";
 import ShopProductDetails from "../components/ShopProductDetails";
 import Slider from "react-slider";
-import { IoMdArrowDropdown } from "react-icons/io";
 
 import useFetchProducts from "../hooks/useFetchProducts";
 import useFilterProducts from "../hooks/useFilterProducts";
-import colorCodes from "../constraint/colors";
+
 import ShopGridFilterComp from "../components/ShopGridFilterComp";
 import ShopPageCategories from "../components/ShopPageCategories";
+import ShopPageColorList from "../components/ShopPageColorList";
 
 export default function Shop() {
   const navigate = useNavigate();
@@ -149,24 +149,13 @@ export default function Shop() {
           </div>
           <div className="">
             <div className="font-bold">Color:</div>
-            <div className="grid grid-cols-5 w-full gap-2 p-2">
-              {colorsList.map((color, index) => (
-                <div
-                  className="relative flex items-center justify-center size-10 rounded-full group border border-black cursor-pointer"
-                  style={{ backgroundColor: colorCodes[color] || "#000000" }} // Default color black if color code not found
-                  key={index}
-                  onClick={() => handleColorClick(color)}
-                >
-                  <div className=" absolute  -top-10 text-blue-500 hidden group-hover:flex items-center justify-center bg-black w-16 h-7 ">
-                    {color}({colorCount[color] || 0}){" "}
-                    <div className="absolute top-[10px] left-3 text-black">
-                      {" "}
-                      <IoMdArrowDropdown className="size-10" />{" "}
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
+
+            {/*Color List gelecek */}
+            <ShopPageColorList
+              colorsList={colorsList}
+              handleColorClick={handleColorClick}
+              colorCount={colorCount}
+            ></ShopPageColorList>
           </div>
           <div className="mt-4">
             <div className="font-bold">Size:</div>
