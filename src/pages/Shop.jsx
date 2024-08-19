@@ -5,12 +5,13 @@ import { useNavigate } from "react-router-dom";
 import ShopTopMenu from "../components/ShopTopMenu";
 import ShopProductDetails from "../components/ShopProductDetails";
 import Slider from "react-slider";
-import { IoIosArrowDown, IoMdArrowDropdown } from "react-icons/io";
+import { IoMdArrowDropdown } from "react-icons/io";
 
 import useFetchProducts from "../hooks/useFetchProducts";
 import useFilterProducts from "../hooks/useFilterProducts";
 import colorCodes from "../constraint/colors";
 import ShopGridFilterComp from "../components/ShopGridFilterComp";
+import ShopPageCategories from "../components/ShopPageCategories";
 
 export default function Shop() {
   const navigate = useNavigate();
@@ -79,6 +80,7 @@ export default function Shop() {
     setPriceRange([0, maxPrice]);
     setSelectedColors([]);
     setSelectedSizes([]);
+    setSelectedCategory([]);
   };
 
   const handleFilterClick = (id) => {
@@ -111,37 +113,14 @@ export default function Shop() {
       <ShopTopMenu />
       <div className="w-full flex ">
         <div className="w-3/12 h-full flex flex-col gap-10 p-4 ">
-          <div>
-            <div className="font-bold flex flex-col ">Categories</div>
-            {categories.map((category, index) => (
-              <div className="flex flex-col  mt-2" key={index}>
-                <div className="flex  items-center justify-between gap-2 hover:text-[#54d9e1] duration-300 hover:cursor-pointer">
-                  <div onClick={() => handleCategoryClick(category.name)}>
-                    {category.name}
-                  </div>
-                  {category.subcategories.length > 0 && (
-                    <div className="">
-                      <IoIosArrowDown
-                        onClick={() => handleOpenSubCategories(category.name)}
-                      />
-                    </div>
-                  )}
-                </div>
-                {subCatFlag[category.name] && (
-                  <div className="flex flex-col gap-2 ml-4 hover:cursor-pointer">
-                    {category.subcategories.map((sub, subIndex) => (
-                      <div
-                        className="hover:text-[#54d9e1] duration-300"
-                        key={subIndex}
-                      >
-                        {sub}
-                      </div>
-                    ))}
-                  </div>
-                )}
-              </div>
-            ))}
-          </div>
+          {/* categori*/}
+          <ShopPageCategories
+            categories={categories}
+            handleCategoryClick={handleCategoryClick}
+            handleOpenSubCategories={handleOpenSubCategories}
+            subCatFlag
+            {...subCatFlag}
+          ></ShopPageCategories>
           <div className="Filter">
             <div className="font-bold">Price</div>
             <Slider
