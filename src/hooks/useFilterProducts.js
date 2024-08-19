@@ -51,8 +51,6 @@ const useFilterProducts = (
     selectedCategory,
     setFilteredProducts,
   ]);
-
-  console.log("selected cat", selectedCategory);
 };
 
 export default useFilterProducts;

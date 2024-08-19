@@ -1,3 +1,9 @@
+import Shop from "./Shop";
+
 export default function FilteredProductsPage() {
-  return <div>categori filtresi</div>;
+  return (
+    <div>
+      <Shop></Shop>
+    </div>
+  );
 }

@@ -97,7 +97,7 @@ ShopPageProductListing.propTypes = {
   filteredProducts: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.number.isRequired,
-      name: PropTypes.string.isRequired,
+      ad: PropTypes.string.isRequired,
       fotograflar: PropTypes.arrayOf(PropTypes.string).isRequired,
       tag: PropTypes.arrayOf(PropTypes.string).isRequired,
       size: PropTypes.arrayOf(PropTypes.string).isRequired,

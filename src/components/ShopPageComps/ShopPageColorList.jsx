@@ -16,11 +16,10 @@ export default function ShopPageColorList({
           key={index}
           onClick={() => handleColorClick(color)}
         >
-          <div className=" absolute  -top-10 text-blue-500 hidden group-hover:flex items-center justify-center bg-black w-16 h-7 ">
-            {color}({colorCount[color] || 0}){" "}
+          <div className="absolute -top-10 text-blue-500 hidden group-hover:flex items-center justify-center bg-black w-16 h-7">
+            {color} ({colorCount[color] || 0}){" "}
             <div className="absolute top-[10px] left-3 text-black">
-              {" "}
-              <IoMdArrowDropdown className="size-10" />{" "}
+              <IoMdArrowDropdown className="size-10" />
             </div>
           </div>
         </div>
@@ -30,7 +29,7 @@ export default function ShopPageColorList({
 }
 
 ShopPageColorList.propTypes = {
-  colorsList: PropTypes.arrayOf,
-  handleColorClick: PropTypes.func.isRequired,
-  colorCount: PropTypes.arrayOf,
+  colorsList: PropTypes.arrayOf(PropTypes.string).isRequired, // colorsList bir dizi olmalı ve her öğesi string olmalı
+  handleColorClick: PropTypes.func.isRequired, // handleColorClick bir fonksiyon olmalı ve zorunlu
+  colorCount: PropTypes.objectOf(PropTypes.number).isRequired, // colorCount bir nesne olmalı ve her değeri sayı olmalı
 };

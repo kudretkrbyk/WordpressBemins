@@ -1,16 +1,22 @@
-// src/pages/Shop.js
-
 import { useState } from "react";
 
 import ShopTopMenu from "../components/ShopPageComps/ShopTopMenu";
-
 import useFetchProducts from "../hooks/useFetchProducts";
 import useFilterProducts from "../hooks/useFilterProducts";
-
 import ShopPageCategories from "../components/ShopPageComps/ShopPageCategories";
 import ShopPageColorList from "../components/ShopPageComps/ShopPageColorList";
 import ShopPageFilterSlider from "../components/ShopPageComps/ShopPageFilterSlider";
 import ShopPageProductListing from "../components/ShopPageComps/ShopPageProductListing";
+
+// Fonksiyonları import edelim
+import {
+  handleOpenSubCategories,
+  handlePriceChange,
+  handleColorClick,
+  handleCategoryClick,
+  handleSizeClick,
+  resetFilters,
+} from "../functions/categoryFilter";
 
 export default function Shop() {
   const [selectedColors, setSelectedColors] = useState([]); // Seçilen renkler
@@ -38,64 +44,38 @@ export default function Shop() {
     priceRange,
     selectedColors,
     selectedSizes,
-
     setFilteredProducts
   );
 
-  const handleOpenSubCategories = (categoryName) => {
-    setSubCatFlag((prevFlag) => ({
-      ...prevFlag,
-      [categoryName]: !prevFlag[categoryName],
-    }));
-  };
-
-  const handlePriceChange = (newRange) => {
-    setPriceRange(newRange);
-  };
-
-  const handleColorClick = (color) => {
-    setSelectedColors((prev) =>
-      prev.includes(color) ? prev.filter((c) => c !== color) : [...prev, color]
-    );
-  };
-  const handleCategoryClick = (category) => {
-    setSelectedCategory(category);
-  };
-
-  const handleSizeClick = (size) => {
-    setSelectedSizes((prev) =>
-      prev.includes(size) ? prev.filter((s) => s !== size) : [...prev, size]
-    );
-  };
-
-  const resetFilters = () => {
-    setPriceRange([0, maxPrice]);
-    setSelectedColors([]);
-    setSelectedSizes([]);
-    setSelectedCategory([]);
-  };
-
-  console.log("fp: ", filteredProducts);
-  console.log("color list:", colorsList);
   return (
     <div className="w-full flex flex-col relative">
-      <ShopTopMenu />
+      <ShopTopMenu
+        categories={categories}
+        handleCategoryClick={(category) =>
+          handleCategoryClick(category, setSelectedCategory)
+        }
+      />
       <div className="w-full flex ">
         <div className="w-3/12 h-full flex flex-col gap-10 p-4 ">
           {/* categori*/}
           <ShopPageCategories
             categories={categories}
-            handleCategoryClick={handleCategoryClick}
-            handleOpenSubCategories={handleOpenSubCategories}
-            subCatFlag
-            {...subCatFlag}
-          ></ShopPageCategories>
+            handleCategoryClick={(category) =>
+              handleCategoryClick(category, setSelectedCategory)
+            }
+            handleOpenSubCategories={(categoryName) =>
+              handleOpenSubCategories(categoryName, setSubCatFlag)
+            }
+            subCatFlag={subCatFlag}
+          />
           {/* Filter Slider Gelecek */}
           <ShopPageFilterSlider
-            handlePriceChange={handlePriceChange}
+            handlePriceChange={(newRange) =>
+              handlePriceChange(newRange, setPriceRange)
+            }
             priceRange={priceRange}
             maxPrice={maxPrice}
-          ></ShopPageFilterSlider>
+          />
 
           <div className="">
             <div className="font-bold">Color:</div>
@@ -103,20 +83,22 @@ export default function Shop() {
             {/*Color List gelecek */}
             <ShopPageColorList
               colorsList={colorsList}
-              handleColorClick={handleColorClick}
+              handleColorClick={(color) =>
+                handleColorClick(color, setSelectedColors)
+              }
               colorCount={colorCount}
-            ></ShopPageColorList>
+            />
           </div>
           <div className="mt-4">
             <div className="font-bold">Size:</div>
             <div className="grid grid-cols-5 w-full gap-2 p-2">
               {sizeList.map((size, index) => (
                 <div
-                  className="flex items-center justify-center   border cursor-pointer"
+                  className="flex items-center justify-center border cursor-pointer"
                   key={index}
-                  onClick={() => handleSizeClick(size)}
+                  onClick={() => handleSizeClick(size, setSelectedSizes)}
                 >
-                  {size}({sizeCount[size] || 0}){" "}
+                  {size}({sizeCount[size] || 0})
                 </div>
               ))}
             </div>
@@ -124,16 +106,22 @@ export default function Shop() {
           <div className="flex justify-center mt-4">
             <button
               className="bg-red-500 text-white px-4 py-2 rounded"
-              onClick={resetFilters}
+              onClick={() =>
+                resetFilters(
+                  setPriceRange,
+                  maxPrice,
+                  setSelectedColors,
+                  setSelectedSizes,
+                  setSelectedCategory
+                )
+              }
             >
               Reset Filters
             </button>
           </div>
         </div>
         {/*Ürünler Listelenecek */}
-        <ShopPageProductListing
-          filteredProducts={filteredProducts}
-        ></ShopPageProductListing>
+        <ShopPageProductListing filteredProducts={filteredProducts} />
       </div>
     </div>
   );

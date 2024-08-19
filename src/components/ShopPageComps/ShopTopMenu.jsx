@@ -1,17 +1,19 @@
 import { useNavigate } from "react-router-dom";
 import useFetchProducts from "../../hooks/useFetchProducts";
 import Slider from "react-slick";
+import PropTypes from "prop-types";
 
 import "../../slick-carousel/slick.css";
 import "../../slick-carousel/slick-theme.css";
-import PropTypes from "prop-types";
+
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
-export default function ShopTopMenu() {
+
+export default function ShopTopMenu({ handleCategoryClick }) {
   const { categories } = useFetchProducts();
   const navigate = useNavigate();
 
   const handleProductClick = (categoryName) => {
-    console.log("tıklama oldu");
+    handleCategoryClick(categoryName);
     navigate(`/shop/${categoryName}`);
   };
   const PrevArrow = ({ onClick }) => (
@@ -72,3 +74,6 @@ export default function ShopTopMenu() {
     </div>
   );
 }
+ShopTopMenu.propTypes = {
+  handleCategoryClick: PropTypes.func,
+};

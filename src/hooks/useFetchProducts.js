@@ -6,7 +6,7 @@ const useFetchProducts = () => {
   const [filteredProducts, setFilteredProducts] = useState([]);
   const [colorsList, setColorsList] = useState([]);
   const [categories, setCategories] = useState([]);
-  const [colorCount, setColorCount] = useState([]);
+  const [colorCount, setColorCount] = useState({});
   const [sizeCount, setSizeCount] = useState([]);
   const [sizeList, setSizeList] = useState([]);
   const [maxPrice, setMaxPrice] = useState(1000); // Maksimum fiyatı takip et
