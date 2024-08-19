@@ -4,7 +4,6 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import ShopTopMenu from "../components/ShopTopMenu";
 import ShopProductDetails from "../components/ShopProductDetails";
-import Slider from "react-slider";
 
 import useFetchProducts from "../hooks/useFetchProducts";
 import useFilterProducts from "../hooks/useFilterProducts";
@@ -12,6 +11,7 @@ import useFilterProducts from "../hooks/useFilterProducts";
 import ShopGridFilterComp from "../components/ShopGridFilterComp";
 import ShopPageCategories from "../components/ShopPageCategories";
 import ShopPageColorList from "../components/ShopPageColorList";
+import ShopPageFilterSlider from "../components/ShopPageFilterSlider";
 
 export default function Shop() {
   const navigate = useNavigate();
@@ -121,32 +121,13 @@ export default function Shop() {
             subCatFlag
             {...subCatFlag}
           ></ShopPageCategories>
-          <div className="Filter">
-            <div className="font-bold">Price</div>
-            <Slider
-              className="horizontal-slider"
-              thumbClassName="thumb"
-              trackClassName="track"
-              value={priceRange}
-              min={0}
-              max={maxPrice}
-              step={10}
-              onChange={handlePriceChange}
-            />
-            <div className="flex flex-col gap-2 ">
-              <div className="bg-black w-full h-1"></div>
-              <div className="flex items-center justify-between w-full">
-                {" "}
-                <span>{priceRange[0]} TL</span>
-                <span>{priceRange[1]} TL</span>
-              </div>
-              <div>
-                <span>
-                  Range: {priceRange[0]}-{priceRange[1]}{" "}
-                </span>
-              </div>
-            </div>
-          </div>
+          {/* Filter Slider Gelecek */}
+          <ShopPageFilterSlider
+            handlePriceChange={handlePriceChange}
+            priceRange={priceRange}
+            maxPrice={maxPrice}
+          ></ShopPageFilterSlider>
+
           <div className="">
             <div className="font-bold">Color:</div>
 
