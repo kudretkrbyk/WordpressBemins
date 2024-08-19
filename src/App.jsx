@@ -11,6 +11,7 @@ import "./App.css";
 import CartPage from "./pages/CartPage";
 import CheckOut from "./pages/CheckOut";
 import OrderTracking from "./pages/OrderTracking";
+import FilteredProductsPage from "./pages/FilteredProductsPage";
 import ErrorPage from "./pages/ErrorPage";
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
         <Route path="/orderTracking" element={<OrderTracking />} />
 
         <Route path="/product/:productId" element={<ProductPage />} />
+        <Route path="/shop/:categoryName" element={<FilteredProductsPage />} />
         <Route path="/*" element={<ErrorPage />} />
       </Routes>
       <Footer></Footer>

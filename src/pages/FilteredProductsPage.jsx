@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function FilteredProductsPage() {
-  return <div></div>;
+  return <div>categori filtresi</div>;
 }
