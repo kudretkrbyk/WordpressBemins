@@ -72,7 +72,7 @@ export default function Instagram() {
         <Slider {...settings}>
           {feeds.map((feed) => (
             <div key={feed.id} className="p-5 w-[400px] outline-none   ">
-              <div className="relative w-full overflow-hidden rounded group/image">
+              <div className="relative  w-full overflow-hidden rounded group/image">
                 {" "}
                 <img
                   src={feed.image}
