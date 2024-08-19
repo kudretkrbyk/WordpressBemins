@@ -114,7 +114,7 @@ export default function Shop() {
             <div className="font-bold flex flex-col ">Categories</div>
             {categories.map((category, index) => (
               <div className="flex flex-col  mt-2" key={index}>
-                <div className="flex  items-center justify-between gap-2 text-blue-700 hover:cursor-pointer">
+                <div className="flex  items-center justify-between gap-2 hover:text-[#54d9e1] duration-300 hover:cursor-pointer">
                   <div onClick={() => handleCategoryClick(category.name)}>
                     {category.name}
                   </div>
@@ -127,9 +127,14 @@ export default function Shop() {
                   )}
                 </div>
                 {subCatFlag[category.name] && (
-                  <div className="flex flex-col gap-2 ml-4">
+                  <div className="flex flex-col gap-2 ml-4 hover:cursor-pointer">
                     {category.subcategories.map((sub, subIndex) => (
-                      <div key={subIndex}>{sub}</div>
+                      <div
+                        className="hover:text-[#54d9e1] duration-300"
+                        key={subIndex}
+                      >
+                        {sub}
+                      </div>
                     ))}
                   </div>
                 )}
