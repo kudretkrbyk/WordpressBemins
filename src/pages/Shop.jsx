@@ -104,7 +104,8 @@ export default function Shop() {
   const handleProductClick = (productId) => {
     navigate(`/product/${productId}`);
   };
-
+  console.log("fp: ", filteredProducts);
+  console.log("color list:", colorsList);
   return (
     <div className="w-full flex flex-col relative">
       <ShopTopMenu />
@@ -141,7 +142,7 @@ export default function Shop() {
               </div>
             ))}
           </div>
-          <div className="">
+          <div className="Filter">
             <div className="font-bold">Price</div>
             <Slider
               className="horizontal-slider"
