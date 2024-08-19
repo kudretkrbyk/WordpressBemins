@@ -1,6 +1,12 @@
 import { FaPlay } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 export default function ShopNow() {
+  const navigate = useNavigate();
+
+  const handleShopLink = () => {
+    navigate("/shop");
+  };
   return (
     <div className="w-full h-[600px] relative rounded-lg  flex items-center justify-center z-20">
       <div className="w-9/12 h-full z-20 ">
@@ -17,7 +23,10 @@ export default function ShopNow() {
           <div className="text-6xl font-bold">Step into Fashion Excellence</div>
           <div>Unveiling the Latest Trends and Must-Have Looks</div>
           <div className="p-5">
-            <button className="border border-black p-3 px-5 rounded-xl hover:bg-[#54d9e1] hover:border-white hover:text-white duration-500 ">
+            <button
+              onClick={handleShopLink}
+              className="border border-black p-3 px-5 rounded-xl hover:bg-[#54d9e1] hover:border-white hover:text-white duration-500 "
+            >
               Shop Now
             </button>
           </div>
