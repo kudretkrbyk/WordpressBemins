@@ -1,9 +1,15 @@
 import { useLocation } from "react-router-dom";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
+import { removeFromFavorites } from "../redux/slices/favoriteSlice";
 
 export default function Favorites() {
   const favoriteItems = useSelector((state) => state.favorites.favoriteItems);
   const location = useLocation();
+  const dispatch = useDispatch();
+
+  const handleRemoveFromFavorites = (id) => {
+    dispatch(removeFromFavorites(id));
+  };
   return (
     <div className="w-full h-full flex flex-col ">
       <div className="w-full h-[400px] overflow-hidden relative border border-black">
@@ -28,12 +34,14 @@ export default function Favorites() {
         {favoriteItems.map((item, index) => (
           <div className="flex p-5" key={index}>
             <div className="flex items-center justify-start gap-5 border w-full p-5">
-              <div>
-                <div className="button w-12 h-12 group relative bg-white  rounded-full">
-                  <div className="w-5 h-[3px] absolute top-6 right-4 -rotate-45 bg-black group-hover:rotate-0 duration-300"></div>
-                  <div className="w-5 h-[3px] absolute top-6 right-4 rotate-45 bg-black group-hover:rotate-180 duration-300"></div>
-                </div>
+              <div
+                onClick={() => handleRemoveFromFavorites(item.id)}
+                className="button w-12 h-12 group relative bg-white  rounded-full"
+              >
+                <div className="w-5 h-[3px] absolute top-6 right-4 -rotate-45 bg-black group-hover:rotate-0 duration-300"></div>
+                <div className="w-5 h-[3px] absolute top-6 right-4 rotate-45 bg-black group-hover:rotate-180 duration-300"></div>
               </div>
+
               <div>
                 <img className="w-24" src={item.fotograflar[0]}></img>
               </div>
