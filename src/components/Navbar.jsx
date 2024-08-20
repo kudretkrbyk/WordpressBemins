@@ -6,6 +6,7 @@ import { IoBagOutline } from "react-icons/io5";
 import { useSelector } from "react-redux";
 import { useNavigate, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
+import Profile from "./Profile";
 
 export default function Navbar() {
   const location = useLocation();
@@ -116,6 +117,7 @@ export default function Navbar() {
           </div>
         </span>
       </div>
+      <Profile></Profile>
     </div>
   );
 }
