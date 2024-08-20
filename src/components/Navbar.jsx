@@ -19,6 +19,9 @@ export default function Navbar() {
   const handleCartLink = () => {
     navigate("/cart");
   };
+  const handleFavoritesLink = () => {
+    navigate("/favorites");
+  };
   const handleHomeLink = () => {
     navigate("/");
   };
@@ -99,13 +102,16 @@ export default function Navbar() {
         </div>
 
         <div className="flex w-4/12 items-center justify-center gap-10  p-2 ">
-          <span className=" ">
+          <span className="hover:cursor-pointer ">
             <IoIosSearch className="size-6" />
           </span>
-          <span onClick={handleProfileOpen} className=" ">
+          <span onClick={handleProfileOpen} className="hover:cursor-pointer ">
             <GoPerson className="size-6" />
           </span>
-          <span className="relative ">
+          <span
+            onClick={handleFavoritesLink}
+            className="relative hover:cursor-pointer"
+          >
             <CiHeart className="size-6" />
             <div className="bg-[#54d9e1] rounded-full size-6 absolute -top-2 -right-3 flex items-center justify-center">
               {favoriteItems.length}
