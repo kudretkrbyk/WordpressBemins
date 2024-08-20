@@ -11,6 +11,7 @@ import Profile from "./Profile";
 export default function Navbar() {
   const location = useLocation();
   const [navbarİcon, setNavbarIcon] = useState(true);
+  const [profileOpen, setProfileOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const cartItems = useSelector((state) => state.cart.cartItems);
   const favoriteItems = useSelector((state) => state.favorites.favoriteItems);
@@ -21,7 +22,10 @@ export default function Navbar() {
   const handleHomeLink = () => {
     navigate("/");
   };
-
+  const handleProfileOpen = () => {
+    setProfileOpen(true);
+  };
+  console.log("navbar profil o", profileOpen);
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 0) {
@@ -98,7 +102,7 @@ export default function Navbar() {
           <span className=" ">
             <IoIosSearch className="size-6" />
           </span>
-          <span className=" ">
+          <span onClick={handleProfileOpen} className=" ">
             <GoPerson className="size-6" />
           </span>
           <span className="relative ">
@@ -120,7 +124,10 @@ export default function Navbar() {
         </div>
       </div>{" "}
       <div className="py-10">
-        <Profile></Profile>
+        <Profile
+          profileOpen={profileOpen}
+          setProfileOpen={setProfileOpen}
+        ></Profile>
       </div>
     </div>
   );
