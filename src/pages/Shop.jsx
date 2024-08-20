@@ -90,7 +90,7 @@ export default function Shop() {
           </div>
           <div className="mt-4">
             <div className="font-bold">Size:</div>
-            <div className="grid grid-cols-5 w-full gap-2 p-2">
+            <div className="grid grid-cols-5 w-full gap-2 ">
               {sizeList.map((size, index) => (
                 <div
                   className="flex items-center justify-center border cursor-pointer"

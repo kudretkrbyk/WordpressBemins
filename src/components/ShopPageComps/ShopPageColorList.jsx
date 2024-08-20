@@ -8,7 +8,7 @@ export default function ShopPageColorList({
   colorCount,
 }) {
   return (
-    <div className="grid grid-cols-5 w-full gap-2 p-2">
+    <div className="grid grid-cols-5 w-full gap-1 p-2">
       {colorsList.map((color, index) => (
         <div
           className="relative flex items-center justify-center size-10 rounded-full group border border-black cursor-pointer"
