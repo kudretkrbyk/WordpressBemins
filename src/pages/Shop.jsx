@@ -8,7 +8,6 @@ import ShopPageColorList from "../components/ShopPageComps/ShopPageColorList";
 import ShopPageFilterSlider from "../components/ShopPageComps/ShopPageFilterSlider";
 import ShopPageProductListing from "../components/ShopPageComps/ShopPageProductListing";
 
-// Fonksiyonları import edelim
 import {
   handleOpenSubCategories,
   handlePriceChange,

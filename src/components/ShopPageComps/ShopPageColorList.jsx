@@ -16,7 +16,7 @@ export default function ShopPageColorList({
           key={index}
           onClick={() => handleColorClick(color)}
         >
-          <div className="absolute -top-10 text-blue-500 hidden group-hover:flex items-center justify-center bg-black w-16 h-7">
+          <div className="absolute -top-10 text-blue-500 hidden group-hover:flex items-center justify-center bg-black w-16 h-7 text-nowrap px-10">
             {color} ({colorCount[color] || 0}){" "}
             <div className="absolute top-[10px] left-3 text-black">
               <IoMdArrowDropdown className="size-10" />
