@@ -7,14 +7,14 @@ export default function Banner() {
   };
 
   return (
-    <div className="flex items-center justify-center w-full gap-10 p-20 py-40">
-      <div className="relative overflow-hidden rounded-xl">
+    <div className="flex items-center justify-center w-full gap-10 p-20 py-40 text-white text-xl font-bold">
+      <div className="relative overflow-hidden rounded-xl ">
         <span className="absolute bottom-20  left-1/2 -translate-x-1/2 z-30">
           Spring Collection
         </span>
         <button
           onClick={handleShopLink}
-          className="z-30 bg-white rounded-xl absolute p-2 px-7 bottom-5  left-1/2 -translate-x-1/2  hover:bg-[#54d9e1] hover:text-white duration-300"
+          className="z-30 bg-white text-sm text-black rounded-xl absolute p-2 px-7 bottom-5  left-1/2 -translate-x-1/2  hover:bg-[#54d9e1] hover:text-white duration-300"
         >
           Shop Now{" "}
         </button>
@@ -29,7 +29,7 @@ export default function Banner() {
         </span>
         <button
           onClick={handleShopLink}
-          className="z-30 bg-white rounded-xl absolute p-2 px-7 bottom-5  left-1/2 -translate-x-1/2  hover:bg-[#54d9e1] hover:text-white duration-300"
+          className="z-30 bg-white text-sm text-black rounded-xl absolute p-2 px-7 bottom-5  left-1/2 -translate-x-1/2  hover:bg-[#54d9e1] hover:text-white duration-300"
         >
           Shop Now{" "}
         </button>
@@ -44,7 +44,7 @@ export default function Banner() {
         </span>
         <button
           onClick={handleShopLink}
-          className="z-30 bg-white rounded-xl absolute p-2 px-7 bottom-5  left-1/2 -translate-x-1/2 hover:bg-[#54d9e1] hover:text-white duration-300"
+          className="z-30 bg-white text-sm text-black rounded-xl absolute p-2 px-7 bottom-5  left-1/2 -translate-x-1/2 hover:bg-[#54d9e1] hover:text-white duration-300"
         >
           Shop Now{" "}
         </button>
