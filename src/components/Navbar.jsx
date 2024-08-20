@@ -54,11 +54,11 @@ export default function Navbar() {
       <div className="w-8/12 flex items-center justify-between text-xl font-bold  ">
         {navbarİcon ? (
           <div className="flex items-center justify-between w-full">
-            <div className="w-full">
+            <div className="w-full ">
               {" "}
               <img
                 onClick={handleHomeLink}
-                className=" object-cover object-center w-48"
+                className=" object-cover object-center w-48 hover:cursor-pointer"
                 src="https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2020/06/logo.png"
               ></img>
             </div>
@@ -84,7 +84,7 @@ export default function Navbar() {
               {" "}
               <img
                 onClick={handleHomeLink}
-                className=" object-cover object-center w-48"
+                className=" object-cover object-center w-48 hover:cursor-pointer"
                 src="https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2020/06/logo.png"
               ></img>
             </div>
