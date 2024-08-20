@@ -1,4 +1,4 @@
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { removeFromFavorites } from "../redux/slices/favoriteSlice";
 
@@ -6,6 +6,11 @@ export default function Favorites() {
   const favoriteItems = useSelector((state) => state.favorites.favoriteItems);
   const location = useLocation();
   const dispatch = useDispatch();
+  const navigate = useNavigate();
+
+  const handleProductClick = (productId) => {
+    navigate(`/product/${productId}`);
+  };
 
   const handleRemoveFromFavorites = (id) => {
     dispatch(removeFromFavorites(id));
@@ -52,7 +57,10 @@ export default function Favorites() {
               </div>
             </div>
             <div className="w-full border flex items-center justify-start p-5">
-              <button className="bg-black p-2 px-5 text-white">
+              <button
+                onClick={() => handleProductClick(item.id)}
+                className="bg-black p-2 px-5 text-white"
+              >
                 Select Options
               </button>
             </div>

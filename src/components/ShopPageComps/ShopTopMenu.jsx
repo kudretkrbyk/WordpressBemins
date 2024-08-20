@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import useFetchProducts from "../../hooks/useFetchProducts";
 import Slider from "react-slick";
 import PropTypes from "prop-types";
@@ -11,6 +11,7 @@ import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 export default function ShopTopMenu({ handleCategoryClick }) {
   const { categories } = useFetchProducts();
   const navigate = useNavigate();
+  const location = useLocation();
 
   const handleProductClick = (categoryName) => {
     handleCategoryClick(categoryName);
@@ -50,7 +51,17 @@ export default function ShopTopMenu({ handleCategoryClick }) {
           alt="Lookbook"
         />
       </div>
-      <div className="absolute  w-full  bottom-0 z-20 ">
+      <div className="absolute z-30 top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 flex flex-col items-center justify-center text-xl">
+        <span className="font-bold">Shop</span>
+        <div className="flex">
+          {" "}
+          <span className=" font-bold hover:text-[#54d9e1] duration-300 hover:cursor-pointer ">
+            Home{" "}
+          </span>
+          <span> {location.pathname}</span>
+        </div>
+      </div>
+      <div className="absolute  w-full  bottom-10 z-20 ">
         <Slider {...settings}>
           {categories.map((category, index) => (
             <div
