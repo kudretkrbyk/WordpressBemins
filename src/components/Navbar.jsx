@@ -47,76 +47,78 @@ export default function Navbar() {
   console.log("location:", location);
 
   return (
-    <div
-      className={`flex items-center justify-center w-full bg-white p-4 px-10  top-0 z-50 transition-all duration-300 ${
-        isScrolled ? "shadow-lg  fixed" : ""
-      }`}
-    >
-      <div className="w-8/12 flex items-center justify-between text-xl font-bold  ">
-        {navbarİcon ? (
-          <div className="flex items-center justify-between w-full">
-            <div className="w-full ">
-              {" "}
-              <img
-                onClick={handleHomeLink}
-                className=" object-cover object-center w-48 hover:cursor-pointer"
-                src="https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2020/06/logo.png"
-              ></img>
+    <div>
+      <div
+        className={`flex items-center justify-center w-full bg-white p-4 px-10  top-0 z-40 transition-all duration-300 ${
+          isScrolled ? "shadow-lg  fixed" : ""
+        }`}
+      >
+        <div className="w-8/12 flex items-center justify-between text-xl font-bold  ">
+          {navbarİcon ? (
+            <div className="flex items-center justify-between w-full">
+              <div className="w-full ">
+                {" "}
+                <img
+                  onClick={handleHomeLink}
+                  className=" object-cover object-center w-48 hover:cursor-pointer"
+                  src="https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2020/06/logo.png"
+                ></img>
+              </div>
+
+              <div className="flex items-center w-full justify-center gap-10 ">
+                <Link to="/">Home</Link>
+                <Link to="/shop">Shop</Link>
+                <Link to="/blog">Blog</Link>
+
+                <Link to="/page">Page</Link>
+              </div>
             </div>
+          ) : (
+            <div className="flex items-center justify-between w-full ">
+              <div className="flex items-center w-full justify-center gap-10 ">
+                <Link to="/">Home</Link>
+                <Link to="/shop">Shop</Link>
+                <Link to="/blog">Blog</Link>
 
-            <div className="flex items-center w-full justify-center gap-10 ">
-              <Link to="/">Home</Link>
-              <Link to="/shop">Shop</Link>
-              <Link to="/blog">Blog</Link>
-
-              <Link to="/page">Page</Link>
+                <Link to="/page">Page</Link>
+              </div>
+              <div className="w-full flex items-center justify-center">
+                {" "}
+                <img
+                  onClick={handleHomeLink}
+                  className=" object-cover object-center w-48 hover:cursor-pointer"
+                  src="https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2020/06/logo.png"
+                ></img>
+              </div>
             </div>
-          </div>
-        ) : (
-          <div className="flex items-center justify-between w-full ">
-            <div className="flex items-center w-full justify-center gap-10 ">
-              <Link to="/">Home</Link>
-              <Link to="/shop">Shop</Link>
-              <Link to="/blog">Blog</Link>
+          )}
+        </div>
 
-              <Link to="/page">Page</Link>
+        <div className="flex w-4/12 items-center justify-center gap-10  p-2 ">
+          <span className=" ">
+            <IoIosSearch className="size-6" />
+          </span>
+          <span className=" ">
+            <GoPerson className="size-6" />
+          </span>
+          <span className="relative ">
+            <CiHeart className="size-6" />
+            <div className="bg-[#54d9e1] rounded-full size-6 absolute -top-2 -right-3 flex items-center justify-center">
+              {favoriteItems.length}
             </div>
-            <div className="w-full flex items-center justify-center">
-              {" "}
-              <img
-                onClick={handleHomeLink}
-                className=" object-cover object-center w-48 hover:cursor-pointer"
-                src="https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2020/06/logo.png"
-              ></img>
+          </span>
+          <span
+            onClick={handleCartLink}
+            className="relative hover:cursor-pointer "
+          >
+            <IoBagOutline className="size-6 " />
+
+            <div className="bg-[#54d9e1] rounded-full size-6 absolute -top-2 -right-3 flex items-center justify-center">
+              {cartItems.length}
             </div>
-          </div>
-        )}
-      </div>
-
-      <div className="flex w-4/12 items-center justify-center gap-10  p-2 ">
-        <span className=" ">
-          <IoIosSearch className="size-6" />
-        </span>
-        <span className=" ">
-          <GoPerson className="size-6" />
-        </span>
-        <span className="relative ">
-          <CiHeart className="size-6" />
-          <div className="bg-[#54d9e1] rounded-full size-6 absolute -top-2 -right-3 flex items-center justify-center">
-            {favoriteItems.length}
-          </div>
-        </span>
-        <span
-          onClick={handleCartLink}
-          className="relative hover:cursor-pointer "
-        >
-          <IoBagOutline className="size-6 " />
-
-          <div className="bg-[#54d9e1] rounded-full size-6 absolute -top-2 -right-3 flex items-center justify-center">
-            {cartItems.length}
-          </div>
-        </span>
-      </div>
+          </span>
+        </div>
+      </div>{" "}
       <Profile></Profile>
     </div>
   );
