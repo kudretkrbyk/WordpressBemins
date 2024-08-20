@@ -13,6 +13,7 @@ import CheckOut from "./pages/CheckOut";
 import OrderTracking from "./pages/OrderTracking";
 import FilteredProductsPage from "./pages/FilteredProductsPage";
 import ErrorPage from "./pages/ErrorPage";
+import Favorites from "./pages/Favorites";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Route path="/blog" element={<Blog />} />
 
         <Route path="/cart" element={<CartPage />} />
+        <Route path="/favorites" element={<Favorites />} />
         <Route path="/checkout" element={<CheckOut />} />
         <Route path="/orderTracking" element={<OrderTracking />} />
 
