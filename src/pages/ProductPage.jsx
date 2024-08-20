@@ -163,7 +163,7 @@ export default function ProductPage() {
           </div>
           <div
             onClick={handleAddToFavorites}
-            className="bg-[#54d9e1] p-2 rounded hover:cursor-pointer"
+            className="hover:bg-[#54d9e1] duration-300 p-2 rounded hover:cursor-pointer"
           >
             <CiHeart className="size-7" />
           </div>
