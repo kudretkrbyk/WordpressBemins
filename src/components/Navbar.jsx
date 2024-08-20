@@ -119,7 +119,9 @@ export default function Navbar() {
           </span>
         </div>
       </div>{" "}
-      <Profile></Profile>
+      <div className="py-10">
+        <Profile></Profile>
+      </div>
     </div>
   );
 }
