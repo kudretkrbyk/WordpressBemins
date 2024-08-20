@@ -1,3 +1,6 @@
+import { IoMdClose } from "react-icons/io";
+import { MdOutlineMinimize } from "react-icons/md";
+
 export default function Profile() {
   return (
     <div className=" w-full h-full  shadow-3xl z-50 ">
@@ -10,6 +13,10 @@ export default function Profile() {
               src="https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2024/02/sing-in.jpg"
             ></img>
             <div className="absolute bottom-0 left-0 p-7 text-2xl">Sign In</div>
+            <div className="w-12 h-12 group absolute bg-white top-2 right-2 rounded-full  ">
+              <div className="w-5 h-[3px] absolute top-6 right-4 -rotate-45   bg-black group-hover:rotate-0 duration-300"></div>
+              <div className="w-5 h-[3px] absolute top-6 right-4 rotate-45   bg-black group-hover:rotate-180 duration-300"></div>
+            </div>
           </div>
           <div className="flex flex-col gap-">
             {" "}
