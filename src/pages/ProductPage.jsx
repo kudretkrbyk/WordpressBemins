@@ -161,7 +161,10 @@ export default function ProductPage() {
               Add To Cart
             </button>
           </div>
-          <div className="bg-[#54d9e1] p-2 rounded">
+          <div
+            onClick={handleAddToFavorites}
+            className="bg-[#54d9e1] p-2 rounded hover:cursor-pointer"
+          >
             <CiHeart className="size-7" />
           </div>
           <div>
