@@ -56,7 +56,7 @@ export default function Shop() {
         }
       />
       <div className="w-full flex ">
-        <div className="w-3/12 h-full flex flex-col gap-10 p-4 ">
+        <div className="w-3/12 h-full flex flex-col gap-5 p-4 sticky top-0">
           {/* categori*/}
           <ShopPageCategories
             categories={categories}

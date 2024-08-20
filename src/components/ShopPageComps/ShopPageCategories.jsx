@@ -7,8 +7,8 @@ export default function ShopPageCategories({
   subCatFlag,
 }) {
   return (
-    <div>
-      <div className="font-bold flex flex-col ">Categories</div>
+    <div className="">
+      <div className="font-bold flex flex-col  ">Categories</div>
       {categories.map((category, index) => (
         <div className="flex flex-col  mt-2" key={index}>
           <div className="flex  items-center justify-between gap-2 hover:text-[#54d9e1] duration-300 hover:cursor-pointer">

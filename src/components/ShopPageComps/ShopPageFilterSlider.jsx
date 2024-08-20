@@ -7,7 +7,7 @@ export default function ShopPageFilterSlider({
   handlePriceChange,
 }) {
   return (
-    <div className="Filter">
+    <div className="Filter ">
       <div className="font-bold">Price</div>
       <Slider
         className="horizontal-slider"
