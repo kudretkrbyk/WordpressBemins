@@ -50,7 +50,7 @@ export default function ShopTopMenu({ handleCategoryClick }) {
           alt="Lookbook"
         />
       </div>
-      <div className="absolute  w-full  bottom-0 z-50 ">
+      <div className="absolute  w-full  bottom-0 z-20 ">
         <Slider {...settings}>
           {categories.map((category, index) => (
             <div
