@@ -8,3 +8,11 @@ Bu projede react, redux, hooks, ürün filtreleme ve frontent tasarım konuları
 In this project, I redesigned the e-commerce WordPress theme in the "https://wpbingosite.com/wordpress/bemins/" link using react. 
 In this project, I covered react, redux, hooks, product filtering and frontent design. I used tailwind css for styles. slick-slider for slider, "Countries States Cities Database for contact form"
 I used " data.
+
+
+![Demo GIF](https://github.com/kudretkrbyk/WordpressBemins/blob/main/src/gif/output000.gif)
+![Demo GIF](https://github.com/kudretkrbyk/WordpressBemins/blob/main/src/gif/output001.gif)
+![Demo GIF](https://github.com/kudretkrbyk/WordpressBemins/blob/main/src/gif/output002.gif)
+![Demo GIF](https://github.com/kudretkrbyk/WordpressBemins/blob/main/src/gif/output003.gif)
+![Demo GIF](https://github.com/kudretkrbyk/WordpressBemins/blob/main/src/gif/output004.gif)
+![Demo GIF](https://github.com/kudretkrbyk/WordpressBemins/blob/main/src/gif/output005.gif)
