@@ -22,10 +22,9 @@ export default function Shop({ categoryNameFilter }) {
   const [selectedSizes, setSelectedSizes] = useState([]); // Seçilen boyutlar
   const [selectedCategory, setSelectedCategory] = useState([]); // Seçilen boyutlar
   const [subCatFlag, setSubCatFlag] = useState({});
-  console.log("shop page", categoryNameFilter);
+
   useEffect(() => {
     if (categoryNameFilter) {
-      console.log("if geldi");
       setSelectedCategory(categoryNameFilter);
     }
   }, [categoryNameFilter]);

@@ -28,7 +28,7 @@ export default function Navbar() {
   const handleProfileOpen = () => {
     setProfileOpen(true);
   };
-  console.log("navbar profil o", profileOpen);
+
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 0) {
@@ -51,7 +51,6 @@ export default function Navbar() {
       setNavbarIcon(false);
     }
   }, [location]);
-  console.log("location:", location);
 
   return (
     <div>

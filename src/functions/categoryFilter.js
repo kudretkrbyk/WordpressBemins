@@ -1,5 +1,3 @@
-// src/handlers/shopHandlers.js
-
 export const handleOpenSubCategories = (categoryName, setSubCatFlag) => {
   setSubCatFlag((prevFlag) => ({
     ...prevFlag,

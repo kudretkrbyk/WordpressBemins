@@ -19,7 +19,7 @@ function App() {
   return (
     <Router>
       <MarqueeText />
-      <Navbar /> {/* Navbar bileşenini üst kısma ekliyoruz */}
+      <Navbar />
       <Routes>
         <Route path="/" element={<MainPage />} />
         <Route path="/shop" element={<Shop />} />

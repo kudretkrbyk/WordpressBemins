@@ -11,7 +11,6 @@ export default function Categories() {
   const navigate = useNavigate();
 
   const handleProductClick = (categoryName) => {
-    console.log("tıklama oldu");
     navigate(`/shop/${categoryName}`);
   };
   const PrevArrow = ({ onClick }) => (

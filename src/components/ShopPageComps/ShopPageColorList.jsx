@@ -12,7 +12,7 @@ export default function ShopPageColorList({
       {colorsList.map((color, index) => (
         <div
           className="relative flex items-center justify-center size-10 rounded-full group border border-black cursor-pointer"
-          style={{ backgroundColor: colorCodes[color] || "#000000" }} // Default color black if color code not found
+          style={{ backgroundColor: colorCodes[color] || "#000000" }}
           key={index}
           onClick={() => handleColorClick(color)}
         >
@@ -29,7 +29,7 @@ export default function ShopPageColorList({
 }
 
 ShopPageColorList.propTypes = {
-  colorsList: PropTypes.arrayOf(PropTypes.string).isRequired, // colorsList bir dizi olmalı ve her öğesi string olmalı
-  handleColorClick: PropTypes.func.isRequired, // handleColorClick bir fonksiyon olmalı ve zorunlu
-  colorCount: PropTypes.objectOf(PropTypes.number).isRequired, // colorCount bir nesne olmalı ve her değeri sayı olmalı
+  colorsList: PropTypes.arrayOf(PropTypes.string).isRequired,
+  handleColorClick: PropTypes.func.isRequired,
+  colorCount: PropTypes.objectOf(PropTypes.number).isRequired,
 };

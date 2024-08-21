@@ -37,7 +37,6 @@ export default function CartPage() {
     }
   };
 
-  console.log(cartItems);
   return (
     <div className="w-full h-full  flex flex-col gap-10 p-10">
       <CartPageNavigator></CartPageNavigator>

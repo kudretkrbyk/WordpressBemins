@@ -9,8 +9,8 @@ const PrevArrow = ({ onClick }) => (
   <IoIosArrowBack
     style={{
       zIndex: "1",
-    }} // Stil ve konum ayarları
-    onClick={onClick} // Tıklama işlevi
+    }}
+    onClick={onClick}
     className="size-8 hover:cursor-pointer top-1/2 left-2 border border-black absolute rounded-full hover:bg-[#54d9e1] hover:text-white hover:border-none duration-300" // Varsayılan sınıf adları
   />
 );
@@ -21,7 +21,7 @@ const NextArrow = ({ onClick }) => (
   ></IoIosArrowForward>
 );
 PrevArrow.propTypes = NextArrow.propTypes = {
-  onClick: PropTypes.func, // onClick'in bir fonksiyon olduğunu belirtir
+  onClick: PropTypes.func,
 };
 export default function Instagram() {
   const settings = {

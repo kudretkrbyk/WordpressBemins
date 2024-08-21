@@ -10,10 +10,7 @@ const useFetchProductById = (productId) => {
     const fetchProductById = async () => {
       try {
         const data = await fetchProducts();
-        console.log(data);
-        console.log("ürün", data.product);
 
-        console.log(productId);
         // Ürün listesinden verilen ID'ye sahip ürünü bul
         const foundProduct = data.product.find(
           (product) => product.id.toString() === productId.toString()

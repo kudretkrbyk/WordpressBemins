@@ -7,18 +7,12 @@ import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import { CiHeart } from "react-icons/ci";
 import { MdCompareArrows } from "react-icons/md";
 
-import { useDispatch, useSelector } from "react-redux";
-import { addToCart, removeFromCart } from "../redux/slices/cartSlicie";
-import {
-  addToFavorites,
-  removeFromFavorites,
-} from "../redux/slices/favoriteSlice";
+import { useDispatch } from "react-redux";
+import { addToCart } from "../redux/slices/cartSlicie";
+import { addToFavorites } from "../redux/slices/favoriteSlice";
 export default function ProductPage() {
   const dispatch = useDispatch();
-  const cartItems = useSelector((state) => state.cart.cartItems);
-  const favoriteItems = useSelector((state) => state.favorites.favoriteItems);
-  console.log("cart", cartItems);
-  console.log("fav", favoriteItems);
+
   const { productId } = useParams(); // URL'den ürün ID'sini alır
   const { product, loading, error } = useFetchProductById(productId);
   const [count, setCount] = useState(1);

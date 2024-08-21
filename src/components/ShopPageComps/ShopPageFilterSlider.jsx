@@ -36,7 +36,7 @@ export default function ShopPageFilterSlider({
   );
 }
 ShopPageFilterSlider.propTypes = {
-  priceRange: PropTypes.arrayOf(PropTypes.number).isRequired, // priceRange bir dizi olmalı ve her öğesi sayı olmalı
-  handlePriceChange: PropTypes.func.isRequired, // handlePriceChange bir fonksiyon olmalı ve zorunlu
-  maxPrice: PropTypes.number.isRequired, // maxPrice bir sayı olmalı ve zorunlu
+  priceRange: PropTypes.arrayOf(PropTypes.number).isRequired,
+  handlePriceChange: PropTypes.func.isRequired,
+  maxPrice: PropTypes.number.isRequired,
 };
