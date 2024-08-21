@@ -42,6 +42,12 @@
 
       "subcategories": ["rings", "Earrings"],
       "image": "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2024/03/category-jw.jpg"
+    },
+    {
+      "name": "Hat",
+
+      "subcategories": [],
+      "image": "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2023/12/products-15-1.jpg"
     }
   ],
   "product": [
@@ -103,7 +109,7 @@
       "colors": ["Beige", "Black"],
       "size": [],
       "SKU": "D2300-1",
-      "kategori": "Sandals",
+      "kategori": "Hat",
       "altKategori": "",
       "marka": "???",
       "tag": ["Hot"],
@@ -437,7 +443,7 @@
       "colors": ["white", "Blue", "Black"],
       "size": ["L", "M", "XL"],
       "SKU": "D1112",
-      "kategori": "Top",
+      "kategori": "Glasses",
       "altKategori": "Shirts",
       "marka": "???",
       "tag": ["trend", "hot"],

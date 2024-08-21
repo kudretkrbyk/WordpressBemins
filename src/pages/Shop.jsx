@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import ShopTopMenu from "../components/ShopPageComps/ShopTopMenu";
 import useFetchProducts from "../hooks/useFetchProducts";
@@ -17,11 +17,18 @@ import {
   resetFilters,
 } from "../functions/categoryFilter";
 
-export default function Shop() {
+export default function Shop({ categoryNameFilter }) {
   const [selectedColors, setSelectedColors] = useState([]); // Seçilen renkler
   const [selectedSizes, setSelectedSizes] = useState([]); // Seçilen boyutlar
   const [selectedCategory, setSelectedCategory] = useState([]); // Seçilen boyutlar
   const [subCatFlag, setSubCatFlag] = useState({});
+  console.log("shop page", categoryNameFilter);
+  useEffect(() => {
+    if (categoryNameFilter) {
+      console.log("if geldi");
+      setSelectedCategory(categoryNameFilter);
+    }
+  }, [categoryNameFilter]);
 
   const {
     productList,
