@@ -1,8 +1,10 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bu projede "https://wpbingosite.com/wordpress/bemins/" linkinde yer alan e-ticaret wordpress temasını react kullanarak yeniden tasarladım. 
+Bu projede react, redux, hooks, ürün filtreleme ve frontent tasarım konularını ele aldım. Stiller için tailwind css kullandım. Slider için slick-slider, iletişim formu için "Countries States Cities Database
+" datasını kullandım.  
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+In this project, I redesigned the e-commerce WordPress theme in the "https://wpbingosite.com/wordpress/bemins/" link using react. 
+In this project, I covered react, redux, hooks, product filtering and frontent design. I used tailwind css for styles. slick-slider for slider, "Countries States Cities Database for contact form"
+I used " data.
