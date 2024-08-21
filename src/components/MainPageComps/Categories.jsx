@@ -57,7 +57,7 @@ export default function Categories() {
                 <div className="flex flex-col items-center justify-center  w-full">
                   {" "}
                   <img
-                    className="rounded-full  hover:scale-90 duration-700  "
+                    className="rounded-full w-40 h-40 object-cover object-center  hover:scale-90 duration-700  "
                     src={category.image}
                     alt={category.name}
                   />
