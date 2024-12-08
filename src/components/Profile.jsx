@@ -29,7 +29,7 @@ export default function Profile({ profileOpen, setProfileOpen }) {
               <div className="relative z-50">
                 <img
                   className="object-cover object-center w-full h-full"
-                  src="https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2024/02/sing-in.jpg"
+                  src="https://bemins.wpbingosite.com/wp-content/uploads/2024/02/sing-in.jpg"
                   alt="Sign In"
                 />
                 <div className="absolute bottom-0 left-0 p-7 text-2xl">
