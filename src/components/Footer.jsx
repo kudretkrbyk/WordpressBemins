@@ -12,7 +12,7 @@ export default function Footer() {
             {" "}
             <img
               className="w-48"
-              src="https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2020/06/logo.png"
+              src="https://bemins.wpbingosite.com/wp-content/uploads/2020/06/logo.png"
             ></img>
           </div>
 
@@ -85,7 +85,7 @@ export default function Footer() {
       <div className="flex w-full items-center justify-between">
         <div>© 2024 – bemins. All Rights Reserved.</div>
         <div>
-          <img src="https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2020/06/payment.png"></img>
+          <img src="https://bemins.wpbingosite.com/wp-content/uploads/2020/06/payment.png"></img>
         </div>
       </div>
     </div>

@@ -47,7 +47,7 @@ export default function ShopTopMenu({ handleCategoryClick }) {
     <div className="w-full h-[480px] relative ">
       <div className="absolute z-20">
         <img
-          src="https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2024/02/lookbook-3.jpg"
+          src="https://bemins.wpbingosite.com/wp-content/uploads/2024/02/lookbook-3.jpg"
           alt="Lookbook"
         />
       </div>
