@@ -67,7 +67,7 @@ export default function Navbar() {
                 <img
                   onClick={handleHomeLink}
                   className=" object-cover object-center w-48 hover:cursor-pointer"
-                  src="https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2020/06/logo.png"
+                  src="https://bemins.wpbingosite.com/wp-content/uploads/2020/06/logo.png"
                 ></img>
               </div>
 
@@ -93,7 +93,7 @@ export default function Navbar() {
                 <img
                   onClick={handleHomeLink}
                   className=" object-cover object-center w-48 hover:cursor-pointer"
-                  src="https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2020/06/logo.png"
+                  src="https://bemins.wpbingosite.com/wp-content/uploads/2020/06/logo.png"
                 ></img>
               </div>
             </div>
