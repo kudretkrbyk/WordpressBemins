@@ -5,7 +5,7 @@ Bu projede react, redux, hooks, ürün filtreleme ve frontent tasarım konuları
 " datasını kullandım.  
 
 
-In this project, I redesigned the e-commerce WordPress theme in the "https://wpbingosite.com/wordpress/bemins/" link using react. 
+In this project, I redesigned the e-commerce WordPress theme in the "https://bemins.wpbingosite.com/" link using react. 
 In this project, I covered react, redux, hooks, product filtering and frontent design. I used tailwind css for styles. slick-slider for slider, "Countries States Cities Database for contact form"
 I used " data.
 
