@@ -37,32 +37,32 @@ export default function Instagram() {
     {
       id: 1,
       image:
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2023/12/instagram-1.jpg",
+        "https://bemins.wpbingosite.com/wp-content/uploads/2023/12/instagram-1.jpg",
     },
     {
       id: 2,
       image:
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2023/12/instagram-2.jpg",
+        "https://bemins.wpbingosite.com/wp-content/uploads/2023/12/instagram-2.jpg",
     },
     {
       id: 3,
       image:
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2023/12/instagram-3.jpg",
+        "https://bemins.wpbingosite.com/wp-content/uploads/2023/12/instagram-3.jpg",
     },
     {
       id: 4,
       image:
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2023/12/instagram-4.jpg",
+        "https://bemins.wpbingosite.com/wp-content/uploads/2023/12/instagram-4.jpg",
     },
     {
       id: 5,
       image:
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2023/12/instagram-5.jpg",
+        "https://bemins.wpbingosite.com/wp-content/uploads/2023/12/instagram-5.jpg",
     },
     {
       id: 6,
       image:
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2023/12/instagram.jpg",
+        "https://bemins.wpbingosite.com/wp-content/uploads/2023/12/instagram.jpg",
     },
   ];
 
