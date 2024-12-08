@@ -8,21 +8,21 @@ export default function HomeSlider() {
     {
       id: 1,
       image:
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2024/02/slider-1.jpg",
+        "https://bemins.wpbingosite.com/wp-content/uploads/2024/02/slider-1.jpg",
       description: "Unveiling This Season's",
       category: "Fashion",
     },
     {
       id: 2,
       image:
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2024/02/slider-2.jpg",
+        "https://bemins.wpbingosite.com/wp-content/uploads/2024/02/slider-2.jpg",
       description: "This İs A Long Open",
       category: "Robe",
     },
     {
       id: 3,
       image:
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2024/02/slider-3.jpg",
+        "https://bemins.wpbingosite.com/wp-content/uploads/2024/02/slider-3.jpg",
       description: "Epitome Of The Big",
       category: "Sweater",
     },

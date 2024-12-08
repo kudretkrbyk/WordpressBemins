@@ -4,50 +4,50 @@
       "name": "Top",
 
       "subcategories": ["Shirts", "dress shirt"],
-      "image": "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2023/11/category.jpg"
+      "image": "https://bemins.wpbingosite.com/wp-content/uploads/2023/11/category.jpg"
     },
 
     {
       "name": "Glasses",
 
       "subcategories": [],
-      "image": "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2023/11/category-2.jpg"
+      "image": "https://bemins.wpbingosite.com/wp-content/uploads/2023/11/category-2.jpg"
     },
     {
       "name": "Sandals",
 
       "subcategories": [],
-      "image": "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2023/11/category-5.jpg"
+      "image": "https://bemins.wpbingosite.com/wp-content/uploads/2023/11/category-5.jpg"
     },
     {
       "name": "Bag",
 
       "subcategories": [],
-      "image": "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2023/11/category-3.jpg"
+      "image": "https://bemins.wpbingosite.com/wp-content/uploads/2023/11/category-3.jpg"
     },
     {
       "name": "Shoes",
 
       "subcategories": [],
-      "image": "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2023/11/category-1.jpg"
+      "image": "https://bemins.wpbingosite.com/wp-content/uploads/2023/11/category-1.jpg"
     },
     {
       "name": "Furniture",
 
       "subcategories": ["chair", "decor"],
-      "image": "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2024/03/category-fr.jpg"
+      "image": "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/category-fr.jpg"
     },
     {
       "name": "jewerly",
 
       "subcategories": ["rings", "Earrings"],
-      "image": "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2024/03/category-jw.jpg"
+      "image": "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/category-jw.jpg"
     },
     {
       "name": "Hat",
 
       "subcategories": [],
-      "image": "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2023/12/products-15-1.jpg"
+      "image": "https://bemins.wpbingosite.com/wp-content/uploads/2023/12/products-15-1.jpg"
     }
   ],
   "product": [
@@ -70,10 +70,10 @@
       "puan": 4.5,
       "tarih": "2024-07-01",
       "fotograflar": [
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2020/12/products-1-1.jpg",
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2020/12/products-2-1.jpg",
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2020/12/products-3-1.jpg",
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2020/12/products-4-2.jpg"
+        "https://bemins.wpbingosite.com/wp-content/uploads/2020/12/products-1-1.jpg",
+        "https://bemins.wpbingosite.com/wp-content/uploads/2020/12/products-2-1.jpg",
+        "https://bemins.wpbingosite.com/wp-content/uploads/2020/12/products-3-1.jpg",
+        "https://bemins.wpbingosite.com/wp-content/uploads/2020/12/products-4-2.jpg"
       ]
     },
     {
@@ -95,10 +95,10 @@
       "puan": 4.5,
       "tarih": "2024-07-01",
       "fotograflar": [
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2019/04/products-11-1.jpg",
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2019/04/products-12-1.jpg",
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2019/04/products-13-1.jpg",
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2019/04/products-14-1.jpg"
+        "https://bemins.wpbingosite.com/wp-content/uploads/2019/04/products-11-1.jpg",
+        "https://bemins.wpbingosite.com/wp-content/uploads/2019/04/products-12-1.jpg",
+        "https://bemins.wpbingosite.com/wp-content/uploads/2019/04/products-13-1.jpg",
+        "https://bemins.wpbingosite.com/wp-content/uploads/2019/04/products-14-1.jpg"
       ]
     },
     {
@@ -120,10 +120,10 @@
       "puan": 4.5,
       "tarih": "2024-07-01",
       "fotograflar": [
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2023/12/products-15-1.jpg",
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2023/12/products-16-1.jpg",
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2023/12/products-17-1.jpg",
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2023/12/products-18-1.jpg"
+        "https://bemins.wpbingosite.com/wp-content/uploads/2023/12/products-15-1.jpg",
+        "https://bemins.wpbingosite.com/wp-content/uploads/2023/12/products-16-1.jpg",
+        "https://bemins.wpbingosite.com/wp-content/uploads/2023/12/products-17-1.jpg",
+        "https://bemins.wpbingosite.com/wp-content/uploads/2023/12/products-18-1.jpg"
       ]
     },
     {
@@ -145,8 +145,8 @@
       "puan": 4.5,
       "tarih": "2024-07-01",
       "fotograflar": [
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2020/12/products-19.jpg",
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2020/12/products-20.jpg"
+        "https://bemins.wpbingosite.com/wp-content/uploads/2020/12/products-19.jpg",
+        "https://bemins.wpbingosite.com/wp-content/uploads/2020/12/products-20.jpg"
       ]
     },
     {
@@ -168,8 +168,8 @@
       "puan": 4.5,
       "tarih": "2024-07-01",
       "fotograflar": [
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2020/12/products-21.jpg",
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2020/12/products-22.jpg"
+        "https://bemins.wpbingosite.com/wp-content/uploads/2020/12/products-21.jpg",
+        "https://bemins.wpbingosite.com/wp-content/uploads/2020/12/products-22.jpg"
       ]
     },
     {
@@ -191,8 +191,8 @@
       "puan": 4.5,
       "tarih": "2024-07-01",
       "fotograflar": [
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2020/12/products-23.jpg",
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2020/12/products-24.jpg"
+        "https://bemins.wpbingosite.com/wp-content/uploads/2020/12/products-23.jpg",
+        "https://bemins.wpbingosite.com/wp-content/uploads/2020/12/products-24.jpg"
       ]
     },
     {
@@ -214,8 +214,8 @@
       "puan": 4.5,
       "tarih": "2024-07-01",
       "fotograflar": [
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2020/12/products-25.jpg",
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2020/12/products-26.jpg"
+        "https://bemins.wpbingosite.com/wp-content/uploads/2020/12/products-25.jpg",
+        "https://bemins.wpbingosite.com/wp-content/uploads/2020/12/products-26.jpg"
       ]
     },
     {
@@ -237,8 +237,8 @@
       "puan": 4.5,
       "tarih": "2024-07-01",
       "fotograflar": [
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2020/12/products-23.jpg",
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2020/12/products-24.jpg"
+        "https://bemins.wpbingosite.com/wp-content/uploads/2020/12/products-23.jpg",
+        "https://bemins.wpbingosite.com/wp-content/uploads/2020/12/products-24.jpg"
       ]
     },
     {
@@ -260,8 +260,8 @@
       "puan": 4.5,
       "tarih": "2024-07-01",
       "fotograflar": [
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2020/12/products-29-1.jpg",
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2020/12/products-30-1.jpg"
+        "https://bemins.wpbingosite.com/wp-content/uploads/2020/12/products-29-1.jpg",
+        "https://bemins.wpbingosite.com/wp-content/uploads/2020/12/products-30-1.jpg"
       ]
     },
     {
@@ -283,10 +283,10 @@
       "puan": 4.5,
       "tarih": "2024-07-01",
       "fotograflar": [
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2020/04/products-31.jpg",
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2020/04/products-32-1.jpg",
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2020/04/products-33-1.jpg",
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2020/04/products-34-1.jpg"
+        "https://bemins.wpbingosite.com/wp-content/uploads/2020/04/products-31.jpg",
+        "https://bemins.wpbingosite.com/wp-content/uploads/2020/04/products-32-1.jpg",
+        "https://bemins.wpbingosite.com/wp-content/uploads/2020/04/products-33-1.jpg",
+        "https://bemins.wpbingosite.com/wp-content/uploads/2020/04/products-34-1.jpg"
       ]
     },
     {
@@ -308,8 +308,8 @@
       "puan": 4.5,
       "tarih": "2024-07-01",
       "fotograflar": [
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2023/12/products-35-1.jpg",
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2023/12/products-36-1.jpg"
+        "https://bemins.wpbingosite.com/wp-content/uploads/2023/12/products-35-1.jpg",
+        "https://bemins.wpbingosite.com/wp-content/uploads/2023/12/products-36-1.jpg"
       ]
     },
     {
@@ -331,10 +331,10 @@
       "puan": 4.5,
       "tarih": "2024-07-01",
       "fotograflar": [
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2018/05/products-37-1.jpg",
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2018/05/products-38-1.jpg",
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2018/05/products-39-1.jpg",
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2018/05/products-40.jpg"
+        "https://bemins.wpbingosite.com/wp-content/uploads/2018/05/products-37-1.jpg",
+        "https://bemins.wpbingosite.com/wp-content/uploads/2018/05/products-38-1.jpg",
+        "https://bemins.wpbingosite.com/wp-content/uploads/2018/05/products-39-1.jpg",
+        "https://bemins.wpbingosite.com/wp-content/uploads/2018/05/products-40.jpg"
       ]
     },
     {
@@ -356,10 +356,10 @@
       "puan": 4.5,
       "tarih": "2024-07-01",
       "fotograflar": [
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2020/04/products-43-1.jpg",
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2020/04/products-44-1.jpg",
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2020/04/products-45-1.jpg",
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2020/04/products-46.jpg"
+        "https://bemins.wpbingosite.com/wp-content/uploads/2020/04/products-43-1.jpg",
+        "https://bemins.wpbingosite.com/wp-content/uploads/2020/04/products-44-1.jpg",
+        "https://bemins.wpbingosite.com/wp-content/uploads/2020/04/products-45-1.jpg",
+        "https://bemins.wpbingosite.com/wp-content/uploads/2020/04/products-46.jpg"
       ]
     },
     {
@@ -381,8 +381,8 @@
       "puan": 4.5,
       "tarih": "2024-07-01",
       "fotograflar": [
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2020/12/products-47-1.jpg",
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2020/12/products-48-1.jpg"
+        "https://bemins.wpbingosite.com/wp-content/uploads/2020/12/products-47-1.jpg",
+        "https://bemins.wpbingosite.com/wp-content/uploads/2020/12/products-48-1.jpg"
       ]
     },
     {
@@ -404,10 +404,10 @@
       "puan": 4.5,
       "tarih": "2024-07-01",
       "fotograflar": [
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2024/04/1.jpg",
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2024/04/3.jpg",
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2024/04/2.jpg",
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2024/04/4.jpg"
+        "https://bemins.wpbingosite.com/wp-content/uploads/2024/04/1.jpg",
+        "https://bemins.wpbingosite.com/wp-content/uploads/2024/04/3.jpg",
+        "https://bemins.wpbingosite.com/wp-content/uploads/2024/04/2.jpg",
+        "https://bemins.wpbingosite.com/wp-content/uploads/2024/04/4.jpg"
       ]
     },
     {
@@ -429,10 +429,10 @@
       "puan": 4.5,
       "tarih": "2024-07-01",
       "fotograflar": [
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2020/12/products-51.jpg",
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2020/12/products-52.jpg",
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2020/12/products-53.jpg",
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2020/12/products-54-1.jpg"
+        "https://bemins.wpbingosite.com/wp-content/uploads/2020/12/products-51.jpg",
+        "https://bemins.wpbingosite.com/wp-content/uploads/2020/12/products-52.jpg",
+        "https://bemins.wpbingosite.com/wp-content/uploads/2020/12/products-53.jpg",
+        "https://bemins.wpbingosite.com/wp-content/uploads/2020/12/products-54-1.jpg"
       ]
     },
     {
@@ -454,8 +454,8 @@
       "puan": 4.5,
       "tarih": "2024-07-01",
       "fotograflar": [
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2023/12/products-35-1.jpg",
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2023/12/products-36-1.jpg"
+        "https://bemins.wpbingosite.com/wp-content/uploads/2023/12/products-35-1.jpg",
+        "https://bemins.wpbingosite.com/wp-content/uploads/2023/12/products-36-1.jpg"
       ]
     },
     {
@@ -477,10 +477,10 @@
       "puan": 4.5,
       "tarih": "2024-07-01",
       "fotograflar": [
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2020/12/products-59-2.jpg",
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2020/12/products-60.jpg",
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2020/12/products-61-2.jpg",
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2020/12/products-62.jpg"
+        "https://bemins.wpbingosite.com/wp-content/uploads/2020/12/products-59-2.jpg",
+        "https://bemins.wpbingosite.com/wp-content/uploads/2020/12/products-60.jpg",
+        "https://bemins.wpbingosite.com/wp-content/uploads/2020/12/products-61-2.jpg",
+        "https://bemins.wpbingosite.com/wp-content/uploads/2020/12/products-62.jpg"
       ]
     },
     {
@@ -502,10 +502,10 @@
       "puan": 4.5,
       "tarih": "2024-07-01",
       "fotograflar": [
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2020/12/products-63.jpg",
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2020/12/products-64.jpg",
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2020/12/products-65.jpg",
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2020/12/products-66.jpg"
+        "https://bemins.wpbingosite.com/wp-content/uploads/2020/12/products-63.jpg",
+        "https://bemins.wpbingosite.com/wp-content/uploads/2020/12/products-64.jpg",
+        "https://bemins.wpbingosite.com/wp-content/uploads/2020/12/products-65.jpg",
+        "https://bemins.wpbingosite.com/wp-content/uploads/2020/12/products-66.jpg"
       ]
     },
     {
@@ -527,8 +527,8 @@
       "puan": 4.5,
       "tarih": "2024-07-01",
       "fotograflar": [
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2022/08/products-67-1.jpg",
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2022/08/products-68-1.jpg"
+        "https://bemins.wpbingosite.com/wp-content/uploads/2022/08/products-67-1.jpg",
+        "https://bemins.wpbingosite.com/wp-content/uploads/2022/08/products-68-1.jpg"
       ]
     },
     {
@@ -550,9 +550,9 @@
       "puan": 4.5,
       "tarih": "2024-07-01",
       "fotograflar": [
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2023/12/products-71.jpg",
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2023/12/products-72.jpg",
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2023/12/products-73.jpg"
+        "https://bemins.wpbingosite.com/wp-content/uploads/2023/12/products-71.jpg",
+        "https://bemins.wpbingosite.com/wp-content/uploads/2023/12/products-72.jpg",
+        "https://bemins.wpbingosite.com/wp-content/uploads/2023/12/products-73.jpg"
       ]
     },
     {
@@ -574,10 +574,10 @@
       "puan": 4.5,
       "tarih": "2024-07-01",
       "fotograflar": [
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2022/08/products-74.jpg",
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2022/08/products-75.jpg",
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2022/08/products-76.jpg",
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2022/08/products-77.jpg"
+        "https://bemins.wpbingosite.com/wp-content/uploads/2022/08/products-74.jpg",
+        "https://bemins.wpbingosite.com/wp-content/uploads/2022/08/products-75.jpg",
+        "https://bemins.wpbingosite.com/wp-content/uploads/2022/08/products-76.jpg",
+        "https://bemins.wpbingosite.com/wp-content/uploads/2022/08/products-77.jpg"
       ]
     },
     {
@@ -599,10 +599,10 @@
       "puan": 4.5,
       "tarih": "2024-07-01",
       "fotograflar": [
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2020/12/products-78.jpg",
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2022/08/products-79.jpg",
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2022/08/products-80.jpg",
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2022/08/products-81.jpg"
+        "https://bemins.wpbingosite.com/wp-content/uploads/2020/12/products-78.jpg",
+        "https://bemins.wpbingosite.com/wp-content/uploads/2022/08/products-79.jpg",
+        "https://bemins.wpbingosite.com/wp-content/uploads/2022/08/products-80.jpg",
+        "https://bemins.wpbingosite.com/wp-content/uploads/2022/08/products-81.jpg"
       ]
     },
     {
@@ -624,10 +624,10 @@
       "puan": 4.5,
       "tarih": "2024-07-01",
       "fotograflar": [
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2020/12/products-82-1.jpg",
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2020/12/products-82-2.jpg",
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2020/12/products-82-3.jpg",
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2020/12/products-82-4.jpg"
+        "https://bemins.wpbingosite.com/wp-content/uploads/2020/12/products-82-1.jpg",
+        "https://bemins.wpbingosite.com/wp-content/uploads/2020/12/products-82-2.jpg",
+        "https://bemins.wpbingosite.com/wp-content/uploads/2020/12/products-82-3.jpg",
+        "https://bemins.wpbingosite.com/wp-content/uploads/2020/12/products-82-4.jpg"
       ]
     },
     {
@@ -649,10 +649,10 @@
       "puan": 4.5,
       "tarih": "2024-07-01",
       "fotograflar": [
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2018/10/360.jpg",
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2018/10/361.jpg",
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2018/10/362.jpg",
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2018/10/363.jpg"
+        "https://bemins.wpbingosite.com/wp-content/uploads/2018/10/360.jpg",
+        "https://bemins.wpbingosite.com/wp-content/uploads/2018/10/361.jpg",
+        "https://bemins.wpbingosite.com/wp-content/uploads/2018/10/362.jpg",
+        "https://bemins.wpbingosite.com/wp-content/uploads/2018/10/363.jpg"
       ]
     },
     {
@@ -674,10 +674,10 @@
       "puan": 4.5,
       "tarih": "2024-07-01",
       "fotograflar": [
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2020/12/products-86-1.jpg",
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2020/12/products-86-2.jpg",
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2020/12/products-86-3.jpg",
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2020/12/products-86-4.jpg"
+        "https://bemins.wpbingosite.com/wp-content/uploads/2020/12/products-86-1.jpg",
+        "https://bemins.wpbingosite.com/wp-content/uploads/2020/12/products-86-2.jpg",
+        "https://bemins.wpbingosite.com/wp-content/uploads/2020/12/products-86-3.jpg",
+        "https://bemins.wpbingosite.com/wp-content/uploads/2020/12/products-86-4.jpg"
       ]
     },
     {
@@ -699,9 +699,9 @@
       "puan": 4.5,
       "tarih": "2024-07-01",
       "fotograflar": [
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2024/03/pro-8.jpg",
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2024/03/pro-9.jpg",
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2024/03/pro-10.jpg"
+        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-8.jpg",
+        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-9.jpg",
+        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-10.jpg"
       ]
     },
     {
@@ -723,9 +723,9 @@
       "puan": 4.5,
       "tarih": "2024-07-01",
       "fotograflar": [
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2024/03/pro-20.jpg",
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2024/03/pro-21.jpg",
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2024/03/pro-22.jpg"
+        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-20.jpg",
+        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-21.jpg",
+        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-22.jpg"
       ]
     },
     {
@@ -747,9 +747,9 @@
       "puan": 4.5,
       "tarih": "2024-07-01",
       "fotograflar": [
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2024/03/pro-53.jpg",
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2024/03/pro-54.jpg",
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2024/03/pro-55.jpg"
+        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-53.jpg",
+        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-54.jpg",
+        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-55.jpg"
       ]
     },
     {
@@ -771,8 +771,8 @@
       "puan": 4.5,
       "tarih": "2024-07-01",
       "fotograflar": [
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2024/03/pro-18.jpg",
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2024/03/pro-19.jpg"
+        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-18.jpg",
+        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-19.jpg"
       ]
     },
     {
@@ -794,10 +794,10 @@
       "puan": 4.5,
       "tarih": "2024-07-01",
       "fotograflar": [
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2024/03/pro-45.jpg",
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2024/03/pro-46.jpg",
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2024/03/pro-47.jpg",
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2024/03/pro-48.jpg"
+        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-45.jpg",
+        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-46.jpg",
+        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-47.jpg",
+        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-48.jpg"
       ]
     },
     {
@@ -819,10 +819,10 @@
       "puan": 4.5,
       "tarih": "2024-07-01",
       "fotograflar": [
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2024/03/pro-26-1.jpg",
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2024/03/pro-26-2.jpg",
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2024/03/pro-26-3.jpg",
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2024/03/pro-26-4.jpg"
+        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-26-1.jpg",
+        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-26-2.jpg",
+        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-26-3.jpg",
+        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-26-4.jpg"
       ]
     },
     {
@@ -844,10 +844,10 @@
       "puan": 4.5,
       "tarih": "2024-07-01",
       "fotograflar": [
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2024/03/pro-37.jpg",
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2024/03/pro-38.jpg",
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2024/03/pro-39.jpg",
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2024/03/pro-40.jpg"
+        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-37.jpg",
+        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-38.jpg",
+        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-39.jpg",
+        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-40.jpg"
       ]
     },
     {
@@ -869,10 +869,10 @@
       "puan": 4.5,
       "tarih": "2024-07-01",
       "fotograflar": [
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2024/03/pro-11.jpg",
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2024/03/pro-12.jpg",
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2024/03/pro-13.jpg",
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2024/03/pro-14.jpg"
+        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-11.jpg",
+        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-12.jpg",
+        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-13.jpg",
+        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-14.jpg"
       ]
     },
     {
@@ -894,9 +894,9 @@
       "puan": 4.5,
       "tarih": "2024-07-01",
       "fotograflar": [
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2024/03/pro-56.jpg",
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2024/03/pro-57.jpg",
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2024/03/pro-58.jpg"
+        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-56.jpg",
+        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-57.jpg",
+        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-58.jpg"
       ]
     },
     {
@@ -918,9 +918,9 @@
       "puan": 4.5,
       "tarih": "2024-07-01",
       "fotograflar": [
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2024/03/pro-34.jpg",
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2024/03/pro-35.jpg",
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2024/03/pro-36.jpg"
+        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-34.jpg",
+        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-35.jpg",
+        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-36.jpg"
       ]
     },
     {
@@ -942,9 +942,9 @@
       "puan": 4.5,
       "tarih": "2024-07-01",
       "fotograflar": [
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2024/03/pro-1.jpg",
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2024/03/pro-2.jpg",
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2024/03/pro-3.jpg"
+        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-1.jpg",
+        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-2.jpg",
+        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-3.jpg"
       ]
     },
     {
@@ -966,10 +966,10 @@
       "puan": 4.5,
       "tarih": "2024-07-01",
       "fotograflar": [
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2024/03/pro-30.jpg",
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2024/03/pro-31.jpg",
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2024/03/pro-32.jpg",
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2024/03/pro-33.jpg"
+        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-30.jpg",
+        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-31.jpg",
+        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-32.jpg",
+        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-33.jpg"
       ]
     },
     {
@@ -991,10 +991,10 @@
       "puan": 4.5,
       "tarih": "2024-07-01",
       "fotograflar": [
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2024/03/pro-4.jpg",
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2024/03/pro-5.jpg",
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2024/03/pro-6.jpg",
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2024/03/pro-7.jpg"
+        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-4.jpg",
+        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-5.jpg",
+        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-6.jpg",
+        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-7.jpg"
       ]
     },
     {
@@ -1016,9 +1016,9 @@
       "puan": 4.5,
       "tarih": "2024-07-01",
       "fotograflar": [
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2024/03/pro-23.jpg",
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2024/03/pro-24.jpg",
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2024/03/pro-25.jpg"
+        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-23.jpg",
+        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-24.jpg",
+        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-25.jpg"
       ]
     },
     {
@@ -1040,10 +1040,10 @@
       "puan": 4.5,
       "tarih": "2024-07-01",
       "fotograflar": [
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2024/03/pro-41.jpg",
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2024/03/pro-42.jpg",
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2024/03/pro-43.jpg",
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2024/03/pro-44.jpg"
+        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-41.jpg",
+        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-42.jpg",
+        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-43.jpg",
+        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-44.jpg"
       ]
     },
     {
@@ -1065,9 +1065,9 @@
       "puan": 4.5,
       "tarih": "2024-07-01",
       "fotograflar": [
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2024/03/pro-15.jpg",
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2024/03/pro-16.jpg",
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2024/03/pro-17.jpg"
+        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-15.jpg",
+        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-16.jpg",
+        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-17.jpg"
       ]
     },
     {
@@ -1089,10 +1089,10 @@
       "puan": 4.5,
       "tarih": "2024-07-01",
       "fotograflar": [
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2024/03/pro-49.jpg",
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2024/03/pro-50.jpg",
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2024/03/pro-51.jpg",
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2024/03/pro-52.jpg"
+        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-49.jpg",
+        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-50.jpg",
+        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-51.jpg",
+        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-52.jpg"
       ]
     },
     {
@@ -1114,9 +1114,9 @@
       "puan": 4.5,
       "tarih": "2024-07-01",
       "fotograflar": [
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2020/12/products-full-1.jpg",
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2020/12/products-full-2.jpg",
-        "https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2020/12/products-full-3.jpg"
+        "https://bemins.wpbingosite.com/wp-content/uploads/2020/12/products-full-1.jpg",
+        "https://bemins.wpbingosite.com/wp-content/uploads/2020/12/products-full-2.jpg",
+        "https://bemins.wpbingosite.com/wp-content/uploads/2020/12/products-full-3.jpg"
       ]
     }
   ]
