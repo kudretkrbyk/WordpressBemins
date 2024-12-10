@@ -13,7 +13,7 @@ export default function ShopNow() {
         <div className="absolute left-1/2 -translate-x-1/2  z-10 w-10/12 ">
           <img
             className="rounded-xl"
-            src="https://wpbingosite.com/wordpress/bemins/wp-content/uploads/2024/02/video.jpg"
+            src="https://bemins.wpbingosite.com/wp-content/uploads/2024/02/video.jpg"
           ></img>
         </div>
         <div className="absolute  w-10/12 h-full flex flex-col items-center justify-center gap-10 z-20 ">
