@@ -1,4 +1,4 @@
-import countryData from "../../data/countries+states+cities.json";
+import countryData from "../../../public/data/countries+states+cities.json";
 import { useState } from "react";
 
 export default function ChectOutForm() {
