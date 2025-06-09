@@ -4,50 +4,50 @@
       "name": "Top",
 
       "subcategories": ["Shirts", "dress shirt"],
-      "image": "https://bemins.wpbingosite.com/wp-content/uploads/2023/11/category.jpg"
+      "image": "/assets/category.webp"
     },
 
     {
       "name": "Glasses",
 
       "subcategories": [],
-      "image": "https://bemins.wpbingosite.com/wp-content/uploads/2023/11/category-2.jpg"
+      "image": "/assets/category-2.webp"
     },
     {
       "name": "Sandals",
 
       "subcategories": [],
-      "image": "https://bemins.wpbingosite.com/wp-content/uploads/2023/11/category-5.jpg"
+      "image": "/assets/category-5.webp"
     },
     {
       "name": "Bag",
 
       "subcategories": [],
-      "image": "https://bemins.wpbingosite.com/wp-content/uploads/2023/11/category-3.jpg"
+      "image": "/assets/category-3.webp"
     },
     {
       "name": "Shoes",
 
       "subcategories": [],
-      "image": "https://bemins.wpbingosite.com/wp-content/uploads/2023/11/category-1.jpg"
+      "image": "/assets/category-1.webp"
     },
     {
       "name": "Furniture",
 
       "subcategories": ["chair", "decor"],
-      "image": "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/category-fr.jpg"
+      "image": "/assets/category-fr.webp"
     },
     {
       "name": "jewerly",
 
       "subcategories": ["rings", "Earrings"],
-      "image": "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/category-jw.jpg"
+      "image": "/assets/category-jw.webp"
     },
     {
       "name": "Hat",
 
       "subcategories": [],
-      "image": "https://bemins.wpbingosite.com/wp-content/uploads/2023/12/products-15-1.jpg"
+      "image": "/assets/products-15-1.webp"
     }
   ],
   "product": [
@@ -70,10 +70,10 @@
       "puan": 4.5,
       "tarih": "2024-07-01",
       "fotograflar": [
-        "https://bemins.wpbingosite.com/wp-content/uploads/2020/12/products-1-1.jpg",
-        "https://bemins.wpbingosite.com/wp-content/uploads/2020/12/products-2-1.jpg",
-        "https://bemins.wpbingosite.com/wp-content/uploads/2020/12/products-3-1.jpg",
-        "https://bemins.wpbingosite.com/wp-content/uploads/2020/12/products-4-2.jpg"
+        "/assets/90s-chino-pant-3-600x820.webp",
+        "/assets/90s-chino-pant-4-600x820.webp",
+        "/assets/90s-chino-pant-5-600x820.webp",
+        "/assets/90s-chino-pant-6-600x820.webp"
       ]
     },
     {
@@ -95,10 +95,10 @@
       "puan": 4.5,
       "tarih": "2024-07-01",
       "fotograflar": [
-        "https://bemins.wpbingosite.com/wp-content/uploads/2019/04/products-11-1.jpg",
-        "https://bemins.wpbingosite.com/wp-content/uploads/2019/04/products-12-1.jpg",
-        "https://bemins.wpbingosite.com/wp-content/uploads/2019/04/products-13-1.jpg",
-        "https://bemins.wpbingosite.com/wp-content/uploads/2019/04/products-14-1.jpg"
+        "/assets/angie-skirt-600x820.webp",
+        "/assets/angie-skirt-2-600x820.webp",
+        "/assets/angie-skirt-3-600x820.webp",
+        "/assets/angie-skirt-4-600x820.webp"
       ]
     },
     {
@@ -120,10 +120,10 @@
       "puan": 4.5,
       "tarih": "2024-07-01",
       "fotograflar": [
-        "https://bemins.wpbingosite.com/wp-content/uploads/2023/12/products-15-1.jpg",
-        "https://bemins.wpbingosite.com/wp-content/uploads/2023/12/products-16-1.jpg",
-        "https://bemins.wpbingosite.com/wp-content/uploads/2023/12/products-17-1.jpg",
-        "https://bemins.wpbingosite.com/wp-content/uploads/2023/12/products-18-1.jpg"
+        "/assets/band-straw-hat-3-600x820.webp",
+        "/assets/band-straw-hat-4-600x820.webp",
+
+        "/assets/band-straw-hat-600x820.webp"
       ]
     },
     {
@@ -145,8 +145,8 @@
       "puan": 4.5,
       "tarih": "2024-07-01",
       "fotograflar": [
-        "https://bemins.wpbingosite.com/wp-content/uploads/2020/12/products-19.jpg",
-        "https://bemins.wpbingosite.com/wp-content/uploads/2020/12/products-20.jpg"
+        "/assets/black-gold-600x820.webp",
+        "/assets/black-gold-2-600x820.webp"
       ]
     },
     {
@@ -168,8 +168,8 @@
       "puan": 4.5,
       "tarih": "2024-07-01",
       "fotograflar": [
-        "https://bemins.wpbingosite.com/wp-content/uploads/2020/12/products-21.jpg",
-        "https://bemins.wpbingosite.com/wp-content/uploads/2020/12/products-22.jpg"
+        "/assets/caramel-midnight-600x820.webp",
+        "/assets/caramel-midnight-2-600x820.webp"
       ]
     },
     {
@@ -191,8 +191,8 @@
       "puan": 4.5,
       "tarih": "2024-07-01",
       "fotograflar": [
-        "https://bemins.wpbingosite.com/wp-content/uploads/2020/12/products-23.jpg",
-        "https://bemins.wpbingosite.com/wp-content/uploads/2020/12/products-24.jpg"
+        "/assets/cloud-5-ready-600x820.webp",
+        "/assets/cloud-5-ready-2-600x820.webp"
       ]
     },
     {
@@ -214,8 +214,8 @@
       "puan": 4.5,
       "tarih": "2024-07-01",
       "fotograflar": [
-        "https://bemins.wpbingosite.com/wp-content/uploads/2020/12/products-25.jpg",
-        "https://bemins.wpbingosite.com/wp-content/uploads/2020/12/products-26.jpg"
+        "/assets/cloud-x-shift-600x820.webp",
+        "/assets/cloud-x-shift-2-600x820.webp"
       ]
     },
     {
@@ -237,8 +237,8 @@
       "puan": 4.5,
       "tarih": "2024-07-01",
       "fotograflar": [
-        "https://bemins.wpbingosite.com/wp-content/uploads/2020/12/products-23.jpg",
-        "https://bemins.wpbingosite.com/wp-content/uploads/2020/12/products-24.jpg"
+        "/assets/cloudboom-echo-600x820.webp",
+        "/assets/cloudboom-echo-2-600x820.webp"
       ]
     },
     {
@@ -260,8 +260,8 @@
       "puan": 4.5,
       "tarih": "2024-07-01",
       "fotograflar": [
-        "https://bemins.wpbingosite.com/wp-content/uploads/2020/12/products-29-1.jpg",
-        "https://bemins.wpbingosite.com/wp-content/uploads/2020/12/products-30-1.jpg"
+        "/assets/cloudstratus-600x820.webp",
+        "/assets/cloudstratus-2-600x820.webp"
       ]
     },
     {
@@ -283,10 +283,8 @@
       "puan": 4.5,
       "tarih": "2024-07-01",
       "fotograflar": [
-        "https://bemins.wpbingosite.com/wp-content/uploads/2020/04/products-31.jpg",
-        "https://bemins.wpbingosite.com/wp-content/uploads/2020/04/products-32-1.jpg",
-        "https://bemins.wpbingosite.com/wp-content/uploads/2020/04/products-33-1.jpg",
-        "https://bemins.wpbingosite.com/wp-content/uploads/2020/04/products-34-1.jpg"
+        "/assets/comfy-denim-shirt-3-600x820.webp",
+        "/assets/comfy-denim-shirt-4-600x820.webp"
       ]
     },
     {
@@ -308,8 +306,8 @@
       "puan": 4.5,
       "tarih": "2024-07-01",
       "fotograflar": [
-        "https://bemins.wpbingosite.com/wp-content/uploads/2023/12/products-35-1.jpg",
-        "https://bemins.wpbingosite.com/wp-content/uploads/2023/12/products-36-1.jpg"
+        "/assets/copper-forest-600x820.webp",
+        "/assets/copper-forest-2-600x820.webp"
       ]
     },
     {
@@ -331,10 +329,12 @@
       "puan": 4.5,
       "tarih": "2024-07-01",
       "fotograflar": [
-        "https://bemins.wpbingosite.com/wp-content/uploads/2018/05/products-37-1.jpg",
-        "https://bemins.wpbingosite.com/wp-content/uploads/2018/05/products-38-1.jpg",
-        "https://bemins.wpbingosite.com/wp-content/uploads/2018/05/products-39-1.jpg",
-        "https://bemins.wpbingosite.com/wp-content/uploads/2018/05/products-40.jpg"
+        "/assets/cozy-fleece-mega-sweatpant-600x820.webp",
+        "/assets/cozy-fleece-mega-sweatpant-2-600x820.webp",
+        "/assets/cozy-fleece-mega-sweatpant-3-600x820.webp",
+        "/assets/cozy-fleece-mega-sweatpant-4-600x820.webp",
+        "/assets/cozy-fleece-mega-sweatpant-5-600x820.webp",
+        "/assets/cozy-fleece-mega-sweatpant-6-600x820.webp"
       ]
     },
     {
@@ -356,10 +356,10 @@
       "puan": 4.5,
       "tarih": "2024-07-01",
       "fotograflar": [
-        "https://bemins.wpbingosite.com/wp-content/uploads/2020/04/products-43-1.jpg",
-        "https://bemins.wpbingosite.com/wp-content/uploads/2020/04/products-44-1.jpg",
-        "https://bemins.wpbingosite.com/wp-content/uploads/2020/04/products-45-1.jpg",
-        "https://bemins.wpbingosite.com/wp-content/uploads/2020/04/products-46.jpg"
+        "/assets/crown-puffer-600x820.webp",
+        "/assets/crown-puffer-2-600x820.webp",
+        "/assets/crown-puffer-3-600x820.webp",
+        "/assets/crown-puffer-4-600x820.webp"
       ]
     },
     {
@@ -381,8 +381,8 @@
       "puan": 4.5,
       "tarih": "2024-07-01",
       "fotograflar": [
-        "https://bemins.wpbingosite.com/wp-content/uploads/2020/12/products-47-1.jpg",
-        "https://bemins.wpbingosite.com/wp-content/uploads/2020/12/products-48-1.jpg"
+        "/assets/curator-bag-3-600x820.webp",
+        "/assets/curator-bag-4-600x820.webp"
       ]
     },
     {
@@ -404,10 +404,10 @@
       "puan": 4.5,
       "tarih": "2024-07-01",
       "fotograflar": [
-        "https://bemins.wpbingosite.com/wp-content/uploads/2024/04/1.jpg",
-        "https://bemins.wpbingosite.com/wp-content/uploads/2024/04/3.jpg",
-        "https://bemins.wpbingosite.com/wp-content/uploads/2024/04/2.jpg",
-        "https://bemins.wpbingosite.com/wp-content/uploads/2024/04/4.jpg"
+        "/assets/1.webp",
+        "/assets/3.webp",
+        "/assets/2.webp",
+        "/assets/4.webp"
       ]
     },
     {
@@ -429,10 +429,8 @@
       "puan": 4.5,
       "tarih": "2024-07-01",
       "fotograflar": [
-        "https://bemins.wpbingosite.com/wp-content/uploads/2020/12/products-51.jpg",
-        "https://bemins.wpbingosite.com/wp-content/uploads/2020/12/products-52.jpg",
-        "https://bemins.wpbingosite.com/wp-content/uploads/2020/12/products-53.jpg",
-        "https://bemins.wpbingosite.com/wp-content/uploads/2020/12/products-54-1.jpg"
+        "/assets/keep-large-tote-3-600x820.webp",
+        "/assets/keep-large-tote-4-600x820.webp"
       ]
     },
     {
@@ -454,8 +452,9 @@
       "puan": 4.5,
       "tarih": "2024-07-01",
       "fotograflar": [
-        "https://bemins.wpbingosite.com/wp-content/uploads/2023/12/products-35-1.jpg",
-        "https://bemins.wpbingosite.com/wp-content/uploads/2023/12/products-36-1.jpg"
+        "/assets/marlo-hi-rise-baggy-jean-600x820.webp",
+        "/assets/marlo-hi-rise-baggy-jean-3-600x820.webp",
+        "/assets/marlo-hi-rise-baggy-jean-4-600x820.webp"
       ]
     },
     {
@@ -477,10 +476,8 @@
       "puan": 4.5,
       "tarih": "2024-07-01",
       "fotograflar": [
-        "https://bemins.wpbingosite.com/wp-content/uploads/2020/12/products-59-2.jpg",
-        "https://bemins.wpbingosite.com/wp-content/uploads/2020/12/products-60.jpg",
-        "https://bemins.wpbingosite.com/wp-content/uploads/2020/12/products-61-2.jpg",
-        "https://bemins.wpbingosite.com/wp-content/uploads/2020/12/products-62.jpg"
+        "/assets/men-thick-life-jacket-3-600x820.webp",
+        "/assets/men-thick-life-jacket-4-600x820.webp"
       ]
     },
     {
@@ -502,10 +499,10 @@
       "puan": 4.5,
       "tarih": "2024-07-01",
       "fotograflar": [
-        "https://bemins.wpbingosite.com/wp-content/uploads/2020/12/products-63.jpg",
-        "https://bemins.wpbingosite.com/wp-content/uploads/2020/12/products-64.jpg",
-        "https://bemins.wpbingosite.com/wp-content/uploads/2020/12/products-65.jpg",
-        "https://bemins.wpbingosite.com/wp-content/uploads/2020/12/products-66.jpg"
+        "/assets/new-bridger-cargo-pant-600x820.webp",
+        "/assets/new-bridger-cargo-pant-2-600x820.webp",
+        "/assets/new-bridger-cargo-pant-3-600x820.webp",
+        "/assets/new-bridger-cargo-pant-4-600x820.webp"
       ]
     },
     {
@@ -527,8 +524,10 @@
       "puan": 4.5,
       "tarih": "2024-07-01",
       "fotograflar": [
-        "https://bemins.wpbingosite.com/wp-content/uploads/2022/08/products-67-1.jpg",
-        "https://bemins.wpbingosite.com/wp-content/uploads/2022/08/products-68-1.jpg"
+        "/assets/phoebe-mini-bag-600x820.webp",
+        "/assets/phoebe-mini-bag-2-600x820.webp",
+        "/assets/phoebe-mini-bag-3-600x820.webp",
+        "/assets/phoebe-mini-bag-4-600x820.webp"
       ]
     },
     {
@@ -550,9 +549,9 @@
       "puan": 4.5,
       "tarih": "2024-07-01",
       "fotograflar": [
-        "https://bemins.wpbingosite.com/wp-content/uploads/2023/12/products-71.jpg",
-        "https://bemins.wpbingosite.com/wp-content/uploads/2023/12/products-72.jpg",
-        "https://bemins.wpbingosite.com/wp-content/uploads/2023/12/products-73.jpg"
+        "/assets/river-jacket-600x820.webp",
+        "/assets/river-jacket-2-600x820.webp",
+        "/assets/river-jacket-3-600x820.webp"
       ]
     },
     {
@@ -574,10 +573,10 @@
       "puan": 4.5,
       "tarih": "2024-07-01",
       "fotograflar": [
-        "https://bemins.wpbingosite.com/wp-content/uploads/2022/08/products-74.jpg",
-        "https://bemins.wpbingosite.com/wp-content/uploads/2022/08/products-75.jpg",
-        "https://bemins.wpbingosite.com/wp-content/uploads/2022/08/products-76.jpg",
-        "https://bemins.wpbingosite.com/wp-content/uploads/2022/08/products-77.jpg"
+        "/assets/terry-fleece-perfect-hoodie-600x820.webp",
+        "/assets/terry-fleece-perfect-hoodie-2-600x820.webp",
+        "/assets/terry-fleece-perfect-hoodie-3-600x820.webp",
+        "/assets/terry-fleece-perfect-hoodie-4-600x820.webp"
       ]
     },
     {
@@ -599,10 +598,11 @@
       "puan": 4.5,
       "tarih": "2024-07-01",
       "fotograflar": [
-        "https://bemins.wpbingosite.com/wp-content/uploads/2020/12/products-78.jpg",
-        "https://bemins.wpbingosite.com/wp-content/uploads/2022/08/products-79.jpg",
-        "https://bemins.wpbingosite.com/wp-content/uploads/2022/08/products-80.jpg",
-        "https://bemins.wpbingosite.com/wp-content/uploads/2022/08/products-81.jpg"
+        "/assets/terry-fleece-sweatshirt-600x820.webp",
+
+        "/assets/terry-fleece-sweatshirt-2-600x820.webp",
+        "/assets/terry-fleece-sweatshirt-3-600x820.webp",
+        "/assets/terry-fleece-sweatshirt-4-600x820.webp"
       ]
     },
     {
@@ -624,10 +624,9 @@
       "puan": 4.5,
       "tarih": "2024-07-01",
       "fotograflar": [
-        "https://bemins.wpbingosite.com/wp-content/uploads/2020/12/products-82-1.jpg",
-        "https://bemins.wpbingosite.com/wp-content/uploads/2020/12/products-82-2.jpg",
-        "https://bemins.wpbingosite.com/wp-content/uploads/2020/12/products-82-3.jpg",
-        "https://bemins.wpbingosite.com/wp-content/uploads/2020/12/products-82-4.jpg"
+        "/assets/the-90s-ricci-jean-skirt-3-600x820.webp",
+
+        "/assets/the-90s-ricci-jean-skirt-4-600x820.webp"
       ]
     },
     {
@@ -649,10 +648,10 @@
       "puan": 4.5,
       "tarih": "2024-07-01",
       "fotograflar": [
-        "https://bemins.wpbingosite.com/wp-content/uploads/2018/10/360.jpg",
-        "https://bemins.wpbingosite.com/wp-content/uploads/2018/10/361.jpg",
-        "https://bemins.wpbingosite.com/wp-content/uploads/2018/10/362.jpg",
-        "https://bemins.wpbingosite.com/wp-content/uploads/2018/10/363.jpg"
+        "/assets/360.webp",
+        "/assets/361.webp",
+        "/assets/362.webp",
+        "/assets/363.webp"
       ]
     },
     {
@@ -674,10 +673,8 @@
       "puan": 4.5,
       "tarih": "2024-07-01",
       "fotograflar": [
-        "https://bemins.wpbingosite.com/wp-content/uploads/2020/12/products-86-1.jpg",
-        "https://bemins.wpbingosite.com/wp-content/uploads/2020/12/products-86-2.jpg",
-        "https://bemins.wpbingosite.com/wp-content/uploads/2020/12/products-86-3.jpg",
-        "https://bemins.wpbingosite.com/wp-content/uploads/2020/12/products-86-4.jpg"
+        "/assets/waffle-east-longsleeve-3-600x820.webp",
+        "/assets/waffle-east-longsleeve-4-600x820.webp"
       ]
     },
     {
@@ -699,9 +696,9 @@
       "puan": 4.5,
       "tarih": "2024-07-01",
       "fotograflar": [
-        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-8.jpg",
-        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-9.jpg",
-        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-10.jpg"
+        "/assets/pro-8.webp",
+        "/assets/pro-9.webp",
+        "/assets/pro-10.webp"
       ]
     },
     {
@@ -723,9 +720,9 @@
       "puan": 4.5,
       "tarih": "2024-07-01",
       "fotograflar": [
-        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-20.jpg",
-        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-21.jpg",
-        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-22.jpg"
+        "/assets/pro-20.webp",
+        "/assets/pro-21.webp",
+        "/assets/pro-22.webp"
       ]
     },
     {
@@ -747,9 +744,9 @@
       "puan": 4.5,
       "tarih": "2024-07-01",
       "fotograflar": [
-        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-53.jpg",
-        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-54.jpg",
-        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-55.jpg"
+        "/assets/pro-53.webp",
+        "/assets/pro-54.webp",
+        "/assets/pro-55.webp"
       ]
     },
     {
@@ -770,10 +767,7 @@
 
       "puan": 4.5,
       "tarih": "2024-07-01",
-      "fotograflar": [
-        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-18.jpg",
-        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-19.jpg"
-      ]
+      "fotograflar": ["/assets/pro-18.webp", "/assets/pro-19.webp"]
     },
     {
       "id": 31,
@@ -794,10 +788,10 @@
       "puan": 4.5,
       "tarih": "2024-07-01",
       "fotograflar": [
-        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-45.jpg",
-        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-46.jpg",
-        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-47.jpg",
-        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-48.jpg"
+        "/assets/pro-45.webp",
+        "/assets/pro-46.webp",
+        "/assets/pro-47.webp",
+        "/assets/pro-48.webp"
       ]
     },
     {
@@ -819,10 +813,10 @@
       "puan": 4.5,
       "tarih": "2024-07-01",
       "fotograflar": [
-        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-26-1.jpg",
-        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-26-2.jpg",
-        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-26-3.jpg",
-        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-26-4.jpg"
+        "/assets/pro-26-1.webp",
+        "/assets/pro-26-2.webp",
+        "/assets/pro-26-3.webp",
+        "/assets/pro-26-4.webp"
       ]
     },
     {
@@ -844,10 +838,10 @@
       "puan": 4.5,
       "tarih": "2024-07-01",
       "fotograflar": [
-        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-37.jpg",
-        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-38.jpg",
-        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-39.jpg",
-        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-40.jpg"
+        "/assets/pro-37.webp",
+        "/assets/pro-38.webp",
+        "/assets/pro-39.webp",
+        "/assets/pro-40.webp"
       ]
     },
     {
@@ -869,10 +863,10 @@
       "puan": 4.5,
       "tarih": "2024-07-01",
       "fotograflar": [
-        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-11.jpg",
-        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-12.jpg",
-        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-13.jpg",
-        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-14.jpg"
+        "/assets/pro-11.webp",
+        "/assets/pro-12.webp",
+        "/assets/pro-13.webp",
+        "/assets/pro-14.webp"
       ]
     },
     {
@@ -894,9 +888,9 @@
       "puan": 4.5,
       "tarih": "2024-07-01",
       "fotograflar": [
-        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-56.jpg",
-        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-57.jpg",
-        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-58.jpg"
+        "/assets/pro-56.webp",
+        "/assets/pro-57.webp",
+        "/assets/pro-58.webp"
       ]
     },
     {
@@ -918,9 +912,9 @@
       "puan": 4.5,
       "tarih": "2024-07-01",
       "fotograflar": [
-        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-34.jpg",
-        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-35.jpg",
-        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-36.jpg"
+        "/assets/pro-34.webp",
+        "/assets/pro-35.webp",
+        "/assets/pro-36.webp"
       ]
     },
     {
@@ -942,9 +936,9 @@
       "puan": 4.5,
       "tarih": "2024-07-01",
       "fotograflar": [
-        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-1.jpg",
-        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-2.jpg",
-        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-3.jpg"
+        "/assets/pro-1.webp",
+        "/assets/pro-2.webp",
+        "/assets/pro-3.webp"
       ]
     },
     {
@@ -966,10 +960,10 @@
       "puan": 4.5,
       "tarih": "2024-07-01",
       "fotograflar": [
-        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-30.jpg",
-        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-31.jpg",
-        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-32.jpg",
-        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-33.jpg"
+        "/assets/pro-30.webp",
+        "/assets/pro-31.webp",
+        "/assets/pro-32.webp",
+        "/assets/pro-33.webp"
       ]
     },
     {
@@ -991,10 +985,10 @@
       "puan": 4.5,
       "tarih": "2024-07-01",
       "fotograflar": [
-        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-4.jpg",
-        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-5.jpg",
-        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-6.jpg",
-        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-7.jpg"
+        "/assets/pro-4.webp",
+        "/assets/pro-5.webp",
+        "/assets/pro-6.webp",
+        "/assets/pro-7.webp"
       ]
     },
     {
@@ -1016,9 +1010,9 @@
       "puan": 4.5,
       "tarih": "2024-07-01",
       "fotograflar": [
-        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-23.jpg",
-        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-24.jpg",
-        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-25.jpg"
+        "/assets/pro-23.webp",
+        "/assets/pro-24.webp",
+        "/assets/pro-25.webp"
       ]
     },
     {
@@ -1040,10 +1034,10 @@
       "puan": 4.5,
       "tarih": "2024-07-01",
       "fotograflar": [
-        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-41.jpg",
-        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-42.jpg",
-        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-43.jpg",
-        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-44.jpg"
+        "/assets/pro-41.webp",
+        "/assets/pro-42.webp",
+        "/assets/pro-43.webp",
+        "/assets/pro-44.webp"
       ]
     },
     {
@@ -1065,9 +1059,9 @@
       "puan": 4.5,
       "tarih": "2024-07-01",
       "fotograflar": [
-        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-15.jpg",
-        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-16.jpg",
-        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-17.jpg"
+        "/assets/pro-15.webp",
+        "/assets/pro-16.webp",
+        "/assets/pro-17.webp"
       ]
     },
     {
@@ -1089,10 +1083,10 @@
       "puan": 4.5,
       "tarih": "2024-07-01",
       "fotograflar": [
-        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-49.jpg",
-        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-50.jpg",
-        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-51.jpg",
-        "https://bemins.wpbingosite.com/wp-content/uploads/2024/03/pro-52.jpg"
+        "/assets/pro-49.webp",
+        "/assets/pro-50.webp",
+        "/assets/pro-51.webp",
+        "/assets/pro-52.webp"
       ]
     },
     {
@@ -1114,9 +1108,9 @@
       "puan": 4.5,
       "tarih": "2024-07-01",
       "fotograflar": [
-        "https://bemins.wpbingosite.com/wp-content/uploads/2020/12/products-full-1.jpg",
-        "https://bemins.wpbingosite.com/wp-content/uploads/2020/12/products-full-2.jpg",
-        "https://bemins.wpbingosite.com/wp-content/uploads/2020/12/products-full-3.jpg"
+        "/assets/products-full-1.webp",
+        "/assets/products-full-2.webp",
+        "/assets/products-full-3.webp"
       ]
     }
   ]
