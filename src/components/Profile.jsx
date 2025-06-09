@@ -29,7 +29,7 @@ export default function Profile({ profileOpen, setProfileOpen }) {
               <div className="relative z-50">
                 <img
                   className="object-cover object-center w-full h-full"
-                  src="/assets/sign-in.webp"
+                  src="/assets/sing-in.webp"
                   alt="Sign In"
                 />
                 <div className="absolute bottom-0 left-0 p-7 text-2xl">
