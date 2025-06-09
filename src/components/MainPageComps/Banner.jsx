@@ -20,7 +20,8 @@ export default function Banner() {
         </button>
         <img
           className="hover:scale-110 duration-1000 rounded-xl"
-          src="https://bemins.wpbingosite.com/wp-content/uploads/2023/11/banner.jpg"
+          src="/assets/banner.webp"
+          alt="Spring Collection Banner"
         ></img>
       </div>
       <div className="relative overflow-hidden rounded-xl">
@@ -35,7 +36,8 @@ export default function Banner() {
         </button>
         <img
           className="hover:scale-110 duration-1000 rounded-xl"
-          src="https://bemins.wpbingosite.com/wp-content/uploads/2023/11/banner-1.jpg"
+          src="/assets/banner-1.webp"
+          alt="30% off all order Banner"
         ></img>
       </div>
       <div className="relative overflow-hidden rounded-xl">
@@ -50,7 +52,8 @@ export default function Banner() {
         </button>
         <img
           className="hover:scale-110 duration-1000 rounded-xl"
-          src="https://bemins.wpbingosite.com/wp-content/uploads/2023/11/banner-2.jpg"
+          src="/assets/banner-2.webp"
+          alt="Must-Have Style Banner"
         ></img>
       </div>
     </div>

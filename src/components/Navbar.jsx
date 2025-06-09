@@ -67,7 +67,8 @@ export default function Navbar() {
                 <img
                   onClick={handleHomeLink}
                   className=" object-cover object-center w-48 hover:cursor-pointer"
-                  src="https://bemins.wpbingosite.com/wp-content/uploads/2020/06/logo.png"
+                  src="/assets/logo.webp"
+                  alt="bemins logo"
                 ></img>
               </div>
 
@@ -93,7 +94,8 @@ export default function Navbar() {
                 <img
                   onClick={handleHomeLink}
                   className=" object-cover object-center w-48 hover:cursor-pointer"
-                  src="https://bemins.wpbingosite.com/wp-content/uploads/2020/06/logo.png"
+                  src="/assets/logo.webp"
+                  alt="bemins logo"
                 ></img>
               </div>
             </div>

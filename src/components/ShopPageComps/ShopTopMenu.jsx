@@ -46,10 +46,7 @@ export default function ShopTopMenu({ handleCategoryClick }) {
   return (
     <div className="w-full h-[480px] relative ">
       <div className="absolute z-20">
-        <img
-          src="https://bemins.wpbingosite.com/wp-content/uploads/2024/02/lookbook-3.jpg"
-          alt="Lookbook"
-        />
+        <img src="/assets/lookbook-3.webp" alt="Lookbook" />
       </div>
       <div className="absolute z-30 top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 flex flex-col items-center justify-center text-xl">
         <span className="font-bold">Shop</span>
