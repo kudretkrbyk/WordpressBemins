@@ -404,10 +404,10 @@
       "puan": 4.5,
       "tarih": "2024-07-01",
       "fotograflar": [
-        "/assets/1.webp",
-        "/assets/3.webp",
-        "/assets/2.webp",
-        "/assets/4.webp"
+        "/assets/audience-satin-dress-4.webp",
+        "/assets/audience-satin-dress-2.webp",
+        "/assets/audience-satin-dress-3.webp",
+        "/assets/audience-satin-dress.webp"
       ]
     },
     {
@@ -647,12 +647,7 @@
 
       "puan": 4.5,
       "tarih": "2024-07-01",
-      "fotograflar": [
-        "/assets/360.webp",
-        "/assets/361.webp",
-        "/assets/362.webp",
-        "/assets/363.webp"
-      ]
+      "fotograflar": ["/assets/360-600x820.webp", "/assets/360-1-600x820.webp"]
     },
     {
       "id": 26,
@@ -696,8 +691,8 @@
       "puan": 4.5,
       "tarih": "2024-07-01",
       "fotograflar": [
-        "/assets/pro-8.webp",
-        "/assets/pro-9.webp",
+        "/assets/pro-8-600x820.webp",
+        "/assets/pro-9-600x820.webp",
         "/assets/pro-10.webp"
       ]
     },
@@ -1108,9 +1103,9 @@
       "puan": 4.5,
       "tarih": "2024-07-01",
       "fotograflar": [
-        "/assets/products-full-1.webp",
-        "/assets/products-full-2.webp",
-        "/assets/products-full-3.webp"
+        "/assets/zswim-shorts.webp",
+        "/assets/zswim-shorts-2.webp",
+        "/assets/zswim-shorts-3.webp"
       ]
     }
   ]
