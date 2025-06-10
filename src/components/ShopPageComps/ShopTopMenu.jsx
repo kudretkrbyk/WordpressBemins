@@ -3,8 +3,8 @@ import useFetchProducts from "../../hooks/useFetchProducts";
 import Slider from "react-slick";
 import PropTypes from "prop-types";
 
-import "../../slick-carousel/slick.css";
-import "../../slick-carousel/slick-theme.css";
+import "../../../public/slick-carousel/slick.css";
+import "../../../public/slick-carousel/slick-theme.css";
 
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 

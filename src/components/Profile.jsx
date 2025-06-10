@@ -91,6 +91,6 @@ export default function Profile({ profileOpen, setProfileOpen }) {
   );
 }
 Profile.propTypes = {
-  profileOpen: PropTypes.object,
-  setProfileOpen: PropTypes.object,
+  profileOpen: PropTypes.bool.isRequired,
+  setProfileOpen: PropTypes.func.isRequired,
 };
